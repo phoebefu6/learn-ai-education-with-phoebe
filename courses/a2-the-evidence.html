@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 2 · The evidence, in plain English - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Leader session 2 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Leader track · Session 2 of 6</div>
+    <h1>The evidence, in <span class="accent">plain English</span></h1>
+    <p class="sub">Four studies carry almost everything a leader needs to know about AI and learning, and you can retell each one in a sentence. A randomized trial where the same AI either hurt exam scores by 17% or boosted practice by 127% - depending only on design. A Harvard trial where a designed tutor doubled learning. An MIT brain-scan study where chatbot writers could not quote their own essays. And a study of 319 knowledge workers where more confidence in AI meant less critical thinking. Tonight you get each study as a card, all four placed on one quadrant, and a live demo where you watch the harmful and the helpful version of the same tool play out on one student. Then the policy consequences: fund design, pilot with guardrails, and one question that sorts every vendor.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Leader track</span>
+      <span class="chip audience">Deans · principals · L&amp;D heads</span>
+      <span class="chip audience">No code, decisions only</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The four studies</span>
+      <span class="a3" style="flex:5">18-42 · Live demo + what it means for policy</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where the track stands</h2>
+    </div>
+    <p class="lede">a1 established the shape of the problem: adoption ran ahead of governance, and an ungoverned rollout defaults to the answer machine. Tonight is the evidence session - the four studies that every later decision in this track (detection in a3, privacy in a4, the roadmap in a5, the change plan in a6) will keep citing. The bar you should hold this session to: by the end, you can retell all four studies from memory, place any vendor claim on the quadrant, and ask the one question that separates learning products from engagement products.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live classroom sim - step through + toggle levers</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      Four one-sentence study retellings, the evidence quadrant for placing any claim, the "feels like learning" trap named, and three policy moves: fund design not tools, pilot with guardrails as the default motion, and the Discernment question for any vendor - "show me the retention data, not the engagement data."
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE FOUR STUDIES ============ -->
+  <section class="section" id="four-studies">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Bastani PNAS 2025 · Kestin 2025 · Kosmyna MIT 2025 · Lee CHI 2025</span>
+      <h2>The four studies <span class="tag concept">15 min live</span></h2>
+    </div>
+    <p class="lede">The evidence on AI and learning is genuinely two-sided, and both sides are strong. Unguarded chatbot access <strong>measurably harms retention</strong> even while practice soars. Well-designed AI tutoring <strong>measurably beats a good classroom</strong>. The variable is never the model - it is the design wrapped around it. One quadrant holds all four studies: unguarded vs designed on one axis, what you measure during practice vs what survives to retention on the other.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 356" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Evidence quadrant: unguarded AI looks good during practice but fails at retention; designed AI wins at both. The four studies placed in their quadrants.">
+        <style>
+          .evT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .evS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .evI { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .evX { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .evRT { font: 700 13px Inter, sans-serif; fill: #991B1B; }
+          .evBT { font: 700 13px Inter, sans-serif; fill: #1E3A8A; }
+          .evN { font: 600 13px Inter, sans-serif; fill: #043029; }
+        </style>
+        <text class="evRT" x="200" y="32">UNGUARDED - raw chatbot access</text>
+        <text class="evBT" x="548" y="32">DESIGNED - guardrails + pedagogy</text>
+        <text class="evI" x="40" y="80">DURING</text>
+        <text class="evI" x="40" y="96">PRACTICE</text>
+        <text class="evX" x="40" y="114">feels like learning</text>
+        <rect x="200" y="48" width="320" height="84" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="evRT" x="216" y="72">Vanilla chatbot - PNAS 2025</text>
+        <text class="evX" x="216" y="94">practice +48% - students feel like winners</text>
+        <text class="evX" x="216" y="114">RCT, ~1,000 high-school math students</text>
+        <rect x="548" y="48" width="320" height="84" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="evBT" x="564" y="72">Guardrailed tutor - PNAS 2025</text>
+        <text class="evX" x="564" y="94">practice +127% - and the gains are real</text>
+        <text class="evX" x="564" y="114">same base model, hints instead of answers</text>
+        <text class="evI" x="40" y="204">AT</text>
+        <text class="evI" x="40" y="220">RETENTION</text>
+        <text class="evX" x="40" y="238">what actually sticks</text>
+        <rect x="200" y="160" width="320" height="108" rx="8" fill="#991B1B"/>
+        <text class="evT" x="216" y="184">Retention: the bill arrives</text>
+        <text class="evS" x="216" y="206">exam -17% vs students with no AI (PNAS)</text>
+        <text class="evS" x="216" y="224">MIT EEG: weakest engagement (preprint)</text>
+        <text class="evS" x="216" y="242">CHI 2025: AI confidence up, thinking down</text>
+        <rect x="548" y="160" width="320" height="108" rx="8" fill="#1E3A8A"/>
+        <text class="evT" x="564" y="184">Retention: the payoff</text>
+        <text class="evS" x="564" y="206">Harvard: twice the learning, in less time</text>
+        <text class="evS" x="564" y="224">(Kestin et al., Scientific Reports 2025)</text>
+        <text class="evS" x="564" y="242">PNAS tutor: exam harm eliminated</text>
+        <rect x="40" y="292" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="evN" x="64" y="304">Same model, same trial, opposite quadrants - the design around the AI decides the outcome.</text>
+        <rect x="40" y="318" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="evN" x="64" y="330">Kosmyna (MIT) is a preprint, n=54 - quote it as suggestive, never as settled. Say so out loud.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the evidence quadrant: where each of the four studies lands</figcaption>
+    </figure>
+
+    <div class="callout tip">
+      <strong>How to use the quadrant</strong>
+      Every claim, pilot report, and vendor demo you meet from now on goes in one of these four cells. If someone can only show you evidence from the top row - practice, engagement, satisfaction - the bottom row is still an open question, and it is the row where the PNAS harm was hiding.
+    </div>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Study 1 · Bastani et al., PNAS 2025 - the two-sided trial<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>One sentence: the same AI hurt or helped depending only on its design.</strong> A randomized controlled trial with about 1,000 high-school math students, published in PNAS - the strongest design in this space:</p>
+        <ul>
+          <li><strong>Vanilla chatbot arm</strong>: practice scores <strong>+48%</strong>. Then, on the unassisted exam, <strong>about 17% worse than students who had no AI at all</strong>. The chatbot did the work; the learning never happened.</li>
+          <li><strong>Guardrailed tutor arm</strong>: the same underlying model, redesigned to give hints and never direct answers. Practice <strong>+127%</strong> - and the exam harm was <strong>eliminated</strong>.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The trap is that the harmed students felt great.</strong> If this trial had been evaluated the way most institutional pilots are - usage, satisfaction, practice performance - the vanilla chatbot would have been declared a triumph and rolled out to every classroom. The harm only appears when someone measures unassisted performance. Remember that when you read any pilot report.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Study 2 · Kestin et al., Scientific Reports 2025 - the upside<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>One sentence: a well-designed AI tutor beat a good Harvard classroom - roughly double the learning, in less time.</strong></p>
+        <ul>
+          <li>A randomized trial in Harvard physics courses: students working with a carefully designed AI tutor <strong>learned more than twice as much in less time</strong> than students in an active-learning classroom - and active learning was already the gold standard being beaten.</li>
+          <li>The tutor was not a raw chatbot: it was built with pedagogy in it - structured guidance, no answer-dumping - the same design family as the PNAS guardrailed arm.</li>
+        </ul>
+        <p>This is the study that keeps the conversation honest in the other direction. The lesson of PNAS is not "keep AI away from students." Designed well, this is the largest learning gain most leaders will see in their careers. The two studies together are the whole argument: <strong>fund the design</strong>.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>Why this study matters at budget time.</strong> "Avoid harm" arguments fund caution; "double the learning" arguments fund programs. When you make the case for design work - guardrailed tutors, redesigned assessment, teacher training - Kestin is the number that turns it from an insurance policy into an investment.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Study 3 · Kosmyna et al., MIT 2025 - the brain-scan warning<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>One sentence: under EEG, chatbot-assisted writers showed the weakest neural engagement and could not quote their own essays minutes after writing them.</strong></p>
+        <ul>
+          <li>MIT researchers put essay writers under EEG. The LLM-assisted group showed the <strong>weakest neural connectivity</strong> of all groups - and, most memorably, <strong>could not quote from their own essays</strong> shortly after finishing them. The words went through them without touching them.</li>
+          <li><strong>The honesty rail, every time you cite it</strong>: this is a <strong>preprint, n=54</strong>. It has not passed peer review. Present it as suggestive and consistent with the PNAS result - never as settled fact. Leaders who add that caveat unprompted are more credible on every other number they quote.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Study 4 · Lee et al., CHI 2025 - the one about your staff<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>One sentence: across 319 knowledge workers, more confidence in AI went with less critical thinking.</strong></p>
+        <ul>
+          <li>Microsoft and CMU researchers studied <strong>319 knowledge workers</strong> using AI in real tasks (CHI 2025). The pattern: <strong>the more people trusted the AI, the less critically they thought</strong> - the work shifted from doing to verifying, and often the verifying quietly stopped.</li>
+          <li>This is the study that moves the problem out of the classroom. The answer-machine dynamic is not a teenager problem - it shows up in your staffroom, your admin office, and your own inbox. Whatever policy you set for students, plan a version of it for adults.</li>
+        </ul>
+        <p>For L&amp;D heads in the room: this is your bridge study. The same design question - does the AI create productive struggle or replace it - decides whether corporate training with AI builds capability or erodes it.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>How to read an education study in five minutes<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>You do not need a research methods course - you need four questions, in order:</p>
+        <ul>
+          <li><strong>1 · Was there a control group with random assignment?</strong> An RCT (PNAS, Kestin) can say "the AI caused this". A survey or observational study can only say "these things travel together". Weight them accordingly.</li>
+          <li><strong>2 · What was actually measured, and when?</strong> The whole PNAS story lives in this question: practice scores said triumph, the unassisted exam said harm. If a study (or vendor) only measured performance <em>with</em> the AI still on, it measured the tool, not the learning.</li>
+          <li><strong>3 · Peer-reviewed or preprint?</strong> PNAS, Scientific Reports, and CHI passed review. Kosmyna has not yet - which is why it gets the "suggestive, n=54" label every single time. Preprints are leads, not verdicts.</li>
+          <li><strong>4 · Who paid, and who benefits?</strong> Not a reason to dismiss - a reason to ask question 2 twice as hard when the answer is "the company selling the tool".</li>
+        </ul>
+        <p>Five minutes, four questions, and you will read AI-in-education claims better than most of the people forwarding them to you.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo">
+    <div class="section-kicker">
+      <span class="klabel">Demo · the PNAS trial, replayed on one student</span>
+      <h2>Watch the -17% and the +127% happen <span class="tag demo">★ 12 min · run it live</span></h2>
+    </div>
+    <p class="lede">This is Marcus, from the Riverview unit your teachers work with in the educator track - a capable student, a persuasive essay due, and a chatbot open in another tab. Step through the moment twice. First with every lever off: the AI defaults to answer machine and you watch the -17% story happen one small, reasonable choice at a time. Then toggle <strong>AI roles</strong> on and run it again: the same student meets a designed tutor - hints, not answers - and you watch the +127% version of the same evening.</p>
+
+    <div class="steps">
+      <div class="step"><p>Run the trace with <strong>all levers off</strong>. Watch where Marcus stops thinking - and notice that no single step feels like cheating. This is the vanilla-chatbot arm of the PNAS trial: practice looks great, the exam bill arrives later.</p></div>
+      <div class="step"><p>Toggle <strong>AI roles</strong> on and step through again. The AI now scaffolds instead of solves - Marcus builds his own thesis against pushback. This is the guardrailed-tutor arm: +127% practice, exam harm gone.</p></div>
+      <div class="step"><p>Say the leader's version out loud: same student, same AI, same evening - one design decision apart. Nothing you can buy off the shelf made the difference; the design did.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="trace" data-scenario="tutor" data-levers=""></div>
+
+    <div class="callout tip">
+      <strong>How to read the classroom sim</strong>
+      🏫 situation · 🧠 thinking · ✏️ action · 📦 what happens · 🛡 rail · 🎓 outcome. The moments are a scripted teaching simulation replaying documented failure modes; every statistic quoted comes from the verified studies on this course's source list.
+    </div>
+  </section>
+
+  <!-- ============ PART 2: POLICY ============ -->
+  <section class="section" id="policy">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · from evidence to institutional policy</span>
+      <h2>What this means for policy <span class="tag concept">12 min live</span></h2>
+    </div>
+    <p class="lede">Four studies, one quadrant, one demo - and three policy moves fall straight out of them. None requires a new budget line as much as a new default: your institution stops evaluating tools and starts evaluating designs.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The three policy moves<span class="mini">8 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>1 · Fund design, not tools.</strong> The PNAS trial's two arms ran on the same model - the entire difference was design work: guardrails, pedagogy, assessment. Yet most budgets buy licenses and fund zero design hours. Flip the ratio: every AI line item should carry the design, training, and assessment-redesign work that makes it land on the right side of the quadrant.</li>
+          <li><strong>2 · Make "pilot with guardrails" the default motion.</strong> No raw-chatbot pilots, ever - the evidence says that arm is the harmful one. Every pilot names its guardrail design up front and its <strong>retention measure</strong> (unassisted performance, not usage) before it starts. A pilot that cannot say how it will measure retention is an engagement experiment, not a learning one.</li>
+          <li><strong>3 · Ask every vendor the Discernment question: "Show me the retention data, not the engagement data."</strong> Engagement dashboards would have crowned the vanilla chatbot. Vendors with real learning products can answer; vendors with answer machines change the subject. One sentence, and it sorts the whole market for you.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>Run the test on the demo you just watched.</strong> Both versions of Marcus's evening would light up an engagement dashboard - he used the tool heavily in each. Only a retention measure separates them. That is why move 2 and move 3 are the same idea wearing different clothes: measure what survives when the AI is closed.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Handling the pushback in the room<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Three objections you will meet when you bring this evidence to your leadership team, and the honest answers:</p>
+        <ul>
+          <li><strong>"One study of Turkish math students - does it generalize?"</strong> Fair instinct, and the reason tonight has four studies, not one: an RCT (PNAS), a second RCT at Harvard (Kestin), a physiological signal (MIT, preprint - say so), and a workplace study (CHI). Different populations, methods, and settings, all pointing the same way.</li>
+          <li><strong>"So we should ban student AI use?"</strong> The evidence does not say that - the designed arms are the biggest learning gains on record. It says unguarded defaults are harmful, so the ban-vs-allow framing is the wrong question. Design-vs-no-design is the question.</li>
+          <li><strong>"Our satisfaction scores for the pilot are excellent."</strong> So were the vanilla chatbot's practice scores - +48%. "Feels like learning" is the documented failure mode, not evidence. Ask what the unassisted measure shows.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The one-page brief: evidence to policy<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>When you carry tonight into a leadership meeting, this is the whole session as one table - each study, its one-sentence retelling, and the policy move it forces:</p>
+        <table class="clean">
+          <thead>
+            <tr><th>Study</th><th>One-sentence retelling</th><th>Policy consequence</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Bastani, PNAS 2025</strong></td><td>Same AI: -17% on exams unguarded, +127% practice with guardrails and no harm</td><td>Evaluate designs, not tools; no raw-chatbot pilots</td></tr>
+            <tr><td><strong>Kestin, Sci Reports 2025</strong></td><td>A designed tutor doubled learning vs a good Harvard classroom</td><td>The upside justifies funding real design work</td></tr>
+            <tr><td><strong>Kosmyna, MIT 2025</strong></td><td>Chatbot writers could not quote their own essays (preprint - suggestive)</td><td>Label evidence quality in everything you circulate</td></tr>
+            <tr><td><strong>Lee, CHI 2025</strong></td><td>319 workers: more AI confidence, less critical thinking</td><td>Whatever rules you set for students, plan the staff version</td></tr>
+          </tbody>
+        </table>
+        <p>And the sentence that ties the table together: <strong>engagement tells you the tool is used; only retention tells you anyone learned.</strong> Every row above is that sentence with a citation attached.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DECISIONS ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Decisions to make</span>
+      <h2>Before a3 - this week <span class="tag exercise">◐ 20-30 min total</span></h2>
+    </div>
+    <ul>
+      <li>Retell the four studies, one sentence each, to someone on your leadership team - PNAS (-17% vs +127%), Kestin (doubled learning), Kosmyna (could not quote own essays - preprint, say so), CHI (confidence up, thinking down). If a sentence will not come, reread that card.</li>
+      <li>Send the Discernment question to one current or prospective vendor: "Show me the retention data, not the engagement data." File the reply - it is a3-a5 raw material.</li>
+      <li>Audit any AI pilot currently running: does it have a named guardrail design and a retention measure? If either is missing, decide this week who adds it.</li>
+      <li>Check one deck or document your institution has circulated about AI: is anything quoted as settled that is actually a preprint or a vendor claim? Fix the labels.</li>
+      <li>Optional: run the demo above once more with a colleague driving - the moment another leader watches the roles toggle flip the outcome is usually the moment the design budget gets easier.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This session teaches the peer-reviewed evidence spine of the course in leader language - exact numbers, honest caveats, and the policy consequences. The full studies stay with the journals (linked from the course source list). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Bastani et al., PNAS 2025 - the two-sided RCT (~1,000 students)</span><span class="note">+48%/-17% vs +127%/harm eliminated · the guardrail design itself is built in educator b6</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Kestin et al., Scientific Reports 2025 - the Harvard tutor RCT</span><span class="note">Doubled learning in less time vs an active-learning classroom · Part 1</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Kosmyna et al., MIT 2025 - the EEG essay study</span><span class="note">Preprint, n=54 - taught with its caveat attached, quoted as suggestive only</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Lee et al., CHI 2025 - 319 knowledge workers</span><span class="note">More AI confidence, less critical thinking · the corporate-L&amp;D bridge, deepened in a5</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · In the PNAS trial, the vanilla chatbot group hit +48% in practice but -17% on the unassisted exam. What did the guardrailed tutor - the same base model - change?</p>
+      <button class="qopt" type="button">A · Nothing - same model, so the same result</button>
+      <button class="qopt" type="button">B · Practice rose +127% and the exam harm was eliminated</button>
+      <button class="qopt" type="button">C · Practice fell, but exam scores improved slightly</button>
+      <p class="qwhy">Hints instead of answers: practice +127% with no exam harm. Same AI, opposite quadrant - which is why the policy unit is the design, not the tool.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Why does "the students love it and use it constantly" fail as evidence that a tool helps learning?</p>
+      <button class="qopt" type="button">A · Students are unreliable reporters of their own tool use</button>
+      <button class="qopt" type="button">B · Engagement data is usually collected incorrectly by vendors</button>
+      <button class="qopt" type="button">C · Practice and engagement can soar while unassisted performance falls - the harmed PNAS group felt like winners at +48%</button>
+      <p class="qwhy">"Feels like learning" is the documented failure mode. The vanilla-chatbot students were the happy ones right up until the exam. Only an unassisted retention measure separates the two arms.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · A vendor demo shows daily active students, session lengths, and glowing satisfaction scores. What is your Discernment question?</p>
+      <button class="qopt" type="button">A · "Show me the retention data, not the engagement data"</button>
+      <button class="qopt" type="button">B · "What is the price per seat at our scale?"</button>
+      <button class="qopt" type="button">C · "How accurate is your built-in AI detector?"</button>
+      <p class="qwhy">Engagement dashboards would have crowned the harmful arm of the PNAS trial. Retention - unassisted performance - is the number that separates learning products from answer machines. (And if the pitch touts a detector, a3 is your next session.)</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Bastani, PNAS 2025</b><span>RCT, ~1,000 students. Vanilla chatbot: practice +48%, exam -17% vs no AI. Guardrailed tutor: +127%, harm eliminated.</span></div>
+      <div class="cheat-item"><b>Kestin, Sci Reports 2025</b><span>Harvard RCT: a designed AI tutor doubled learning in less time vs an active-learning classroom - the upside case.</span></div>
+      <div class="cheat-item"><b>Kosmyna, MIT 2025</b><span>EEG: weakest neural engagement in the LLM group; writers could not quote their own essays. Preprint, n=54 - suggestive only, say so.</span></div>
+      <div class="cheat-item"><b>Lee, CHI 2025</b><span>319 knowledge workers: more AI confidence = less critical thinking; doing shifts to verifying. Applies to your staff, not just students.</span></div>
+      <div class="cheat-item"><b>The quadrant</b><span>Unguarded vs designed × practice vs retention. Same model lands in opposite quadrants - design decides the outcome.</span></div>
+      <div class="cheat-item"><b>The trap</b><span>"Feels like learning" lies: the harmed group was the happy group. Never evaluate a pilot on engagement and satisfaction alone.</span></div>
+      <div class="cheat-item"><b>The default motion</b><span>Fund design, not tools. Pilot with guardrails, retention measure named before launch. No raw-chatbot pilots, ever.</span></div>
+      <div class="cheat-item"><b>The vendor question</b><span>"Show me the retention data, not the engagement data." Real learning products can answer; answer machines change the subject.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 2 of 6 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a1-what-ai-changes.html">← a1 · What AI changes</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="a3-redesign-not-detect.html">Next: Redesign, not detect →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

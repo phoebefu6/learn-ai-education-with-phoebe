@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 3 · The seven student-facing AI roles - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 3 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 3 of 10</div>
+    <h1>The seven <span class="accent">student-facing AI roles</span></h1>
+    <p class="sub">Left alone with a chatbot, students get one default: the answer machine - and b1 showed you what that costs. Mollick &amp; Mollick's "Assigning AI: Seven Approaches for Students" is the antidote: seven scaffolded roles - tutor, coach, mentor, teammate, tool, simulator, student - each building a different kind of learning and each carrying a named risk. Tonight you learn all seven, then build three of them live on Riverview: a debate simulator for Priya that argues back but never argues FOR her, an AI-student that plays confused novice while a real student teaches it the plastics-ban concepts, and an AI-teammate with a defined job and a credit line. Then the scorecard moves: roles are the second lever, and rung 2 is where Marcus stops outsourcing his thesis.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The seven roles</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: role prompts for Riverview</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are in the track</h2>
+    </div>
+    <p class="lede">b2 made YOU fluent at prompting. Tonight the prompts turn around and face the students - which changes everything, because b1's delegation rule was clear: anything student-facing is <strong>delegate with design</strong>, never raw. The design is a role. Same running case: <strong>Ms. Tan, Grade 9, 28 students, "Should our city ban single-use plastics?"</strong> - and tonight the Riverview scorecard climbs its second rung.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live classroom sim - step through + toggle levers</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The seven roles with what each builds and what each risks, three ready-to-adapt role prompts built live on Riverview, the scaffolding rule that makes any role safe - every role prompt states what the AI must NOT do - and the scorecard at 8/12 with a clear map of the four fails still waiting.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE SEVEN ROLES ============ -->
+  <section class="section" id="seven-roles">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Mollick &amp; Mollick, "Assigning AI: Seven Approaches for Students"</span>
+      <h2>Seven roles, seven kinds of learning <span class="tag concept">15 min live</span></h2>
+    </div>
+    <p class="lede">The paper's move is simple and profound: stop asking "should students use AI?" and start asking "<strong>as what?</strong>" Seven assignable roles, each with a pedagogical function: <strong>AI-tutor</strong> (knowledge) · <strong>AI-coach</strong> (metacognition) · <strong>AI-mentor</strong> (feedback) · <strong>AI-teammate</strong> (collaborative intelligence) · <strong>AI-tool</strong> (performance) · <strong>AI-simulator</strong> (practice) · <strong>AI-student</strong> (checks understanding - the teach-the-AI pattern, riding the protege effect). None of them is "answer machine." That is the point.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The seven student-facing AI roles arranged around one student: tutor, coach, mentor, teammate, tool, simulator, and AI-student.">
+        <style>
+          .r3T { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .r3S { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .r3I { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .r3X { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .r3N { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .r3Wire { stroke: #93C5FD; stroke-width: 2; fill: none; marker-end: url(#r3Hd); }
+        </style>
+        <defs>
+          <marker id="r3Hd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#93C5FD"/>
+          </marker>
+        </defs>
+        <path class="r3Wire" d="M165,94 L360,185"/>
+        <path class="r3Wire" d="M440,94 L440,180"/>
+        <path class="r3Wire" d="M715,94 L520,185"/>
+        <path class="r3Wire" d="M290,222 L320,222"/>
+        <path class="r3Wire" d="M590,222 L560,222"/>
+        <path class="r3Wire" d="M300,345 L395,259"/>
+        <path class="r3Wire" d="M580,345 L485,259"/>
+        <rect x="40" y="40" width="250" height="54" rx="8" fill="#1E3A8A"/>
+        <text class="r3T" x="56" y="62">AI-TUTOR</text>
+        <text class="r3S" x="56" y="81">knowledge - explains + quizzes</text>
+        <rect x="315" y="40" width="250" height="54" rx="8" fill="#1D4ED8"/>
+        <text class="r3T" x="331" y="62">AI-COACH</text>
+        <text class="r3S" x="331" y="81">metacognition - how you learn</text>
+        <rect x="590" y="40" width="250" height="54" rx="8" fill="#3B82F6"/>
+        <text class="r3T" x="606" y="62">AI-MENTOR</text>
+        <text class="r3S" x="606" y="81">feedback on work in progress</text>
+        <rect x="40" y="195" width="250" height="54" rx="8" fill="#1E293B"/>
+        <text class="r3T" x="56" y="217">AI-TEAMMATE</text>
+        <text class="r3S" x="56" y="236">collaborative intelligence</text>
+        <rect x="590" y="195" width="250" height="54" rx="8" fill="#64748B"/>
+        <text class="r3T" x="606" y="217">AI-TOOL</text>
+        <text class="r3S" x="606" y="236">performance - does grunt work</text>
+        <rect x="325" y="190" width="230" height="64" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="r3I" x="345" y="216">THE STUDENT</text>
+        <text class="r3X" x="345" y="236">seven scaffolds, one learner</text>
+        <rect x="175" y="345" width="250" height="54" rx="8" fill="#1E3A8A"/>
+        <text class="r3T" x="191" y="367">AI-SIMULATOR</text>
+        <text class="r3S" x="191" y="386">practice - argues back</text>
+        <rect x="455" y="345" width="250" height="54" rx="8" fill="#0E7C6B"/>
+        <text class="r3T" x="471" y="367">AI-STUDENT</text>
+        <text class="r3S" x="471" y="386">you teach it - protege effect</text>
+        <rect x="40" y="415" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="r3N" x="64" y="427">Every role keeps the student doing the thinking - the AI scaffolds it, never replaces it.</text>
+        <rect x="40" y="443" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="r3N" x="64" y="455">AI-student is the sleeper: explaining to a confused AI is the protege effect - teaching checks understanding.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the seven roles around one student, each with its function</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The role table: function and risk together<span class="mini">7 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The paper is honest in a way most edtech writing is not: every role carries a risk - <strong>complacency, errors, bias</strong> - and the role prompt has to name it. Read function and risk as a pair:</p>
+        <table class="clean">
+          <thead><tr><th>Role</th><th>What the student does</th><th>What learning it builds</th><th>The risk it carries</th></tr></thead>
+          <tbody>
+            <tr><td>AI-tutor</td><td>Asks for explanations, worked examples, check questions</td><td>Knowledge</td><td>Complacency - accepting explanations, and their errors, without checking</td></tr>
+            <tr><td>AI-coach</td><td>Reflects on how they studied, plans the next attempt</td><td>Metacognition</td><td>Generic advice taken as personal insight</td></tr>
+            <tr><td>AI-mentor</td><td>Submits work in progress for critique</td><td>Feedback</td><td>Wrong or biased feedback worn as authority</td></tr>
+            <tr><td>AI-teammate</td><td>Works alongside it on a group task with a defined job</td><td>Collaborative intelligence</td><td>Social loafing - the AI quietly becomes the group</td></tr>
+            <tr><td>AI-tool</td><td>Hands over grunt work: formatting, summarizing, tidying</td><td>Performance</td><td>Performance without learning when the grunt work WAS the learning</td></tr>
+            <tr><td>AI-simulator</td><td>Practices against it: debates, role-plays, scenarios</td><td>Practice</td><td>Errors - an inaccurate simulation rehearsed until it sticks</td></tr>
+            <tr><td>AI-student</td><td>Teaches it: explains a concept, corrects its confusion</td><td>Checks understanding</td><td>Confidently teaching it wrong with nobody noticing - teacher spot-checks needed</td></tr>
+          </tbody>
+        </table>
+        <p>Notice AI-tool is the only role where the AI does the work - and it is safe only when the work it does is NOT the learning objective. Everything else scaffolds the student's own thinking.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why AI-student is the quiet star<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The teach-the-AI pattern rides the <strong>protege effect</strong>: students learn more when they explain material to someone else, and they cannot fake an explanation to a novice who keeps asking "but why?" It flips the whole power dynamic - instead of the AI checking the student, the student checks the AI. It is also the cheapest formative assessment you will ever run: the transcript of a student teaching the plastics-ban argument to a confused AI shows you exactly where their understanding bends. One rail, though: a student can teach the AI something wrong and feel great about it, so the transcript comes to you (or gets a two-minute spot-check in class) - the pattern checks understanding only when somebody reads the check.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The four roles we did not build tonight<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The build-along covered simulator, AI-student, and teammate. Here is what the other four look like on the same Riverview unit, so you can sketch them yourself:</p>
+        <ul>
+          <li><strong>AI-tutor</strong> - explains claim-evidence-reasoning with worked examples from OTHER topics, then quizzes the student on their plastics-ban draft. NOT-do line: never produce sentences for the essay itself. (b6 turns this one into a full guardrailed tutor.)</li>
+          <li><strong>AI-coach</strong> - after a draft comes back, the student debriefs: what was hardest, what would you do differently, what is your plan for draft 2? NOT-do line: never critique the essay content - that is the mentor's job, and mixing them muddies both.</li>
+          <li><strong>AI-mentor</strong> - reads a work-in-progress paragraph and gives feedback against the class rubric. NOT-do line: feedback as questions and observations only, never rewritten sentences - and the student notes one piece of feedback they REJECTED and why, which keeps discernment alive.</li>
+          <li><strong>AI-tool</strong> - formats the bibliography, tidies the works-cited page. Safe here precisely because citation formatting is not this unit's learning objective. Move the same delegation to "find me evidence" and it stops being a tool and starts being the essay.</li>
+        </ul>
+        <p>Same pattern every time: a job, a NOT-do line, and a check that a human reads. Pick roles by the unit's learning objective, not by what the AI is good at.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: BUILD-ALONG ============ -->
+  <section class="section" id="build-along">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · build-along on Riverview</span>
+      <h2>Three role prompts, built live <span class="tag demo">★ 18 min · build along</span></h2>
+    </div>
+    <p class="lede">Three roles, three real Riverview moments. Every prompt follows tonight's one non-negotiable - <strong>the scaffolding rule: every role prompt states what the AI must NOT do.</strong> The role gives the AI a job; the NOT-do line is what stops it sliding back into answer machine the moment a student pushes.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Role prompt 1 · AI-simulator for Priya's debate practice<span class="mini">6 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Priya is drafting her plastics-ban essay and needs opposition, not assistance. The simulator argues back - and the NOT-do line keeps it from ever writing her side for her.</p>
+        <div class="prompt-box good"><span class="label">AI-simulator - argues back, never FOR her</span>You are a debate opponent for a Grade 9 student preparing a persuasive essay arguing FOR a city ban on single-use plastics. Take the opposing side and argue it well: raise the strongest real objections - cost to small businesses, jobs, whether bans actually cut waste - one at a time, and push back on weak evidence when she responds.
+What you must NOT do: never argue her side for her, never suggest wording or sentences for her essay, never summarize the debate into points she could paste. If she asks you to switch sides or write her rebuttal, refuse and return to the debate.
+End after 10 exchanges with three questions she still cannot answer well - questions only, no model answers.</div>
+        <p><strong>Why it works:</strong> Priya leaves with pressure-tested arguments and three named gaps - and not one sentence she could submit. Practice, with the thinking left intact.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Role prompt 2 · AI-student for the plastics-ban concepts<span class="mini">6 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The teach-the-AI move: the real student explains, the AI plays confused novice, the student corrects it. The protege effect does the heavy lifting.</p>
+        <div class="prompt-box good"><span class="label">AI-student - the confused novice you teach</span>You are a confused novice student who has never studied persuasive writing or the single-use plastics debate. A real Grade 9 student will teach you the key concepts: claim, evidence, reasoning, and counterargument, using their plastics-ban essay topic.
+Your job: ask naive questions, make one plausible mistake per concept (for example, treat a strong opinion as evidence), and let the student catch and correct you. Stay confused until their explanation is actually clear - do not pretend to understand a muddled explanation.
+What you must NOT do: never explain a concept correctly yourself, never fix their essay, never break character to lecture. If taught something wrong, accept it - the teacher reviews this transcript and the student is told so.</div>
+        <p><strong>Why it works:</strong> you cannot explain claim-versus-evidence to a novice who pushes back without actually understanding it - and the transcript hands Ms. Tan a formative-assessment goldmine.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Role prompt 3 · AI-teammate with a defined job + credit line<span class="mini">6 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Group work is where AI use goes invisible - so the teammate role makes it visible by design: one defined job, and a credit line in the group log like any other member.</p>
+        <div class="prompt-box good"><span class="label">AI-teammate - one job, on the record</span>You are the fifth member of a Grade 9 group researching "Should our city ban single-use plastics?" Your defined job, assigned by the group: devil's advocate and evidence-checker. When the group shares a claim, stress-test it - what evidence supports this, what would the other side say, what is the weakest link?
+What you must NOT do: never write sections of the group's essay or slides, never do another member's job, never make the group's decisions - you raise questions, humans decide.
+Every contribution you make gets logged by the group in their work log as "AI teammate suggested..." - remind them if they forget.</div>
+        <p><strong>Why it works:</strong> the defined job blocks social loafing, and the credit line turns AI use from a secret into a work practice - the same disclosure habit b7's policy will make official.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>This pattern is how the serious tutors are built.</strong> Anthropic's Learning Mode runs on Socratic questioning ("What evidence supports your conclusion?") and no direct answers; Khan Academy's Khanmigo has the same design DNA - Socratic hints, won't give answers - and is free for educators 18+ in 44+ countries. Your role prompts are the DIY version of the exact scaffolding those products hard-code. b6 builds you a full guardrailed tutor on this pattern.</p>
+        </div>
+      </div>
+    </details>
+
+    <div class="callout tip">
+      <strong>The scaffolding rule, one more time</strong>
+      Every role prompt states what the AI must NOT do. Read the three prompts back and notice the NOT-do line is doing most of the pedagogical work: no wording for Priya, no correct explanations from the novice, no ghost-written sections from the teammate. A role without a NOT-do line is an answer machine wearing a costume.
+    </div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Rolling roles out without chaos<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Seven roles on Monday morning is a recipe for noise. The sequence that works:</p>
+        <ul>
+          <li><strong>One role, one lesson, one week</strong> - introduce a single role on a task where its risk is cheap. The simulator on debate prep is a classic first pick: the failure mode is a weak debate, not a compromised grade.</li>
+          <li><strong>Teach the risk WITH the role</strong> - "this one sometimes gets facts wrong, your job includes catching it" is a stronger AI-literacy lesson than any slideshow, because the student meets the risk live.</li>
+          <li><strong>Make the transcript part of the work</strong> - every role tonight ended in something a human reads: three unanswered questions, a teach-back transcript, a group log. If no artifact reaches you, the role is running on trust alone.</li>
+          <li><strong>Name the role out loud</strong> - "today the AI is your opponent, not your writer" gives students language for what changed. The b7 policy will lean on exactly this vocabulary.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE RUNG-2 SCORECARD ============ -->
+  <section class="section" id="rung-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the lever ladder, rung 2</span>
+      <h2>The scorecard climbs: 8/12 <span class="tag demo">★ 8 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">In b1 you watched the Riverview scorecard sit at 2/12 with everything off. Tonight two levers are on: <strong>policy + roles</strong>. Roles are YOUR new lever - and the score reads <strong>8/12</strong>. Step through and see exactly what tonight's work buys, and what is still waiting.</p>
+
+    <div class="steps">
+      <div class="step"><p>Read the score: <strong>8/12</strong>. Roles just flipped three moments - <strong>Marcus</strong> builds his own thesis against a tutor-role instead of outsourcing it, <strong>Priya</strong> practices against the simulator instead of hiding behind a chatbot, and <strong>the study group</strong> works with a credited teammate instead of a ghost-writer.</p></div>
+      <div class="step"><p>Note what you did NOT build tonight: policy's 3 flips (the 2 → 5 climb) arrive fully in b7 - the simulator assumes the b7 policy statement is already in force. Roles need that floor: without a policy, even a good role is something a student can be accused over.</p></div>
+      <div class="step"><p>Read the <strong>4 remaining fails</strong> one by one. Two are waiting on redesigned assessment (b5) - the polished-drafts moment and Aiden's hidden gap. Two are waiting on privacy rails (b8) - the IEP paste and the under-13 class.</p></div>
+      <div class="step"><p>Say the pattern out loud: each session turns on the lever that unlocks the next rung. You are halfway up the 2 → 5 → 8 → 10 → 12 ladder.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="score" data-levers="policy,roles"></div>
+
+    <div class="callout tip">
+      <strong>How to read the sim</strong>
+      🏫 situation · 🧠 thinking · ✏️ action · 📦 what happens · 🛡 rail · 🎓 outcome. Scripted teaching simulation replaying documented failure modes; every statistic quoted comes from the verified studies on this course's source list.
+    </div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Reading a role transcript in two minutes<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every role tonight produced an artifact a human reads. Here is the two-minute scan so it stays sustainable across 28 students:</p>
+        <ul>
+          <li><strong>Simulator transcript</strong> - skip to the end. The three questions Priya could not answer ARE the formative data; the debate itself is just the workout.</li>
+          <li><strong>AI-student transcript</strong> - scan for the planted mistakes. Did the student catch the "opinion as evidence" trap? A missed catch is next lesson's warm-up.</li>
+          <li><strong>Group log</strong> - count the "AI teammate suggested..." lines against what shipped. Zero lines with a polished product means the log is fiction; that conversation is a policy moment, and b7 gives you the language for it.</li>
+        </ul>
+        <p>If a role generates transcripts nobody will ever scan, shrink the role - a smaller role you actually check beats a rich one running on trust.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 20-30 min total</span></h2>
+    </div>
+    <ul>
+      <li>Pick ONE role and one real lesson of yours. Write the role prompt with a NOT-do line, run it yourself playing the student, and note the first moment the AI tries to slide back into answer machine.</li>
+      <li>Try AI-student on a topic you teach: explain a concept to it while it plays confused novice. Notice where YOUR explanation bends - that is the protege effect working on you.</li>
+      <li>Map each of the seven roles to one unit you teach: which single role would help most, and which would be actively risky for that unit's learning objective?</li>
+      <li>Re-run the scorecard at policy + roles and read all four remaining fails aloud. Predict which flip in b5 and which in b8 - you will check yourself in those sessions.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Tonight is the deepest single-source session in the track: one paper, taught hands-on. Certificates and graded assessments stay with the official providers. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Mollick &amp; Mollick, "Assigning AI: Seven Approaches for Students" - the seven roles + their risks</span><span class="note">Parts 1-2 · the full paper is a 30-minute read and worth it</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Mollick Wharton Coursera - module 3, assigning AI to students</span><span class="note">The course walks the same roles with video demos · GPT-building lands in b6</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">UNESCO AI competency framework for students - the student-side map</span><span class="note">Pointer only: 4 dimensions x 3 levels · the sibling learn-ai-literacy course goes deeper</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Which role checks a student's understanding by flipping who does the teaching?</p>
+      <button class="qopt" type="button">A · AI-tutor - it quizzes the student until gaps show</button>
+      <button class="qopt" type="button">B · AI-mentor - its feedback reveals what the student missed</button>
+      <button class="qopt" type="button">C · AI-student - the student teaches a confused novice AI, riding the protege effect</button>
+      <p class="qwhy">AI-student is the teach-the-AI pattern: explaining to a novice that pushes back is the protege effect, and the transcript shows the teacher exactly where understanding bends. Tutor and mentor scaffold the student; AI-student makes the student do the scaffolding.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · The scaffolding rule: what must EVERY role prompt state?</p>
+      <button class="qopt" type="button">A · What the AI must NOT do - the line that stops the role sliding back into answer machine</button>
+      <button class="qopt" type="button">B · The student's full name and grade, so the AI can personalize</button>
+      <button class="qopt" type="button">C · A minimum word count for the AI's replies</button>
+      <p class="qwhy">Priya's simulator never argues FOR her, the novice never explains correctly, the teammate never writes sections. The NOT-do line carries the pedagogy - a role without one is an answer machine in a costume. (And never put student names in prompts - that is b8.)</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · Policy + roles takes the scorecard to 8/12. Which moments did ROLES just flip?</p>
+      <button class="qopt" type="button">A · The IEP paste, the under-13 class, and the parent question</button>
+      <button class="qopt" type="button">B · Marcus's thesis, Priya's debate practice, and the study group</button>
+      <button class="qopt" type="button">C · The polished-drafts moment and Aiden's hidden gap</button>
+      <p class="qwhy">Roles flipped Marcus (tutor-role, not answer machine), Priya (simulator practice), and the study group (credited teammate). Option A waits on privacy rails in b8; option C waits on redesigned assessment in b5 - those are the four remaining fails.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The seven roles</b><span>AI-tutor (knowledge) · AI-coach (metacognition) · AI-mentor (feedback) · AI-teammate (collaborative intelligence) · AI-tool (performance) · AI-simulator (practice) · AI-student (checks understanding).</span></div>
+      <div class="cheat-item"><b>The reframe</b><span>Not "should students use AI?" but "as what?" Every role scaffolds the student's thinking - none of the seven is answer machine.</span></div>
+      <div class="cheat-item"><b>The scaffolding rule</b><span>Every role prompt states what the AI must NOT do. The NOT-do line does the pedagogical work; without it the role collapses.</span></div>
+      <div class="cheat-item"><b>The protege effect</b><span>AI-student: the real student teaches a confused novice AI. You cannot fake an explanation to something that keeps asking why - and the transcript is formative gold.</span></div>
+      <div class="cheat-item"><b>The three built tonight</b><span>Simulator (argues back, never FOR Priya) · AI-student (plays confused, student corrects it) · teammate (defined job + credit line in the group log).</span></div>
+      <div class="cheat-item"><b>The named risks</b><span>Complacency, errors, bias - one per role, stated in the paper. Teach the risk with the role; AI-tool is safe only when the grunt work is not the learning.</span></div>
+      <div class="cheat-item"><b>Rung 2 = 8/12</b><span>Roles flipped Marcus, Priya, and the study group. Remaining fails: two wait on redesign (b5), two on privacy rails (b8). Ladder: 2 → 5 → 8 → 10 → 12.</span></div>
+      <div class="cheat-item"><b>The product parallel</b><span>Learning Mode and Khanmigo hard-code this scaffolding: Socratic hints, no direct answers. b6 builds your own guardrailed tutor on the same pattern.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 3 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b2-prompting-for-teaching.html">← b2 · Prompting for teaching</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b4-lesson-unit-design.html">Next: Lesson + unit design →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

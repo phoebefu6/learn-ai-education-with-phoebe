@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 1 · The educator's AI loop - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 1 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 1 of 10</div>
+    <h1>The educator's <span class="accent">AI loop</span></h1>
+    <p class="sub">Sixty percent of US teachers already use AI, and the weekly users save about six weeks a year. The same tool, in the same classroom, can double learning or quietly erase it - the difference is never the model, it is the design around it. Tonight you get the frame this whole course runs on: the 4D fluency loop (Delegation, Description, Discernment, Diligence), the four levers that decide whether learning survives AI, and a live simulator where you watch a real classroom moment fail at every missing lever. By b10 you will have redesigned one full unit - Riverview's Grade 9 persuasive essay - end to end.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">Start here</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The 4D loop + the four levers</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: watch a unit fail + climb</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>How this track works</h2>
+    </div>
+    <p class="lede">Ten sessions, one running case: <strong>Riverview Secondary, Ms. Tan's Grade 9 class, 28 students, one persuasive-essay unit</strong> - "Should our city ban single-use plastics?" It is the classic AI-disruption battleground, and you will redesign it end to end. Tonight the frame. b2 teaches prompting for teaching, b3 the seven student-facing AI roles, b4 lesson and unit design, b5 the assessment redesign (the heart of the course), b6 builds a guardrailed tutor, b7 policy and integrity, b8 privacy rails, b9 mirrors everything onto corporate L&amp;D, b10 assembles the full unit and scores it. Every session ships an artifact you can use Monday.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill peach">▶ Live classroom sim - step through + toggle levers</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The 4D fluency loop you can run on any AI decision, the four levers - policy, AI roles, redesigned assessment, privacy rails - and the diagnostic habit this course is built on: when AI "ruins" a classroom moment, name the missing lever before blaming the students or the tool.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE 4D LOOP ============ -->
+  <section class="section" id="the-4d-loop">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Anthropic AI Fluency (4D framework) + AI Fluency for Educators</span>
+      <h2>The 4D loop: how fluent educators use AI <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Anthropic's AI Fluency framework - built with academics and taught in its educator course - names four competencies, and they run as a loop, not a checklist. <strong>Delegation</strong>: should AI touch this task at all, and which part? <strong>Description</strong>: can you tell it what you actually want? <strong>Discernment</strong>: can you judge what came back? <strong>Diligence</strong>: do you take responsibility - integrity, privacy, accuracy, and being transparent about AI's role? Every classroom decision in this course is one of these four questions wearing a costume.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The 4D loop: Delegation, Description, Discernment, Diligence, cycling around every educator AI decision.">
+        <style>
+          .fdT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .fdS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .fdI { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .fdX { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .fdN { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .fdWire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#fdHd); }
+        </style>
+        <defs>
+          <marker id="fdHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+        </defs>
+        <rect x="60" y="60" width="200" height="56" rx="8" fill="#1E3A8A"/>
+        <text class="fdT" x="76" y="84">1 · DELEGATION</text>
+        <text class="fdS" x="76" y="103">should AI do this at all?</text>
+        <rect x="620" y="60" width="200" height="56" rx="8" fill="#1D4ED8"/>
+        <text class="fdT" x="636" y="84">2 · DESCRIPTION</text>
+        <text class="fdS" x="636" y="103">say what you actually want</text>
+        <rect x="620" y="190" width="200" height="56" rx="8" fill="#3B82F6"/>
+        <text class="fdT" x="636" y="214">3 · DISCERNMENT</text>
+        <text class="fdS" x="636" y="233">judge what came back</text>
+        <rect x="60" y="190" width="200" height="56" rx="8" fill="#1E293B"/>
+        <text class="fdT" x="76" y="214">4 · DILIGENCE</text>
+        <text class="fdS" x="76" y="233">own the consequences</text>
+        <path class="fdWire" d="M260,88 L615,88"/>
+        <path class="fdWire" d="M720,116 L720,185"/>
+        <path class="fdWire" d="M615,218 L265,218"/>
+        <path class="fdWire" d="M160,185 L160,121"/>
+        <rect x="330" y="126" width="220" height="56" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="fdI" x="350" y="150">EVERY AI DECISION</text>
+        <text class="fdX" x="350" y="170">lesson, email, rubric, tutor</text>
+        <rect x="60" y="276" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="fdN" x="84" y="288">Diligence is where teaching lives: integrity, student privacy, accuracy, transparency about AI's role.</text>
+        <rect x="60" y="304" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="fdN" x="84" y="316">The loop repeats per task - fluent educators run it in seconds, new users skip straight to Description.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the 4D loop every AI decision runs through</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The four levers of this course<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The 4D loop is how <em>you</em> think. The four levers are what your <em>classroom</em> needs so learning survives AI - and they are the four ways real classrooms fail:</p>
+        <ul>
+          <li><strong>Policy</strong> - without a clear, shared AI policy, every student guesses and every teacher improvises. Honesty becomes a confession.</li>
+          <li><strong>AI roles</strong> - without scaffolded roles, the AI defaults to answer machine, and students submit words they cannot defend.</li>
+          <li><strong>Redesigned assessment</strong> - without process evidence, a polished final draft is a black box with a name on it.</li>
+          <li><strong>Privacy rails</strong> - without them, one helpful instinct pastes a student's protected record into a consumer chatbot.</li>
+        </ul>
+        <p>There is a fifth toggle in the simulator - an <strong>AI detector</strong>. It is not a lever. You will discover why yourself in Demo 2, and get the full evidence in b5 and b7.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The six-weeks number is real.</strong> Gallup's 2025 survey of 2,232 US public-school teachers: 60% used AI this school year, and weekly users save about 5.9 hours a week - roughly six working weeks a year - on prep, worksheets, and adapting materials. The time saving is not hype. What happens to <em>learning</em> is the open question, and it is the one this course answers.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Delegation: the question most educators skip<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The fluency course's sharpest idea is that the first question is not "how do I prompt this?" but "should AI touch this task, and which part?" A quick delegation rule for teaching work:</p>
+        <ul>
+          <li><strong>Delegate freely</strong> - low-stakes, teacher-reviewed output: newsletter drafts, worksheet variants, differentiation ideas, rubric first drafts.</li>
+          <li><strong>Delegate with design</strong> - anything student-facing: only through a scaffolded role (b3) or a guardrailed tutor (b6), never raw.</li>
+          <li><strong>Do not delegate</strong> - the judgment that IS the job: grades, feedback that carries your relationship with the student, IEP decisions, anything requiring protected data (b8).</li>
+        </ul>
+        <p>Write these three buckets on one sticky note and you have a working AI policy for your own desk - the classroom-wide version arrives in b7.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: DESIGN DETERMINES OUTCOME ============ -->
+  <section class="section" id="two-classrooms">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the evidence spine: Bastani et al. PNAS 2025, Kestin et al. 2025</span>
+      <h2>Same tool, two classrooms <span class="tag concept">6 min live</span></h2>
+    </div>
+    <p class="lede">The best-designed study in this space (Bastani et al., PNAS 2025) put ~1,000 high-school math students in a randomized trial. Students with a <strong>vanilla chatbot</strong> looked great in practice (+48%) - then scored about <strong>17% worse than the no-AI group</strong> on the unassisted exam. Students with a <strong>guardrailed tutor</strong> - same underlying model, but designed to give hints and never direct answers - practiced far better (+127%) with <strong>no exam harm</strong>. And a Harvard trial found a well-designed AI tutor <strong>doubled learning</strong> versus an active classroom. Same technology. Opposite outcomes. Design decides.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two paths from the same AI: unguarded access boosts practice but drops exam scores 17 percent; a guardrailed tutor boosts practice more and preserves exam performance.">
+        <style>
+          .tcT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .tcS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .tcI { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .tcX { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .tcN { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .tcBad { font: 700 13px Inter, sans-serif; fill: #991B1B; }
+          .tcGood { font: 700 13px Inter, sans-serif; fill: #1E3A8A; }
+          .tcWire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#tcHd); }
+          .tcWireR { stroke: #991B1B; stroke-width: 2.5; fill: none; marker-end: url(#tcHdR); }
+        </style>
+        <defs>
+          <marker id="tcHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+          <marker id="tcHdR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+        <rect x="40" y="120" width="150" height="52" rx="8" fill="#1E293B"/>
+        <text class="tcT" x="56" y="142">SAME AI</text>
+        <text class="tcS" x="56" y="161">same students</text>
+        <rect x="280" y="46" width="200" height="52" rx="8" fill="#991B1B"/>
+        <text class="tcT" x="296" y="68">ANSWER MACHINE</text>
+        <text class="tcS" x="296" y="87">vanilla chatbot access</text>
+        <rect x="280" y="230" width="200" height="52" rx="8" fill="#1D4ED8"/>
+        <text class="tcT" x="296" y="252">GUARDRAILED TUTOR</text>
+        <text class="tcS" x="296" y="271">hints only, no answers</text>
+        <rect x="560" y="46" width="150" height="52" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="tcBad" x="576" y="68">practice +48%</text>
+        <text class="tcX" x="576" y="87">feels like winning</text>
+        <rect x="560" y="230" width="150" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="tcGood" x="576" y="252">practice +127%</text>
+        <text class="tcX" x="576" y="271">and it is real</text>
+        <rect x="740" y="46" width="112" height="52" rx="8" fill="#991B1B"/>
+        <text class="tcT" x="752" y="68">EXAM -17%</text>
+        <text class="tcS" x="752" y="87">vs no AI at all</text>
+        <rect x="740" y="230" width="112" height="52" rx="8" fill="#1E3A8A"/>
+        <text class="tcT" x="752" y="252">EXAM holds</text>
+        <text class="tcS" x="752" y="271">harm eliminated</text>
+        <path class="tcWireR" d="M190,132 C230,120 240,80 275,72"/>
+        <path class="tcWire" d="M190,160 C230,172 240,244 275,252"/>
+        <path class="tcWireR" d="M480,72 L555,72"/>
+        <path class="tcWire" d="M480,256 L555,256"/>
+        <path class="tcWireR" d="M710,72 L735,72"/>
+        <path class="tcWire" d="M710,256 L735,256"/>
+        <rect x="40" y="310" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="tcN" x="64" y="322">Bastani et al., PNAS 2025 (RCT, ~1,000 students). Harvard RCT: designed tutor doubled learning. Design decides.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the two-sided evidence this course is built on</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Why "feels like learning" lies<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The trap in the PNAS study is that the harmed students <em>felt great</em> - their practice scores soared while the learning quietly stopped happening. Two more studies sharpen the picture:</p>
+        <ul>
+          <li><strong>MIT's EEG essay study</strong> (2025, preprint - suggestive, not conclusive): the chatbot group showed the weakest neural engagement and could not quote their own essays minutes after writing them.</li>
+          <li><strong>Microsoft/CMU at CHI 2025</strong> (319 knowledge workers): the more people trusted the AI, the less critically they thought - the work shifted from doing to verifying. That one is about YOUR staffroom, not just students.</li>
+        </ul>
+        <p>The takeaway is not "AI harms learning." It is that <strong>fluency without friction is the failure mode</strong> - and every lever in this course is a way of putting the right friction back.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the vendor courses agree on<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>We verified the current syllabi of six major AI-for-educators offerings - Google's Gemini course, Microsoft's educator path, Anthropic's fluency courses, OpenAI's teacher foundations, Common Sense Education, and ISTE's deep dives. Three things they all converge on:</p>
+        <ul>
+          <li><strong>The prompt-iterate-evaluate loop</strong> as the core teacher skill (b2 teaches it once, properly).</li>
+          <li><strong>Teacher time-saving first</strong> - planning, differentiation, materials, parent comms - before any student-facing use.</li>
+          <li><strong>Redesign and transparency over detection.</strong> Not one of the six endorses AI detectors. OpenAI is on record: they don't reliably work.</li>
+        </ul>
+        <p>Certificates and graded assessments stay with the official providers - this course teaches you the working core and links out each session.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>Watch one classroom moment fail <span class="tag demo">★ 12 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">The moment every teacher recognizes: <strong>14 of Ms. Tan's 28 final drafts read far above the class's in-term writing.</strong> Below is that moment with every lever off. Step through with Next and feel how bad every option is - then <strong>turn on Policy and Redesign</strong> and step through again. Same students, same drafts, completely different school.</p>
+
+    <div class="steps">
+      <div class="step"><p>Step through with <strong>all levers off</strong>. Ms. Tan's three options - accuse, ignore, re-test - are all losing moves. Name why: no evidence, no standard.</p></div>
+      <div class="step"><p>Turn on <strong>Redesign</strong> only. Portfolios appear - and a new failure: evidence without an agreed rulebook is retroactive rule-making.</p></div>
+      <div class="step"><p>Turn on <strong>Policy</strong> too. Read the 9 / 3 / 2 split in the evidence step - polish, restructure, outsourced - each landing in a policy tier with due process.</p></div>
+      <div class="step"><p>Say the lesson out loud: the students did not change between runs. The <em>design</em> did.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="trace" data-scenario="essay" data-levers=""></div>
+
+    <div class="callout tip">
+      <strong>How to read every classroom sim in this course</strong>
+      🏫 situation · 🧠 thinking · ✏️ action · 📦 what happens · 🛡 rail · 🎓 outcome. The moments are a scripted teaching simulation replaying documented failure modes; every statistic quoted comes from the verified studies on this course's source list.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>The 12-moment scorecard - your course-long benchmark <span class="tag demo">★ 10 min · explore</span></h2>
+    </div>
+    <p class="lede">Twelve real classroom moments from the Riverview unit - honest essays, chatbot temptations, IEP data, parent questions. Start with every lever off and climb: watch WHICH moments flip to ✓ with each lever, and read the failure text on the ones still red. This ladder - <strong>2 → 5 → 8 → 10 → 12</strong> - is the spine of the whole track: each session turns on the lever that unlocks the next rung.</p>
+
+    <div class="steps">
+      <div class="step"><p>All levers off: <strong>2/12</strong>. Only Dana's honest essay and a teacher-reviewed newsletter survive on their own.</p></div>
+      <div class="step"><p>+ Policy: <strong>5/12</strong> (b7). Parents get one answer, disclosure stops being a confession, teachers stop contradicting each other.</p></div>
+      <div class="step"><p>+ AI roles: <strong>8/12</strong> (b3, b6). Marcus builds his own thesis, Priya practices against the machine instead of hiding behind it.</p></div>
+      <div class="step"><p>+ Redesign: <strong>10/12</strong> (b5). The polished-drafts moment and Aiden's hidden gap both become visible, early, fixable.</p></div>
+      <div class="step"><p>+ Privacy rails: <strong>12/12</strong> (b8). The IEP paste and the under-13 class stop being incidents waiting to happen.</p></div>
+      <div class="step"><p>Now, at 12/12, turn on the <strong>AI detector</strong>. Watch the score. We will spend all of b5 and b7 on what you just saw.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="score" data-levers=""></div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>That detector result is not a gimmick.</strong> Detectors falsely flagged 61% of honest TOEFL essays by non-native English speakers (Stanford, published in Patterns). OpenAI retired its own detector at a 26% catch rate. Vanderbilt did the arithmetic - roughly 750 falsely accused students a year at their scale - and turned Turnitin's detector off. The simulator's fifth toggle behaves the way the research says detectors behave.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 20-30 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run the full lever ladder on the scorecard - 2, 5, 8, 10, 12 - until you can predict which moments flip before clicking. Then run the detector toggle once more and write one sentence on what it did.</li>
+      <li>Draw the 4D loop from memory - Delegation, Description, Discernment, Diligence - and run it on one real task from your week (a lesson plan, an email, a rubric). Which D did you usually skip?</li>
+      <li>Sort five of YOUR recurring tasks into the three delegation buckets: delegate freely / delegate with design / do not delegate. That sticky note is your personal AI policy until b7 gives you the classroom version.</li>
+      <li>Optional: take Anthropic's free "AI Fluency: Framework &amp; Foundations" course this month - you now have the educator's frame for it.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This track teaches the working core of the major AI-for-educators sources - the vendor courses, the UNESCO frameworks, the Mollick playbook, and the peer-reviewed evidence base - with a live classroom simulator on the key pages. Certificates, videos, and graded assessments stay on the official sites (linked each session). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Anthropic AI Fluency - the 4D framework (Delegation · Description · Discernment · Diligence)</span><span class="note">Parts 1-2 · the educator applications deepen in b2, b4, b6</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Bastani et al., PNAS 2025 + Kestin et al. 2025 - the two-sided evidence</span><span class="note">Part 2 · full treatment of the guardrail design lands in b6</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Gallup/Walton 2025 teacher survey - adoption + time savings</span><span class="note">60% adoption, ~6 weeks/year saved · leader track a1 goes deeper</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Google, Microsoft, OpenAI, Common Sense, ISTE educator courses - the shared core</span><span class="note">Convergence points only · prompting lands in b2, use cases in b4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Detection evidence (Liang et al., OpenAI, Vanderbilt)</span><span class="note">Previewed in Demo 2's detector toggle · full evidence in b5 + b7</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In the PNAS trial, students with vanilla chatbot access improved practice scores by 48%. What happened on the unassisted exam?</p>
+      <button class="qopt" type="button">A · They scored about the same as the no-AI group</button>
+      <button class="qopt" type="button">B · They scored 48% higher - the gains transferred</button>
+      <button class="qopt" type="button">C · They scored about 17% worse than students with no AI at all</button>
+      <p class="qwhy">The answer-machine effect: practice looked great while learning stopped. The guardrailed-tutor group kept the practice gains WITHOUT the exam harm - same AI, different design.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · A teacher wonders whether to let AI draft feedback on student essays. Which 4D question comes FIRST?</p>
+      <button class="qopt" type="button">A · Delegation - should AI touch this task at all, and which part of it?</button>
+      <button class="qopt" type="button">B · Description - what prompt would produce the best feedback?</button>
+      <button class="qopt" type="button">C · Discernment - how will I check the feedback quality?</button>
+      <p class="qwhy">Fluency starts before the prompt box. Feedback that carries your relationship with a student sits in the "do not delegate" bucket for most teachers - and that is a Delegation call, made first.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · At 12/12 on the scorecard, turning ON the AI detector drops the score to 11/12. Why?</p>
+      <button class="qopt" type="button">A · The detector uses up the class's AI budget</button>
+      <button class="qopt" type="button">B · It falsely flags an honest essay by a non-native English speaker - the documented 61% failure mode</button>
+      <button class="qopt" type="button">C · It is a simulator bug the course acknowledges</button>
+      <p class="qwhy">Detectors flagged 61%+ of honest non-native TOEFL essays in the Stanford study. The two real cases in the unit were already caught by process evidence - the detector's only unique contribution was a false accusation.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The 4D loop</b><span>Delegation (should AI do this?) → Description (say what you want) → Discernment (judge the output) → Diligence (own the consequences). Run it per task.</span></div>
+      <div class="cheat-item"><b>The four levers</b><span>Policy (b7) · AI roles (b3, b6) · Redesigned assessment (b5) · Privacy rails (b8). Diagnose failures by lever, not vibes.</span></div>
+      <div class="cheat-item"><b>The ladder</b><span>12 classroom moments: 2 → 5 → 8 → 10 → 12 as the levers come on. b10's assembled unit must hit 12/12.</span></div>
+      <div class="cheat-item"><b>The detector toggle</b><span>Never raises the score; at 12/12 it drops one honest student. 61% false-flag rate on non-native writers - full evidence in b5 + b7.</span></div>
+      <div class="cheat-item"><b>Design decides</b><span>Same AI: -17% on exams unguarded, doubled learning well-designed (PNAS 2025, Harvard 2025). "Feels like learning" is not evidence.</span></div>
+      <div class="cheat-item"><b>Delegation buckets</b><span>Delegate freely (low-stakes, reviewed) · delegate with design (anything student-facing) · do not delegate (grades, relationships, protected data).</span></div>
+      <div class="cheat-item"><b>The adoption reality</b><span>60% of US teachers use AI; weekly users save ~6 weeks/year (Gallup 2025). The time is real - this course protects the learning.</span></div>
+      <div class="cheat-item"><b>Running case</b><span>Riverview Secondary · Ms. Tan · 28 students · the persuasive-essay unit. You redesign it end to end by b10.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 1 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← All sessions</a> &nbsp;·&nbsp; <a href="b2-prompting-for-teaching.html">Next: Prompting for teaching →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 9 · AI for corporate L&amp;D - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 9 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 9 of 10</div>
+    <h1>AI for corporate <span class="accent">L&amp;D</span></h1>
+    <p class="sub">Eight sessions in, you own a redesigned unit. Tonight you discover you also own a second career: everything Riverview taught you translates move for move into corporate learning and development - a $400B industry where roughly a third of the market still ships static courses. Bersin's maturity model gives you the map, the verified ATD and LinkedIn Learning curricula show what L&amp;D teams actually do with AI, and the CHI 2025 study hands the enterprise the same warning your classroom got: more confidence in AI means less critical thinking, unless verification is taught as a skill. Whether you ever leave the classroom or not, this is the session that makes your unit portable.</p>
+    <div class="chip-row">
+      <span class="chip level">🔴 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The L&amp;D landscape</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: translate Riverview to the enterprise</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PART 1: THE CORPORATE MIRROR ============ -->
+  <section class="section" id="corporate-mirror">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Bersin's maturity model + the ATD and LinkedIn Learning L&amp;D curricula</span>
+      <h2>The corporate mirror: where L&amp;D actually stands <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Corporate learning is a <strong>$400B global spend</strong> - more than <strong>$1,400 per employee per year</strong> - and Josh Bersin's Corporate Learning Maturity Model says most of it is stuck at the bottom. Four levels: <strong>Static Training</strong> (scheduled courses, one size fits all - roughly 33% of the market sits here), <strong>Scaled Learning</strong> (the digital-library era), <strong>Integrated Development</strong> (learning in the flow of work), and <strong>Dynamic Enablement</strong> (learning fused with work itself). The stakes are not cosmetic: Level-4 organizations are <strong>10x more likely to be innovation leaders and 6x more likely to exceed financial targets</strong>. AI is the engine that moves orgs up this staircase - and your classroom levers are how it moves them safely.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bersin's Corporate Learning Maturity Model as an ascending staircase: Static Training where about a third of the market sits, then Scaled Learning, Integrated Development, and Dynamic Enablement, with AI capabilities appearing at each level.">
+        <style>
+          .l9T { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .l9S { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .l9I { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .l9X { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .l9N { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .l9R { font: 700 12px Inter, sans-serif; fill: #991B1B; }
+          .l9WireR { stroke: #991B1B; stroke-width: 2.5; fill: none; marker-end: url(#l9HdR); }
+        </style>
+        <defs>
+          <marker id="l9HdR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+        <rect x="40" y="260" width="195" height="70" rx="8" fill="#64748B"/>
+        <text class="l9T" x="56" y="284">1 · STATIC TRAINING</text>
+        <text class="l9S" x="56" y="303">~33% of the market</text>
+        <text class="l9S" x="56" y="321">AI: absent</text>
+        <rect x="250" y="200" width="195" height="130" rx="8" fill="#3B82F6"/>
+        <text class="l9T" x="266" y="224">2 · SCALED LEARNING</text>
+        <text class="l9S" x="266" y="243">the digital-library era</text>
+        <text class="l9S" x="266" y="261">AI: content at scale</text>
+        <rect x="460" y="140" width="195" height="190" rx="8" fill="#1D4ED8"/>
+        <text class="l9T" x="476" y="164">3 · INTEGRATED</text>
+        <text class="l9T" x="476" y="182">DEVELOPMENT</text>
+        <text class="l9S" x="476" y="203">learning in the flow</text>
+        <text class="l9S" x="476" y="221">AI: per-role skill maps</text>
+        <rect x="670" y="80" width="182" height="250" rx="8" fill="#1E3A8A"/>
+        <text class="l9T" x="686" y="104">4 · DYNAMIC</text>
+        <text class="l9T" x="686" y="122">ENABLEMENT</text>
+        <text class="l9S" x="686" y="143">AI: hyper-personal</text>
+        <text class="l9S" x="686" y="161">paths, skills-gap</text>
+        <text class="l9S" x="686" y="179">analysis, support</text>
+        <rect x="40" y="180" width="160" height="40" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="l9R" x="54" y="205">most orgs are here</text>
+        <path class="l9WireR" d="M120,220 L120,255"/>
+        <rect x="40" y="346" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="l9N" x="64" y="358">Bersin: $400B global spend, more than $1,400 per employee per year - and ~33% of it still sits at level 1.</text>
+        <rect x="40" y="374" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="l9N" x="64" y="386">Level-4 orgs: 10x more likely to be innovation leaders, 6x more likely to exceed financial targets.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - Bersin's four levels: where most orgs sit and where AI pays off</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>What L&amp;D teams actually do with AI<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>From the verified ATD and LinkedIn Learning curricula, six workloads keep showing up - notice how each one is a Riverview move wearing a suit:</p>
+        <ul>
+          <li><strong>Skills-gap analysis</strong> - what can this workforce do versus what the strategy needs. The enterprise version of knowing your class before you plan the unit.</li>
+          <li><strong>Per-role skill maps</strong> - the objectives layer (b4), written per job instead of per grade.</li>
+          <li><strong>Hyper-personalized learning paths</strong> - differentiation (b4) at 10,000-employee scale.</li>
+          <li><strong>AI-assisted content creation</strong> - first drafts by AI, designer QC. Your worksheet workflow from b2, industrialized.</li>
+          <li><strong>Performance support</strong> - help in the flow of work. The guardrailed tutor's corporate cousin (more in Part 2).</li>
+          <li><strong>Content rationalization</strong> - AI audits the sprawling course library for overlap and rot. No classroom equivalent; enterprises hoard content the way nobody's classroom can.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Reading the staircase without flattering yourself<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Every org places itself one level too high. The honest diagnostic is not "what do we aspire to" but "what happens on a random Tuesday":</p>
+        <ul>
+          <li><strong>Level 1 test</strong> - if learning mostly means "a course was scheduled," you are at Static Training, with a third of the market. No shame; that is the baseline.</li>
+          <li><strong>Level 2 test</strong> - a big library and completion tracking, but the same library for everyone? Scaled Learning.</li>
+          <li><strong>Level 3 test</strong> - does learning show up inside the work tools, mapped to the role? That is Integrated Development, and it is where per-role skill maps start paying rent.</li>
+          <li><strong>Level 4 test</strong> - does the system notice a skills gap before the manager does, and route support in the flow of work? Dynamic Enablement.</li>
+        </ul>
+        <p>The level you are AT decides which AI capability to buy next - buying level-4 tools for a level-1 org is the enterprise version of handing a vanilla chatbot to a Grade 9 class.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The vocabulary bridge<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Same concepts, different badge at the door. If you ever interview across the aisle, swap the words, keep the thinking:</p>
+        <ul>
+          <li><strong>Unit</strong> → module or learning journey · <strong>student</strong> → learner or employee · <strong>class</strong> → cohort.</li>
+          <li><strong>Rubric</strong> → competency framework · <strong>objectives</strong> → per-role skill map · <strong>differentiation</strong> → personalization.</li>
+          <li><strong>Oral defense</strong> → capability conversation · <strong>portfolio</strong> → work sample · <strong>IEP and student records</strong> → HR data.</li>
+        </ul>
+        <p>Nothing you built in b1-b8 needs rebuilding - it needs renaming. That is the quiet career news of this session.</p>
+      </div>
+    </details>
+
+    <div class="callout win">
+      <strong>★ What you walk out with tonight</strong>
+      Your org placed honestly on Bersin's staircase, the six-row translation table filled in for one real training module, and a walkthrough-demo script - the three artifacts that make a classroom educator instantly credible in an L&amp;D conversation.
+    </div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The two PD products worth knowing by name<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>If you want a credential in this space, two verified offerings anchor the market:</p>
+        <ul>
+          <li><strong>ATD "Applying AI in L&amp;D" certificate</strong> - 3 days, hands-on and multi-tool, 21 CE credits, and you leave with a working AI project rather than a slide deck. The practitioner's choice.</li>
+          <li><strong>LinkedIn Learning "Generative AI for L&amp;D" professional certificate</strong> - 5 courses, about 5 hours: upskilling frameworks, personalization, skills-gap analysis per role. The affordable overview.</li>
+        </ul>
+        <p>Certificates and graded assessments stay with the official providers, as always - this session teaches you the working core so either program lands on prepared ground.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE TRANSLATION TABLE ============ -->
+  <section class="section" id="translation">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the Riverview-to-enterprise translation + Lee et al., CHI 2025</span>
+      <h2>Every Riverview move, translated <span class="tag concept">18 min live</span></h2>
+    </div>
+    <p class="lede">This table is the heart of the session. You spent eight sessions building six design moves for one Grade 9 classroom. Read each row aloud and notice that the right column is not a metaphor - it is the same move, protecting the same thing: <strong>capability that survives without the tool</strong>.</p>
+
+    <table class="clean">
+      <thead>
+        <tr><th>Riverview move (your classroom)</th><th>The enterprise translation (L&amp;D)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>The 3-tier policy statement (b7)</td><td>An acceptable-AI-use policy per role and per tool - sales can draft with AI, legal review cannot, and everyone knows which is which</td></tr>
+        <tr><td>Scaffolded AI roles (b3)</td><td>AI as practice simulator in sales and compliance training - the trainee argues against the machine before facing a customer or an auditor</td></tr>
+        <tr><td>The guardrailed tutor (b6)</td><td>A performance-support bot that coaches, never does the task for the learner - hints in the flow of work, not finished work on demand</td></tr>
+        <tr><td>The process portfolio (b5)</td><td>Work-sample plus walkthrough demo: "show me how you'd do it without the tool, then with it"</td></tr>
+        <tr><td>The oral defense (b5)</td><td>The capability conversation - five minutes with a manager, testing the person, not the deliverable</td></tr>
+        <tr><td>Privacy rails (b8)</td><td>Employee-data discipline - HR data is the IEP of the enterprise: never pasted into consumer tools, only vetted systems under agreements</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout tip">
+      <strong>How to read the table</strong>
+      Cover the left column and read only the right: it should sound like a sane enterprise learning design on its own, no classroom required. Cover the right and read the left: same design. That is the test of a real translation - both columns protect capability that survives without the tool.
+    </div>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The CHI 2025 evidence: why the enterprise needs your levers<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The study that makes this session urgent is not about students at all. Lee et al. at CHI 2025 (Microsoft/CMU) surveyed <strong>319 knowledge workers</strong> and found a clean, uncomfortable pattern: <strong>the more confident people were in the AI, the less critical thinking they applied</strong> - and their work shifted from <em>doing</em> to <em>verifying</em>.</p>
+        <p>That is the PNAS answer-machine effect, relocated to the office. And it hands L&amp;D a design brief nobody had five years ago: <strong>training must teach verification as a skill</strong> - how to check an AI draft, when to distrust a confident answer, what "good" looks like without the tool. The walkthrough demo and the capability conversation exist precisely because completion certificates cannot see whether verification skill exists.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The compliance-training test case.</strong> An L&amp;D team rolls out an AI assistant to speed up compliance scenarios, and pass rates jump - the practice-score mirage from b1, in corporate clothing. The fix is the same fix: a work sample without the tool, a walkthrough with it, and a five-minute capability conversation. If the skill only exists when the bot is open, the training did not work - it just felt like it did.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Build-along: translate one training module<span class="mini">8 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Pick any training module you know - onboarding, product knowledge, a compliance refresher - and run the six rows on it, out loud, with a partner:</p>
+        <ul>
+          <li><strong>Policy</strong> - which AI uses are allowed for this role, on this task, with this tool?</li>
+          <li><strong>Simulator</strong> - what does the learner practice AGAINST the AI, before the real thing?</li>
+          <li><strong>Support bot</strong> - where does a coach-not-doer bot live in the flow of work?</li>
+          <li><strong>Work sample + walkthrough</strong> - what do they show you without the tool, then with it?</li>
+          <li><strong>Capability conversation</strong> - what three questions would expose an outsourced skill?</li>
+          <li><strong>Data discipline</strong> - what employee data must never leave vetted systems?</li>
+        </ul>
+        <p>Six answers on one page is a serious first draft of an enterprise learning design - most L&amp;D consultancies would charge for the same page.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Three traps when the classroom moves to the office<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The translation table works, but three enterprise habits will try to bend it back:</p>
+        <ul>
+          <li><strong>Tool-first rollouts.</strong> The enterprise buys the AI platform, then asks what to do with it - the corporate version of handing out chatbots before the policy exists. The table runs policy first for the same reason your unit does.</li>
+          <li><strong>Compliance theater.</strong> A mandatory module with a completion checkbox is the enterprise "polished final draft": it proves attendance, not capability. The walkthrough demo is the antidote, and it costs five minutes.</li>
+          <li><strong>Dashboard worship.</strong> Completion rates climb, so the program is declared a success - the practice-score mirage from the PNAS study, at org scale. If the dashboard cannot show capability without the tool, it is measuring the wrong thing.</li>
+        </ul>
+        <p>Name the trap out loud in the meeting and you will usually be the only person in the room who can - that is what eight sessions of classroom evidence buys you.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: SELF-STUDY ============ -->
+  <section class="section" id="designer-lens">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · the instructional designer's lens</span>
+      <h2>ADGIE and the measurement shift <span class="tag exercise">◐ self-study</span></h2>
+    </div>
+    <p class="lede">Two shorter ideas complete the enterprise picture - read them this week, before the capstone.</p>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>ADGIE, applied to corporate content<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>b4 introduced ADGIE - ADDIE with AI in every phase - for lesson design. It was born for corporate work, and it maps directly:</p>
+        <ul>
+          <li><strong>Analysis</strong> - AI personas and skill maps stand in for early learner research.</li>
+          <li><strong>Design</strong> - AI prototypes the training plan; the designer chooses, not types.</li>
+          <li><strong>Generation</strong> - AI writes first drafts of modules and scenarios; the designer QCs every claim.</li>
+          <li><strong>Individualisation</strong> - the phase classic ADDIE never had: real-time adaptation per learner.</li>
+          <li><strong>Evaluation</strong> - continuous, not end-of-course.</li>
+        </ul>
+        <p>The rule from b4 still holds: AI accelerates every phase, and the designer owns every decision.</p>
+        <div class="callout tip">
+          <strong>Where ADGIE earns its keep in the enterprise</strong>
+          Content rationalization - the workload with no classroom equivalent - is Analysis and Evaluation run against the existing library instead of new learners: AI maps what the courses claim to teach, the skill maps say what roles actually need, and the gap between the two is the rationalization report.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Measure capability demonstrated, not courses completed<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Your classroom mantra since b5 has been "grade the thinking, not the text." The enterprise version: <strong>measure capability demonstrated, not courses completed.</strong> Completion dashboards are the corporate equivalent of engagement metrics - they measure attendance at learning, not learning. A Level-4 org in Bersin's model measures whether the skill shows up in work: the work sample, the walkthrough, the capability conversation. If your L&amp;D dashboard cannot tell you who can do the thing without the tool, it is measuring the wrong thing - the enterprise version of "retention, not engagement."</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 20-30 min total</span></h2>
+    </div>
+    <ul>
+      <li>Finish the build-along: one real training module (or one unit of yours, imagined as corporate onboarding) run through all six translation rows, on one page.</li>
+      <li>Write the walkthrough-demo script for one skill you teach: what exactly does "show me without the tool, then with it" look like, step by step?</li>
+      <li>Place your own organization (school or company) on Bersin's staircase, honestly - then name the ONE AI capability that would move it up a level.</li>
+      <li>Rewrite one metric on any dashboard you own (class or corporate) from a completion measure to a capability measure - "28 of 28 finished the module" becomes "22 of 28 passed the walkthrough without the tool."</li>
+      <li>Optional: bookmark the ATD certificate and the LinkedIn Learning path - if L&amp;D is a direction you are considering, either one converts this session into a credential.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Certificates, videos, and graded assessments stay on the official sites (linked each session). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Bersin Corporate Learning Maturity Model - four levels, market numbers</span><span class="note">Part 1 · $400B, >$1,400/employee/yr, 10x / 6x quoted exactly</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">ATD "Applying AI in L&amp;D" certificate - the practitioner curriculum</span><span class="note">Parts 1-2 · 3-day format, 21 CE credits, working AI project</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">LinkedIn Learning "Generative AI for L&amp;D" professional certificate</span><span class="note">Parts 1-2 · 5 courses ~5h: upskilling, personalization, skills-gap per role</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Lee et al., CHI 2025 (Microsoft/CMU) - 319 knowledge workers</span><span class="note">Part 2 · the doing-to-verifying shift as the L&amp;D design brief</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">ADGIE (Hardman) - instructional design with AI per phase</span><span class="note">Part 3 recap · full treatment lives in b4</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · In Bersin's maturity model, at which level does AI stop being a content tool and start transforming the whole learning system?</p>
+      <button class="qopt" type="button">A · Scaled Learning - AI generates course content at scale</button>
+      <button class="qopt" type="button">B · Static Training - AI schedules the courses</button>
+      <button class="qopt" type="button">C · Dynamic Enablement - hyper-personalized paths, skills-gap analysis, and performance support fused with work</button>
+      <p class="qwhy">Level 4 is where learning and work merge - and the payoff is real: Level-4 orgs are 10x more likely to be innovation leaders and 6x more likely to exceed financial targets. Meanwhile ~33% of the market is still at level 1.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · What is the enterprise translation of Riverview's process portfolio + oral defense?</p>
+      <button class="qopt" type="button">A · The work-sample + walkthrough demo: "show me how you'd do it without the tool, then with it," plus a capability conversation</button>
+      <button class="qopt" type="button">B · An annual certification exam, proctored and device-free</button>
+      <button class="qopt" type="button">C · A completion dashboard with time-on-course metrics</button>
+      <p class="qwhy">The portfolio becomes the work sample, the oral becomes the walkthrough and the capability conversation. Same design logic: test the person, not the deliverable - completion metrics cannot see whether the skill exists without the tool.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · CHI 2025 (319 knowledge workers): more confidence in AI, less critical thinking. What is the training takeaway?</p>
+      <button class="qopt" type="button">A · Restrict AI tools to senior staff who can handle them</button>
+      <button class="qopt" type="button">B · Teach verification as a skill - the work has shifted from doing to verifying, so training must cover the verifying</button>
+      <button class="qopt" type="button">C · The finding only applies to students, not professionals</button>
+      <p class="qwhy">The study IS about professionals - that is what makes it the L&amp;D stake. When work shifts from doing to verifying, verification becomes the core capability, and it has to be taught and assessed deliberately, not assumed.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 9 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Bersin's staircase</b><span>Static Training (~33% of market) → Scaled Learning → Integrated Development → Dynamic Enablement. AI capability grows per level.</span></div>
+      <div class="cheat-item"><b>The money</b><span>$400B global spend, >$1,400/employee/yr. Level-4 orgs: 10x more likely innovation leaders, 6x more likely to exceed financial targets.</span></div>
+      <div class="cheat-item"><b>What L&amp;D does with AI</b><span>Skills-gap analysis · per-role skill maps · hyper-personalized paths · AI-assisted content creation · performance support · content rationalization.</span></div>
+      <div class="cheat-item"><b>The walkthrough demo</b><span>Portfolio + oral, translated: "show me how you'd do it without the tool, then with it." A work sample that detects outsourced skill.</span></div>
+      <div class="cheat-item"><b>Measure the right thing</b><span>Capability demonstrated, not courses completed - the enterprise version of retention, not engagement.</span></div>
+      <div class="cheat-item"><b>The HR data rule</b><span>HR data is the IEP of the enterprise: never in consumer tools, only vetted systems under written agreements (b8's rails, rebranded).</span></div>
+      <div class="cheat-item"><b>CHI 2025</b><span>319 knowledge workers: AI confidence up, critical thinking down; doing shifts to verifying. Training must teach verification as a skill.</span></div>
+      <div class="cheat-item"><b>The PD ladder</b><span>ATD "Applying AI in L&amp;D": 3 days, 21 CE credits, working AI project · LinkedIn Learning GenAI-for-L&amp;D: 5 courses, ~5h.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 9 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b8-privacy-rails.html">← b8 · Privacy rails</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b10-capstone-unit.html">Next: Capstone →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

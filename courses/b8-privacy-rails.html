@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 8 · Privacy + safety rails - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 8 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 8 of 10</div>
+    <h1>Privacy + <span class="accent">safety rails</span></h1>
+    <p class="sub">One lever left, and it is the one you cannot grade your way out of: one helpful instinct pastes a student's protected record into a consumer chatbot, and the data is gone. Tonight the fix - a 10-second de-identification habit, a vetted-tools-only rule, and the three regimes (FERPA, COPPA, PDPA) each in one card, short enough to actually remember. Then the moment the whole track has been climbing toward: all four levers on, the Riverview unit scores 12/12, and the detector gets one final chance to prove it ever helped. It will not.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The rails + the regimes</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: the PII discipline + the last two moments</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PART 1: THE RAILS + THE REGIMES ============ -->
+  <section class="section" id="pii-discipline">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers FERPA/COPPA guidance, Singapore MOE/PDPA, US state guidance</span>
+      <h2>The PII discipline + the three regimes <span class="tag concept">10 min live</span></h2>
+    </div>
+    <p class="lede">The teacher's whole privacy practice fits in two rules. <strong>Rule 1, the 10-second habit:</strong> strip identity before you prompt. "Dana Okafor, IEP for written expression" becomes <strong>"a Grade 9 student who struggles with written organization"</strong> - same help, zero exposure. <strong>Rule 2:</strong> anything touching actual student work goes through <strong>vetted district tools ONLY</strong>. Rosters, grades, IEP or medical details, family situations - none of it ever enters a consumer chatbot. And this is not just good manners: <strong>~12 US states say it explicitly - no student PII in AI systems, ever.</strong></p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 416" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The paste decision tree: about to prompt with student info? Strip identity, check for a vetted district tool, check for under-13 students, then proceed or stop.">
+        <style>
+          .v8T { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .v8S { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .v8I { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .v8X { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .v8N { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .v8Wire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#v8Hd); }
+          .v8WireR { stroke: #991B1B; stroke-width: 2.5; fill: none; marker-end: url(#v8HdR); }
+        </style>
+        <defs>
+          <marker id="v8Hd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+          <marker id="v8HdR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+        <rect x="30" y="46" width="230" height="56" rx="8" fill="#1E293B"/>
+        <text class="v8T" x="46" y="70">STUDENT INFO GOING IN?</text>
+        <text class="v8S" x="46" y="90">roster · grades · IEP · family</text>
+        <rect x="330" y="46" width="220" height="56" rx="8" fill="#1D4ED8"/>
+        <text class="v8T" x="346" y="70">STRIP IDENTITY FIRST</text>
+        <text class="v8S" x="346" y="90">the 10-second habit</text>
+        <rect x="620" y="46" width="230" height="56" rx="8" fill="#1E3A8A"/>
+        <text class="v8T" x="636" y="70">VETTED DISTRICT TOOL?</text>
+        <text class="v8S" x="636" y="90">DPA + school control</text>
+        <rect x="330" y="170" width="220" height="56" rx="8" fill="#991B1B"/>
+        <text class="v8T" x="346" y="194">NOT VETTED → STOP</text>
+        <text class="v8S" x="346" y="214">consumer chatbots are out</text>
+        <rect x="620" y="170" width="230" height="56" rx="8" fill="#1E3A8A"/>
+        <text class="v8T" x="636" y="194">UNDER-13 STUDENTS?</text>
+        <text class="v8S" x="636" y="214">COPPA territory</text>
+        <rect x="330" y="294" width="220" height="56" rx="8" fill="#3B82F6"/>
+        <text class="v8T" x="346" y="318">TEACHER-MEDIATED ONLY</text>
+        <text class="v8S" x="346" y="338">walled garden, no accounts</text>
+        <rect x="620" y="294" width="230" height="56" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="v8I" x="636" y="318">PROCEED - PROMPT AWAY</text>
+        <text class="v8X" x="636" y="338">same help, zero exposure</text>
+        <path class="v8Wire" d="M260,74 L325,74"/>
+        <path class="v8Wire" d="M550,74 L615,74"/>
+        <path class="v8WireR" d="M640,102 C600,128 580,198 555,198"/>
+        <path class="v8Wire" d="M735,102 L735,165"/>
+        <path class="v8Wire" d="M640,226 C600,252 580,322 555,322"/>
+        <path class="v8Wire" d="M735,226 L735,289"/>
+        <text class="v8X" x="500" y="146">no</text>
+        <text class="v8X" x="748" y="140">yes</text>
+        <text class="v8X" x="470" y="268">under 13</text>
+        <text class="v8X" x="748" y="264">13 or older</text>
+        <rect x="30" y="366" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="v8N" x="54" y="378">~12 US states say it plainly: no student PII in AI systems, ever. ~20 anchor guidance on FERPA/COPPA.</text>
+        <rect x="30" y="394" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="v8N" x="54" y="406">Singapore: MOE routes classroom AI through SLS; the LEA assistant runs from Primary 4, teacher-supervised.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the paste decision tree to run before any prompt with student info</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The 10-second habit, before and after<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The habit is a rewrite, not a refusal - you still get the AI's help, the student just never enters the room:</p>
+        <div class="prompt-box bad"><span class="label">Never - identity + protected record leave your control</span>Dana Okafor in my Grade 9 class has an IEP for written expression. Suggest ways to scaffold her persuasive essay.</div>
+        <div class="prompt-box good"><span class="label">The 10-second rewrite - same help, zero exposure</span>A Grade 9 student who struggles with written organization is drafting a persuasive essay. Suggest three scaffolds I can offer.</div>
+        <p>The never-paste list, kept short on purpose: <strong>rosters, grades, IEP or medical details, family situations.</strong> If a prompt needs any of these to work, it needs a vetted district tool - or a rewrite.</p>
+        <div class="callout tip">
+          <strong>The habit covers every input, not just typing</strong>
+          A photo of a marked-up essay with a name in the header, a pasted email thread with a parent, a screenshot of the gradebook - each is a paste. Run the same 10-second check on anything that enters the prompt box, in any format. And deleting the chat afterwards fixes nothing: the disclosure already happened.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>FERPA in one card<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Student PII from education records entering a consumer AI tool is an <strong>unauthorized disclosure</strong> - unless the vendor qualifies as a "school official," and that exception has three teeth:</p>
+        <ul>
+          <li>A <strong>written agreement</strong> between the vendor and the school - not a click-through ToS.</li>
+          <li>The <strong>school keeps control</strong> of the data, including what happens to it later.</li>
+          <li><strong>No reuse for training</strong> - the data serves your students, never the vendor's model.</li>
+        </ul>
+        <p>Your consumer chatbot account has none of the three. Practical rail: district-vetted tools with data protection agreements for anything touching student records; everything else gets the de-identified version.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>COPPA in one card<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Under-13 use needs <strong>verifiable parental consent</strong>, and schools may consent only for educational use. But the sharper fact sits in the terms of service: <strong>consumer chatbot ToS are 13+</strong> (OpenAI: 13+, and 13-18 with parental consent) - so an elementary class on a consumer chatbot is outside the vendor's own rules before COPPA even enters. The elementary pattern is <strong>teacher-mediated or walled-garden tools</strong>: the teacher drives, or the district tool holds the account.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>PDPA + Singapore in one card<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Singapore shows what the guarded path looks like when a system builds it on purpose: <strong>MOE routes classroom AI through the Student Learning Space (SLS)</strong> with guardrails built in, and the <strong>AI Learning Assistant (LEA) runs from Primary 4, teacher-supervised</strong> in the early years. Under PDPA, student data is fully protected personal data and minors' consent runs through parents or guardians. The lesson travels: the safe route is the platform your system vetted, not the app in your pocket.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The three regimes at a glance<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Different laws, same classroom rail. Pin this next to the decision tree:</p>
+        <table class="clean">
+          <tr><th>Regime</th><th>What triggers it</th><th>Your classroom rail</th></tr>
+          <tr><td>FERPA (US)</td><td>Student PII from education records leaving school control</td><td>Vetted district tools with a written agreement; de-identify everywhere else</td></tr>
+          <tr><td>COPPA (US)</td><td>Under-13 students using an online service</td><td>Teacher-mediated or walled-garden tools; consumer chatbot ToS are 13+ anyway</td></tr>
+          <tr><td>PDPA (Singapore)</td><td>Any student personal data; minors' consent via parents/guardians</td><td>Route through SLS; LEA from Primary 4, teacher-supervised</td></tr>
+        </table>
+        <p>Notice that all three rows end in the same two habits: strip identity, use the vetted route. Learn the habits and the regime almost stops mattering - which is exactly what you want when you change schools, states, or countries.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>The IEP paste, replayed with rails <span class="tag demo">★ 8 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">The most sympathetic failure in the whole course: Ms. Tan wants differentiation help for Dana, and the fastest version of that prompt includes a name and a diagnosis. The trace below starts with <strong>every lever off</strong>. Watch the exact moment the data leaves, then turn the rails on.</p>
+
+    <div class="steps">
+      <div class="step"><p>Step through with rails <strong>off</strong>. Mark the step where "Dana Okafor" plus "IEP for written expression" leaves district control - a FERPA disclosure in the US, and the same paste is the same failure under PDPA.</p></div>
+      <div class="step"><p>Toggle <strong>Privacy rails on</strong> and step through again: the de-identified prompt in the vetted tool gets the same differentiation help with zero exposure.</p></div>
+      <div class="step"><p>Say the design lesson out loud: the rail is not "no AI." It is same help, zero identity - the 10-second habit, systematized.</p></div>
+      <div class="step"><p>Run the failed paste through the decision tree above and name the branch where it should have stopped: identity never got stripped, and the tool was never vetted - two exits, both missed.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="trace" data-scenario="privacy" data-levers=""></div>
+
+    <div class="callout tip">
+      <strong>The honest rail</strong>
+      The simulator's moments are a scripted teaching sim - but the FERPA school-official conditions, the COPPA under-13 reality, and the PDPA/SLS routing quoted on this page are the real published rules, from the verified sources on this course's list.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>The final rung: 12/12 <span class="tag demo">★ 8 min · explore</span></h2>
+    </div>
+    <p class="lede">Policy (b7), AI roles (b3, b6), redesigned assessment (b5), and tonight's privacy rails - <strong>all four levers on</strong>. The scorecard below opens at the state the whole track has been climbing toward: <strong>12/12</strong>. Every moment survives - the honest essays, the temptations, the polished drafts, the IEP paste, the under-13 class.</p>
+
+    <div class="steps">
+      <div class="step"><p>Read the two rows that flipped tonight: the IEP paste and the under-13 class. No amount of policy or assessment design ever touched them - privacy was always a separate lever.</p></div>
+      <div class="step"><p>Walk the whole ladder in your head one more time: 2 → 5 → 8 → 10 → 12. Each rung was one session's lever. That is the unit you will assemble as your capstone in b10.</p></div>
+      <div class="step"><p>Now try the <strong>detector</strong> one last time: 11/12 - it falsely flags Dana, at the strongest design the course can build. It never helped, at any rung. Levers build; the anti-lever only subtracts.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="score" data-levers="policy,roles,redesign,privacy"></div>
+
+    <div class="callout win">
+      <strong>★ What 12/12 actually means</strong>
+      Not "AI-proof" - AI-survivable. Learning stays visible, honesty stays the default path, data stays inside district control, and no student is ever asked to prove a negative. That is the whole course in four levers.
+    </div>
+  </section>
+
+  <!-- ============ PART 3: SAFETY BEYOND PRIVACY ============ -->
+  <section class="section" id="safety-beyond">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · classroom safety beyond privacy</span>
+      <h2>Age gates, parents, and vendor questions <span class="tag concept">self-study</span></h2>
+    </div>
+    <p class="lede">Privacy is the legal floor; safety is the classroom ceiling. Common Sense Education's safety-first framing is the useful lens here: assume young users will do the unexpected, and design so the unexpected is boring. Three practical pieces for after class.</p>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Age gates + teacher-mediated patterns for young classes<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Age gates in practice: the ToS age is a hard floor, not a suggestion - 13+ for consumer chatbots, parental consent expectations for 13-18, and school consent only inside educational-use boundaries. For classes below the gate, two patterns do all the work:</p>
+        <ul>
+          <li><strong>Teacher-mediated</strong> - one screen, the teacher's hands on the keyboard, the class directing the prompts together. The students get the thinking practice; no student ever holds an account.</li>
+          <li><strong>Walled garden</strong> - a district-vetted, education-built tool where the guardrails, logging, and data terms were negotiated for minors. Singapore's SLS + LEA is the national-scale version of exactly this.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>Age terms sit on the teacher side too.</strong> Khanmigo - the Socratic, no-direct-answers tutor whose design DNA b6 borrowed - is free for educators 18 and over in 44+ countries (Microsoft-funded). Even purpose-built education tools publish an age posture; the vendor-questions card below turns that into a habit you run before any tool reaches your class.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What to tell parents: the transparency letter<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A one-page letter before the unit starts turns AI from a rumor into a policy. The template, as bullets:</p>
+        <ul>
+          <li><strong>What we use</strong> - the named, district-vetted tool, and what it is for in this unit.</li>
+          <li><strong>What students do with it</strong> - the tier rules from b7, in one plain sentence each.</li>
+          <li><strong>What never goes in</strong> - no names, no grades, no records; the de-identification habit, stated as a promise.</li>
+          <li><strong>How work is assessed</strong> - portfolios, in-class anchors, and orals mean your child's own thinking is what gets graded.</li>
+          <li><strong>Who to ask</strong> - you, with an email address, before it becomes a school-gate conversation.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Tone check</strong>
+          Write it the way you would say it at pickup time: no acronyms, no defensiveness. Parents are not asking whether AI exists in your classroom - they are asking whether anyone is watching. The letter is the proof that someone is.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Four questions before adopting any classroom tool<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Ask the vendor - or the colleague recommending the shiny new app - these four, in order:</p>
+        <ul>
+          <li><strong>Is there a DPA?</strong> A signed data protection agreement with the district - the FERPA school-official test in paper form.</li>
+          <li><strong>Is student data used for training?</strong> The only acceptable answer is a written no.</li>
+          <li><strong>Can we delete?</strong> Deletion on request, with a stated timeline, for a named data owner at the school.</li>
+          <li><strong>What is the under-13 posture?</strong> COPPA-compliant by design, teacher-mediated only, or honestly "not for under-13" - any of these beats a shrug.</li>
+        </ul>
+        <p>A vendor who cannot answer all four in one email has answered anyway.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 25-35 min total</span></h2>
+    </div>
+    <ul>
+      <li>De-identify five real prompts from your own week - time yourself. The habit earns its name when each rewrite takes under ten seconds.</li>
+      <li>List every AI tool your students touched last term and run the four vendor questions against each. Anything that fails goes on the teacher-mediated-only list.</li>
+      <li>Draft your parent transparency letter from the five template bullets - one page, plain language, your name at the bottom.</li>
+      <li>Run the full ladder one last time - 2 → 5 → 8 → 10 → 12 - then the detector. Write the one sentence you would say to a colleague about what it never did.</li>
+      <li>Optional: find out who owns your district's vetted-tools list and how a tool gets on it - ten minutes now, so you know the route before you need it.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Certificates, videos, and graded assessments stay on the official sites (linked each session). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">FERPA/COPPA guidance (FPF, Student Privacy Compass) - the school-official exception + under-13 reality</span><span class="note">Part 1 + Demo 1 · the classroom-rail translation</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Singapore MOE/PDPA - SLS routing, LEA from Primary 4, minors' consent</span><span class="note">Part 1 · the built-on-purpose guarded path</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">US state AI guidance - ~12 states: no student PII in AI systems</span><span class="note">Part 1 · ~20 states anchor on FERPA/COPPA/CIPA/IDEA</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Common Sense Education - safety-first framing for K-12 classrooms</span><span class="note">Part 3 · their full AI PD courses linked from the official site</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · The 10-second de-identification habit turns "Dana Okafor, IEP for written expression" into:</p>
+      <button class="qopt" type="button">A · "Student D.O., Grade 9, IEP on file" - initials keep it compliant</button>
+      <button class="qopt" type="button">B · "A Grade 9 student who struggles with written organization" - same help, zero identity</button>
+      <button class="qopt" type="button">C · Nothing - rewriting is unnecessary if you delete the chat afterwards</button>
+      <p class="qwhy">Initials plus a class plus a record type still identify a real child in context, and deleting a chat does not undo a disclosure. The rewrite keeps everything the AI needs to help and removes everything that makes it a FERPA (or PDPA) failure.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Why can an elementary class not just use a consumer chatbot?</p>
+      <button class="qopt" type="button">A · Consumer ToS are 13+, and COPPA demands verifiable parental consent under 13 - the pattern is teacher-mediated or walled-garden tools</button>
+      <button class="qopt" type="button">B · Young students cannot type well enough for prompting to work</button>
+      <button class="qopt" type="button">C · FERPA bans all AI use below Grade 6</button>
+      <p class="qwhy">The class is outside the vendor's own rules before the law even enters. The working patterns: the teacher drives one shared screen, or the district's walled-garden tool holds the account - Singapore's SLS + LEA (from Primary 4, teacher-supervised) is that pattern at national scale.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">3 · At the final rung, all four levers score 12/12. Turning the detector on gives:</p>
+      <button class="qopt" type="button">A · 12/12 - at full rails the detector does no harm</button>
+      <button class="qopt" type="button">B · 12/12, but with faster grading on the essays</button>
+      <button class="qopt" type="button">C · 11/12 - it falsely flags Dana, and at no rung in the whole course did it ever raise the score</button>
+      <p class="qwhy">Levers build: 2 → 5 → 8 → 10 → 12 as policy, roles, redesign, and privacy come on. The anti-lever only ever subtracted - its one unique contribution at the strongest design was accusing an honest non-native writer.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 8 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The 10-second habit</b><span>Strip identity before prompting: "Dana Okafor, IEP for written expression" → "a Grade 9 student who struggles with written organization." Same help, zero exposure.</span></div>
+      <div class="cheat-item"><b>The never-paste list</b><span>Rosters · grades · IEP/medical details · family situations. Into consumer chatbots: never. Needs the real record? Vetted district tool or a rewrite.</span></div>
+      <div class="cheat-item"><b>FERPA in one line</b><span>Consumer paste = unauthorized disclosure. The school-official exception needs a written agreement + school control + no training reuse.</span></div>
+      <div class="cheat-item"><b>COPPA in one line</b><span>Under-13 needs verifiable parental consent; consumer ToS are 13+ anyway. Elementary = teacher-mediated or walled garden.</span></div>
+      <div class="cheat-item"><b>PDPA + SLS</b><span>MOE routes classroom AI through SLS; LEA runs from Primary 4, teacher-supervised. The safe route is the vetted platform, everywhere.</span></div>
+      <div class="cheat-item"><b>The state floor</b><span>~12 US states: no student PII in AI systems, ever. ~20 anchor guidance on FERPA/COPPA. Assume the strict rule and you are portable.</span></div>
+      <div class="cheat-item"><b>Vendor questions</b><span>DPA signed? Training on student data (written no)? Deletion on request? Under-13 posture? No answers = your answer.</span></div>
+      <div class="cheat-item"><b>The final rung</b><span>All four levers = 12/12, the unit survives everything. Detector on: 11/12 - Dana flagged. It never helped, at any rung. b10 assembles the capstone.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 8 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b7-integrity-policy.html">← b7 · Integrity + policy</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b9-ai-for-ld.html">Next: AI for corporate L&amp;D →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

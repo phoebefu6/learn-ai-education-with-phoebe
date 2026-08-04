@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 4 · Privacy, equity, governance - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Leader session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Leader track · Session 4 of 6</div>
+    <h1>Privacy, equity, <span class="accent">governance</span></h1>
+    <p class="sub">The most dangerous AI incident in your institution will not be a cheating scandal - it will be a helpful teacher pasting a student's protected record into a consumer chatbot at 9pm, trying to draft a support plan faster. Tonight you set the rails that make that impossible: the three privacy regimes (FERPA, COPPA, Singapore's PDPA) that all converge on the same four rules, the TeachAI governance toolkit you do not have to write from scratch, and the equity numbers - only 18% of principals have any AI guidance, 13% in high-poverty schools versus 25% in affluent ones - that make "we'll govern it later" an equity failure, not a scheduling choice. You watch the IEP-paste incident happen in the simulator, then watch the rails catch it.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Leader track</span>
+      <span class="chip audience">Deans · principals · L&amp;D heads</span>
+      <span class="chip audience">No code, decisions only</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The three privacy regimes</span>
+      <span class="a3" style="flex:5">18-42 · The governance toolkit + equity</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PART 1: THE THREE PRIVACY REGIMES ============ -->
+  <section class="section" id="privacy-regimes">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers FERPA/COPPA guidance + Singapore MOE/PDPA</span>
+      <h2>Three regimes, four rails <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">You do not need to become a privacy lawyer - you need to know that three very different legal regimes, written decades apart on two continents, all land on the same four operational rules. Set those four rails once and you are substantially compliant everywhere your students are. Skip them and every helpful teacher with a browser tab is a disclosure incident waiting to happen.</p>
+
+    <table class="clean">
+      <thead>
+        <tr><th>Regime</th><th>Who and what it protects</th><th>The rule that bites</th><th>The operational rail</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>FERPA</strong> (US)</td>
+          <td>PII in education records - grades, IEPs, behavior notes, health data</td>
+          <td>Consumer AI = <strong>unauthorized disclosure</strong> unless the vendor is a "school official" under written agreement, school keeps control, no reuse or training</td>
+          <td>Never student PII in consumer chatbots; district-vetted tools with DPAs only</td>
+        </tr>
+        <tr>
+          <td><strong>COPPA</strong> (US)</td>
+          <td>Children under 13</td>
+          <td><strong>Verifiable parental consent</strong> required; schools may consent only for educational use; consumer chatbot ToS are 13+ anyway</td>
+          <td>Elementary use is teacher-mediated or in walled-garden school tools</td>
+        </tr>
+        <tr>
+          <td><strong>PDPA + MOE</strong> (Singapore)</td>
+          <td>All student personal data; minors' consent via parents/guardians</td>
+          <td>Classroom AI routes through the Student Learning Space (SLS) with guardrails built in</td>
+          <td>AI assistant "LEA" from Primary 4, teacher-supervised P4-6 - the platform is the policy</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three privacy regimes - FERPA, COPPA, and Singapore's PDPA - converge on the same four rails: district-vetted tools, no student PII in consumer AI, written agreements with DPAs, and human review.">
+        <style>
+          .pgT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .pgS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .pgI { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .pgX { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .pgN { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .pgWire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#pgHd); }
+        </style>
+        <defs>
+          <marker id="pgHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+        </defs>
+        <rect x="20" y="30" width="230" height="56" rx="8" fill="#1E3A8A"/>
+        <text class="pgT" x="36" y="53">FERPA · US records</text>
+        <text class="pgS" x="36" y="73">PII needs a school official</text>
+        <rect x="20" y="120" width="230" height="56" rx="8" fill="#1D4ED8"/>
+        <text class="pgT" x="36" y="143">COPPA · under 13</text>
+        <text class="pgS" x="36" y="163">verifiable parental consent</text>
+        <rect x="20" y="210" width="230" height="56" rx="8" fill="#3B82F6"/>
+        <text class="pgT" x="36" y="233">PDPA · Singapore</text>
+        <text class="pgS" x="36" y="253">MOE routes AI through SLS</text>
+        <rect x="330" y="118" width="210" height="56" rx="8" fill="#1E293B"/>
+        <text class="pgT" x="346" y="141">SAME 4 RAILS</text>
+        <text class="pgS" x="346" y="161">three laws, one playbook</text>
+        <rect x="620" y="14" width="240" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="pgI" x="636" y="36">1 · Vetted tools</text>
+        <text class="pgX" x="636" y="55">district-approved list only</text>
+        <rect x="620" y="86" width="240" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="pgI" x="636" y="108">2 · No student PII</text>
+        <text class="pgX" x="636" y="127">never in consumer chatbots</text>
+        <rect x="620" y="158" width="240" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="pgI" x="636" y="180">3 · Written agreements</text>
+        <text class="pgX" x="636" y="199">DPAs: no reuse, no training</text>
+        <rect x="620" y="230" width="240" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="pgI" x="636" y="252">4 · Human review</text>
+        <text class="pgX" x="636" y="271">teacher stays in the loop</text>
+        <path class="pgWire" d="M250,58 C295,70 295,120 325,132"/>
+        <path class="pgWire" d="M250,148 L325,146"/>
+        <path class="pgWire" d="M250,238 C295,226 295,175 325,162"/>
+        <path class="pgWire" d="M540,130 C575,110 585,55 615,42"/>
+        <path class="pgWire" d="M540,140 C575,132 585,118 615,111"/>
+        <path class="pgWire" d="M540,152 C575,160 585,175 615,183"/>
+        <path class="pgWire" d="M540,162 C575,182 585,240 615,255"/>
+        <rect x="20" y="298" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="pgN" x="44" y="310">~12 US states explicitly ban student PII in AI systems; ~20 anchor guidance on FERPA/COPPA.</text>
+        <rect x="20" y="324" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="pgN" x="44" y="336">Singapore's LEA runs inside SLS from Primary 4, teacher-supervised P4-6 - rails built in by design.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - three regimes converging on the same four rails</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>FERPA: the school-official rail<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>FERPA's core for leaders: student PII from education records entered into a consumer AI tool is an <strong>unauthorized disclosure</strong> - unless the vendor qualifies as a "school official" under a written agreement, the school keeps control of the data, and the vendor does not reuse it or train on it. A teacher's personal ChatGPT account meets none of those tests.</p>
+        <ul>
+          <li><strong>The practical rail:</strong> never student PII in consumer chatbots - grades, IEPs, behavior notes, health information, even a name attached to a struggle.</li>
+          <li><strong>The sanctioned path:</strong> district-vetted tools operating under data-processing agreements (DPAs) that lock in no-reuse, no-training terms. The teacher's workflow barely changes; the legal exposure changes completely.</li>
+          <li><strong>The state layer on top:</strong> roughly 12 US states now explicitly say do not input student PII into AI systems, and about 20 anchor their AI guidance on FERPA, COPPA, CIPA, and IDEA. The direction of travel is one way.</li>
+        </ul>
+        <p>The leader's question is not "do my teachers know FERPA?" It is "have I given them a vetted tool, so the compliant path is also the easy path?"</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>COPPA and the under-13 reality<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>COPPA requires <strong>verifiable parental consent</strong> before collecting personal information from children under 13, and schools may consent on parents' behalf <strong>only for educational use</strong>. Meanwhile the consumer chatbot terms of service are 13+ across the board (OpenAI: 13+, and 13-18 with parental consent).</p>
+        <ul>
+          <li><strong>What that means bluntly:</strong> a Grade 4 class "trying out ChatGPT" on student accounts is outside both the vendor's own terms and the consent framework - before any pedagogy is discussed.</li>
+          <li><strong>The workable pattern:</strong> elementary AI use is teacher-mediated or runs in walled-garden tools built for schools - the teacher drives, the students never hold consumer accounts.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>Singapore built the walled garden at national scale.</strong> MOE routes classroom AI through the Student Learning Space (SLS) with guardrails built in - the AI Learning Assistant "LEA" is available from Primary 4, teacher-supervised for P4-6, and student data stays under PDPA protection with minors' consent handled via parents and guardians. Nobody asks each teacher to be a privacy lawyer; the platform IS the policy. That is the design target for any district, at any scale.</p>
+        </div>
+      </div>
+    </details>
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The 9pm test: what counts as student PII<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The rail only works if a tired teacher can apply it at 9pm without a flowchart. The test: <strong>could anyone connect this to a real student?</strong> If yes, it stays out of anything not on the vetted list.</p>
+        <ul>
+          <li><strong>Obviously in scope:</strong> names, student IDs, grades, IEP and 504 details, health or counseling notes, disciplinary history, contact details, photos.</li>
+          <li><strong>The sneaky middle:</strong> "my Grade 9 student with dyslexia who just moved from Manila" - no name, still identifiable in a class of 28. Combinations of details are PII even when each detail alone is not.</li>
+          <li><strong>Out of scope, and encouraged:</strong> fully de-identified patterns - "a ninth grader struggling with topic sentences" - which is all the AI needed to draft the support plan anyway.</li>
+        </ul>
+        <p>That last point is the training message that actually lands: the compliant prompt is usually the BETTER prompt, because the model never needed the name - only the situation. Teach the de-identified habit once and the rail stops feeling like a restriction.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: GOVERNANCE TOOLKIT + EQUITY ============ -->
+  <section class="section" id="governance-equity">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the TeachAI toolkit + the equity gap data</span>
+      <h2>The governance toolkit you do not have to write <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">The good news for a busy leadership team: the starting documents already exist, free, and co-authored by the organizations your board will recognize. Your job is adoption and adaptation, not authorship - and the operational core is smaller than it looks: an approved-tool list and the agreements behind it.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>TeachAI: the off-the-shelf starting kit<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The TeachAI toolkit - a coalition effort from Code.org, ETS, ISTE, Khan Academy, and the World Economic Forum - hands you three artifacts most institutions try to write from a blank page:</p>
+        <ul>
+          <li><strong>7 guiding principles</strong> for AI in education - the values layer your policy points back to.</li>
+          <li><strong>Sample policy language</strong> - editable text for acceptable use, disclosure, and staff guidance, ready for your counsel to mark up rather than draft.</li>
+          <li><strong>A transparency guide</strong> - how to tell students, parents, and staff what AI is in use and why.</li>
+        </ul>
+        <p>Then the operational core, where governance becomes real: <strong>the approved-tool list plus DPAs</strong>. A living list of vetted tools, each backed by a written agreement covering PII handling, no-reuse, no-training. Everything else in AI governance is commentary on those two artifacts - the list tells teachers what the easy path is, and the agreements make the easy path legal.</p>
+        <p>The questions for your next leadership meeting: Who owns our approved list? What is the request-and-review process when a teacher finds a new tool? How fast does a decision come back - because if the answer is "months", the shadow tools win.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The equity section: ungoverned AI is not neutral<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Here is the number that turns governance from an IT chore into a leadership obligation: only <strong>18% of US principals</strong> say their school provides AI guidance - and the split is <strong>13% in high-poverty schools versus 25% in affluent ones</strong>.</p>
+        <div class="callout win">
+          <strong>★ The equity argument, in one breath</strong>
+          Ungoverned AI is an equity failure. The schools least likely to have rails serve the students least able to push back - on a false AI accusation, on a privacy disclosure, on a consumer tool quietly training on their data. Affluent schools are twice as likely to have guidance; their students get the protections AND the productive use. Waiting to govern does not pause the risk - it distributes it to the students with the least recourse. If your institution serves a high-need population, this session is not optional homework. It is the job.
+        </div>
+        <p>Pair that with a3's detection evidence and the pattern is complete: the same students detectors falsely flag - non-native writers, under-resourced schools - are the ones no policy protects. Governance is how a leader closes both gaps with one document.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The governance one-pager: six lines, one page<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Your entire AI governance posture should fit on one page a new teacher can absorb in five minutes. The six-line checklist:</p>
+        <ul>
+          <li><strong>1 · Policy per course.</strong> Every syllabus states its AI tier (a3's mandate). Owner: academic leadership.</li>
+          <li><strong>2 · Vetted-tool list.</strong> One living page of approved tools; anything off-list needs a request, not forgiveness. Owner: named, with a review deadline per request.</li>
+          <li><strong>3 · DPA template.</strong> Standard agreement terms - school-official status, no reuse, no training - so vetting is a checklist, not a negotiation. Owner: counsel or procurement.</li>
+          <li><strong>4 · The PII rule.</strong> One sentence, no exceptions: no student personal information in any tool that is not on the list.</li>
+          <li><strong>5 · Incident protocol.</strong> What happens when PII lands in the wrong tool anyway: report without blame, contain, notify per regulation, fix the workflow that made it easy.</li>
+          <li><strong>6 · Review cadence.</strong> The list, the policy, and the incidents get reviewed on a named schedule - this space moves too fast for annual.</li>
+        </ul>
+        <p>Draft it this week; a5 slots it into the full institutional roadmap alongside training and build-vs-buy decisions.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo · the privacy trace</span>
+      <h2>Watch the IEP paste happen - then watch the rails catch it <span class="tag demo">★ 12 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">The simulator below runs the incident this whole session exists to prevent: a caring, competent teacher pastes a student's IEP details into a consumer chatbot to draft a support plan faster. Every lever is off - which is exactly the state of a school with no guidance, the 82% majority in the principal survey. Nobody in this trace is careless or malicious. That is what makes it the scariest scenario in the course.</p>
+
+    <div class="steps">
+      <div class="step"><p>Run it <strong>as-is, all levers off</strong>. Follow the teacher's reasoning - every step feels helpful and normal right up until the protected record is sitting in a consumer tool that may train on it.</p></div>
+      <div class="step"><p>Note what is missing: not good intentions, and not effort. There was no vetted tool to reach for, no PII rule to remember, no agreement making any path safe. The failure was built before the teacher sat down.</p></div>
+      <div class="step"><p>Toggle <strong>Privacy rails ON</strong> and run again. Same teacher, same 9pm, same need - the vetted tool with a DPA does the same job, and the disclosure never happens.</p></div>
+      <div class="step"><p>Say the leader lesson out loud: you cannot train your way out of a missing rail. The fix is infrastructure - a list, an agreement, one rule - not a memo asking teachers to be more careful.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="trace" data-scenario="privacy" data-levers=""></div>
+
+    <div class="callout tip">
+      <strong>How to read the classroom sim</strong>
+      🏫 situation · 🧠 thinking · ✏️ action · 📦 what happens · 🛡 rail · 🎓 outcome. The moments are a scripted teaching simulation replaying documented failure modes; the regulatory mechanics (FERPA's school-official test, COPPA consent, PDPA protection) are the real published rules from the sources on this page.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 25-35 min total</span></h2>
+    </div>
+    <ul>
+      <li>Answer the four-rail audit for your own institution: Do we have a vetted-tool list? A PII rule anyone can recite? DPAs behind every approved tool? A named human-review expectation? Score yourself 0-4 - that number is your a5 starting point.</li>
+      <li>Draft the six-line governance one-pager from the self-study card, with a real owner's name against each line. Blank owner slots are the finding, not a formatting problem.</li>
+      <li>Locate your institution on the equity data: if you serve a high-need population, write one sentence for your board on why AI governance is an equity item, using the 13% vs 25% split.</li>
+      <li>Optional deep read: the TeachAI toolkit (teachai.org/toolkit) - skim the 7 principles and the sample policy language before a5, where it feeds the full roadmap.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Certificates, videos, and graded assessments stay on the official sites (linked each session). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">FERPA + COPPA guidance corpus (FPF, Student Privacy Compass) - the US privacy rails</span><span class="note">Part 1 · the teacher-level discipline lands in b8</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Singapore MOE / PDPA pattern - SLS, LEA, and the walled-garden model</span><span class="note">Part 1 · verify exact PDPC age wording before quoting further</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">TeachAI toolkit (Code.org, ETS, ISTE, Khan Academy, WEF) - principles, policy language, transparency guide</span><span class="note">Part 2 · feeds the a5 institutional roadmap</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">US state AI guidance landscape - the ~12-state PII bans and the equity gap data</span><span class="note">Headline numbers here · fuller adoption picture in a1 and a5</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Under FERPA, when does entering student PII into an AI tool avoid being an unauthorized disclosure?</p>
+      <button class="qopt" type="button">A · Whenever the teacher deletes the chat afterwards</button>
+      <button class="qopt" type="button">B · Whenever the use is clearly educational and well-intentioned</button>
+      <button class="qopt" type="button">C · When the vendor is a "school official" under a written agreement, the school keeps control, and the data is not reused or used for training</button>
+      <p class="qwhy">Intent and deletion are irrelevant to the disclosure. The school-official exception is a contractual state, not a vibe - which is why the operational rail is district-vetted tools with DPAs, never consumer chatbots.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · A Grade 4 teacher wants students to use a consumer chatbot directly. What is the under-13 reality?</p>
+      <button class="qopt" type="button">A · Consumer chatbot terms are 13+, and COPPA requires verifiable parental consent - so elementary use runs teacher-mediated or in walled-garden tools</button>
+      <button class="qopt" type="button">B · It is fine as long as the school signs a permission form for the class</button>
+      <button class="qopt" type="button">C · COPPA only applies to social media, not AI tools</button>
+      <p class="qwhy">Schools may consent only for educational use, and the vendors' own terms exclude under-13 accounts anyway. The workable pattern is the teacher driving, or a school-built walled garden - Singapore's SLS with LEA from Primary 4 is the national-scale version.</p>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · What does the principal-survey data say about who has AI guidance?</p>
+      <button class="qopt" type="button">A · About half of schools have guidance, evenly distributed</button>
+      <button class="qopt" type="button">B · Only 18% of principals report guidance - 13% in high-poverty schools vs 25% in affluent ones</button>
+      <button class="qopt" type="button">C · Guidance is nearly universal, but rarely enforced</button>
+      <p class="qwhy">The gap is the point: the schools least likely to have rails serve the students least able to push back on a false accusation or a privacy disclosure. Ungoverned AI is an equity failure, and governance is how a leader closes the gap.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>FERPA rail</b><span>Student PII in consumer AI = unauthorized disclosure unless the vendor is a school official under written agreement, no reuse, no training. Vetted tools + DPAs.</span></div>
+      <div class="cheat-item"><b>COPPA rail</b><span>Under-13 needs verifiable parental consent; school consent covers educational use only; consumer chatbot ToS are 13+. Elementary = teacher-mediated or walled garden.</span></div>
+      <div class="cheat-item"><b>Singapore pattern</b><span>MOE routes classroom AI through SLS; LEA from Primary 4, teacher-supervised P4-6; PDPA protects student data. The platform IS the policy.</span></div>
+      <div class="cheat-item"><b>The four rails</b><span>Vetted tools · no student PII in consumer AI · written agreements (DPAs) · human review. Three regimes, one playbook.</span></div>
+      <div class="cheat-item"><b>The state layer</b><span>~12 US states explicitly ban student PII in AI systems; ~20 anchor guidance on FERPA/COPPA/CIPA/IDEA. Direction of travel: one way.</span></div>
+      <div class="cheat-item"><b>TeachAI toolkit</b><span>Code.org + ETS + ISTE + Khan Academy + WEF: 7 principles, sample policy language, transparency guide. Adapt, don't author.</span></div>
+      <div class="cheat-item"><b>The equity numbers</b><span>18% of principals have AI guidance - 13% high-poverty vs 25% affluent. Ungoverned AI lands hardest on students with the least recourse.</span></div>
+      <div class="cheat-item"><b>The demo lesson</b><span>The IEP paste is a missing-rail failure, not a careless-teacher failure. Fix the infrastructure - list, agreement, one rule - not the memo.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 4 of 6 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a3-redesign-not-detect.html">← a3 · Redesign, not detect</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="a5-institution-roadmap.html">Next: Your institution's AI roadmap →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

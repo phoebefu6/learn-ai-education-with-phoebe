@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 4 · Design lessons + units with AI - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 4 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 4 of 10</div>
+    <h1>Design lessons + units <span class="accent">with AI</span></h1>
+    <p class="sub">You have the loop (b1), the prompting craft (b2), and the seven student-facing roles (b3). Tonight they go to work on the biggest time-sink in teaching: designing lessons and units. Gallup found modifying materials is already 28% of teacher AI use - tonight you do it the design-first way. Backward design names the evidence of learning before anything else; AI first-drafts at every stage; you own the objectives and the judgment. By minute 42, Riverview's persuasive-essay unit exists as v1: objectives, a 4-week arc, differentiated materials, exit tickets - and one honest hole we leave open on purpose, because b5 exists to fix it.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Backward design + ADGIE</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: Riverview unit v1</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are in the unit</h2>
+    </div>
+    <p class="lede">The Riverview case so far: Ms. Tan has a working AI policy sketch on her desk (b1), context-rich prompts that name the class instead of "a lesson" (b2), and seven scaffolded roles her students could meet AI through (b3). What she does not have yet is the unit itself. Tonight is the construction session: two design frames - <strong>backward design</strong> for the classroom and <strong>ADGIE</strong> for instructional designers - and one live build that ends with a real, usable unit v1 for "Should our city ban single-use plastics?"</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      A backward-design habit that puts evidence of learning before activities and materials, the ADGIE stage map for bigger design jobs, a reusable context-rich unit brief you can paste for any unit, and Riverview unit v1: teacher-pruned objectives, a 4-week arc, differentiated materials built without touching student data, and weekly exit tickets.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: BACKWARD DESIGN ============ -->
+  <section class="section" id="backward-design">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Vanderbilt course-design guidance + Khanmigo teacher features</span>
+      <h2>Backward design with an AI co-designer <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">Start where the unit ends: <strong>what will students DO to show they learned it?</strong> Name that evidence first. Then choose activities that build toward it, then materials that support the activities - never the reverse order, and never materials first just because AI makes materials cheap. AI drafts at every stage: Khanmigo's teacher tools generate learning objectives, rubrics, and exit tickets, and Vanderbilt's course-design guidance walks faculty through using AI for course objectives, activities, and assessment ideas. But the order of operations, the objectives, and the bar stay with the teacher. AI is the fastest first-draft colleague you have ever had - it is not the teacher of record.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 412" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Backward design flow: evidence of learning, then activities, then materials - with a teacher-owns lane above every stage and an AI-drafts lane below every stage.">
+        <style>
+          .d4T { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .d4S { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .d4I { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .d4X { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .d4N { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .d4Wire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#d4Hd); }
+        </style>
+        <defs>
+          <marker id="d4Hd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+        </defs>
+        <rect x="40" y="56" width="230" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="d4I" x="56" y="78">TEACHER OWNS</text>
+        <text class="d4X" x="56" y="97">the objectives + the bar</text>
+        <rect x="325" y="56" width="230" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="d4I" x="341" y="78">TEACHER OWNS</text>
+        <text class="d4X" x="341" y="97">sequence + judgment calls</text>
+        <rect x="610" y="56" width="230" height="52" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="d4I" x="626" y="78">TEACHER OWNS</text>
+        <text class="d4X" x="626" y="97">fit for THESE 28 students</text>
+        <rect x="40" y="170" width="230" height="56" rx="8" fill="#1E3A8A"/>
+        <text class="d4T" x="56" y="194">1 · EVIDENCE OF LEARNING</text>
+        <text class="d4S" x="56" y="213">what students DO to show it</text>
+        <rect x="325" y="170" width="230" height="56" rx="8" fill="#1D4ED8"/>
+        <text class="d4T" x="341" y="194">2 · ACTIVITIES</text>
+        <text class="d4S" x="341" y="213">practice that builds evidence</text>
+        <rect x="610" y="170" width="230" height="56" rx="8" fill="#3B82F6"/>
+        <text class="d4T" x="626" y="194">3 · MATERIALS</text>
+        <text class="d4S" x="626" y="213">texts, examples, scaffolds</text>
+        <rect x="40" y="290" width="230" height="52" rx="8" fill="#1E293B"/>
+        <text class="d4T" x="56" y="312">AI DRAFTS</text>
+        <text class="d4S" x="56" y="331">rubric rows + exit tickets</text>
+        <rect x="325" y="290" width="230" height="52" rx="8" fill="#1E293B"/>
+        <text class="d4T" x="341" y="312">AI DRAFTS</text>
+        <text class="d4S" x="341" y="331">activity menus + variants</text>
+        <rect x="610" y="290" width="230" height="52" rx="8" fill="#1E293B"/>
+        <text class="d4T" x="626" y="312">AI DRAFTS</text>
+        <text class="d4S" x="626" y="331">leveled texts + examples</text>
+        <path class="d4Wire" d="M155,108 L155,165"/>
+        <path class="d4Wire" d="M440,108 L440,165"/>
+        <path class="d4Wire" d="M725,108 L725,165"/>
+        <path class="d4Wire" d="M155,290 L155,231"/>
+        <path class="d4Wire" d="M440,290 L440,231"/>
+        <path class="d4Wire" d="M725,290 L725,231"/>
+        <path class="d4Wire" d="M270,198 L320,198"/>
+        <path class="d4Wire" d="M555,198 L605,198"/>
+        <rect x="40" y="358" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="d4N" x="64" y="370">Backward design: name the evidence of learning first, then activities, then materials - never the reverse.</text>
+        <rect x="40" y="386" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="d4N" x="64" y="398">AI first-drafts everything below the line; the objectives and the bar never leave the teacher's hands.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - backward design with an AI-drafts lane and a teacher-owns lane</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Who drafts, who owns - stage by stage<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The practitioner pattern, at every stage of the flow above:</p>
+        <ul>
+          <li><strong>Objectives</strong> - AI drafts eight candidate objectives from your topic and your named evidence. You prune to three or four and rewrite them in your students' language. Pruning IS the design act - what you cut defines the unit as much as what you keep.</li>
+          <li><strong>Rubrics</strong> - AI drafts the rows; you rewrite the top band yourself, because the top band is your standard. A rubric whose top band you did not write is a bar you did not set.</li>
+          <li><strong>Exit tickets</strong> - AI generates them in seconds per objective per week; you check each one actually tests the objective and not vocabulary recall.</li>
+          <li><strong>Materials</strong> - the safest delegation of all (b1's "delegate freely" bucket): leveled readings, worked examples, sentence starters - always teacher-reviewed before students see them.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>This split is already productized.</strong> Khanmigo's teacher tools generate learning objectives, rubrics, and exit tickets - and it is free for educators 18+ in 44+ countries (Microsoft-funded). On the higher-ed side, Vanderbilt's teaching-center guidance walks faculty through AI for course objectives, activities, and assessment ideas. Both put the same worker in the same seat: AI drafts, the educator decides.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The 15-minute single-lesson version<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Most weeks you are not designing a unit - you are designing Tuesday. Same order of operations, one class period:</p>
+        <ul>
+          <li><strong>Name the exit evidence</strong> - one thing students do before the bell that shows the lesson landed. One sentence, written by you, before AI opens.</li>
+          <li><strong>AI drafts the middle</strong> - a hook, one main activity, and the exit ticket, all pointed at that evidence.</li>
+          <li><strong>Prune and fit-check</strong> - cut what does not build the evidence, adjust for the class you actually have on a Tuesday afternoon.</li>
+        </ul>
+        <p>Fifteen minutes, most of it yours. The unit build in Part 2 is exactly this skill at four-week scale - which is why we practice the small version first.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Unit design through the 4D loop<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Run tonight's work back through b1's loop and it holds up cleanly:</p>
+        <ul>
+          <li><strong>Delegation</strong> - drafting objectives, activities, and materials is "delegate freely with review". Setting the objectives and the top rubric band is "do not delegate" - that judgment is the job.</li>
+          <li><strong>Description</strong> - the unit brief you will meet in Part 2 is Description done properly: class size, levels, topic, fixed evidence, constraints.</li>
+          <li><strong>Discernment</strong> - pruning eight AI objectives to four, catching the exit ticket that tests vocabulary instead of argument.</li>
+          <li><strong>Diligence</strong> - the Dana rule below: differentiated materials described by need, never by student record.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: ADGIE + BUILD-ALONG ============ -->
+  <section class="section" id="adgie-build">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers ADGIE (Hardman) + the build-along</span>
+      <h2>ADGIE, then build Riverview unit v1 <span class="tag concept">24 min live</span></h2>
+    </div>
+    <p class="lede">If you design learning for a living - instructional designer, L&amp;D, curriculum lead - Philippa Hardman's <strong>ADGIE</strong> is the classic ADDIE cycle with AI written into every phase. One honesty note before the table: ADGIE is our frame for <em>instructional design with AI</em> - the objectives-and-rubrics pattern in Part 1 stands on Khanmigo's teacher features and Vanderbilt's guidance, not on ADGIE, which does not cover them.</p>
+
+    <table class="clean">
+      <thead><tr><th>ADGIE stage</th><th>What AI does</th><th>What the designer does</th></tr></thead>
+      <tbody>
+        <tr><td>Analysis</td><td>Builds learner personas and skill maps from interview data</td><td>Runs the interviews, validates the personas against real learners</td></tr>
+        <tr><td>Design</td><td>Proposes multiple pedagogical prototypes to compare</td><td>Picks the pedagogy and the trade-offs - the taste decision</td></tr>
+        <tr><td>Generation</td><td>First-drafts text, scripts, and knowledge checks</td><td>Quality-controls every draft - the designer QCs, always</td></tr>
+        <tr><td>Individualisation</td><td>Adapts content to the learner in real time</td><td>Sets the bounds of adaptation and watches for drift</td></tr>
+        <tr><td>Evaluation</td><td>Runs continuously instead of as a final step</td><td>Decides what the signals mean and what changes</td></tr>
+      </tbody>
+    </table>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>ADGIE or backward design - which frame when<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>They are not competitors; they are different zoom levels.</p>
+        <ul>
+          <li><strong>Backward design</strong> - one teacher, one unit, one class. Evidence-first thinking you can run at your desk tonight, which is why the build-along uses it.</li>
+          <li><strong>ADGIE</strong> - design at scale: full courses, curricula, corporate modules. The Analysis and continuous Evaluation stages only earn their keep when there are many learners and many iterations - b9 runs ADGIE end to end on a corporate onboarding module.</li>
+        </ul>
+        <p>Both share the guardrail that matters: AI drafts, the human owns the pedagogy and the bar. If you remember one thing from the two frames, remember the shared rule.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Build-along: Riverview unit v1, in four moves<span class="mini">18 min · type along</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>First, the prompt that wastes the session versus the one that builds the unit. This is b2's lesson wearing its unit-design costume:</p>
+        <div class="prompt-box bad"><span class="label">The generic ask - what most teachers type</span>Make me a lesson plan about persuasive essays for Grade 9.</div>
+        <div class="prompt-box good"><span class="label">The context-rich unit brief - paste, then build</span>You are co-designing a 4-week Grade 9 persuasive-essay unit with me. I am the teacher of record: I own the objectives, and I will prune everything you draft.
+
+Context: Riverview Secondary, 28 students, mixed writing levels, several non-native English speakers. Topic: "Should our city ban single-use plastics?" Evidence of learning (fixed - do not change it): students plan, draft, and defend a persuasive essay - claim, evidence, counterargument - and can explain their argument aloud.
+
+Draft one section at a time and wait for my edits before continuing:
+1. Eight candidate unit objectives aligned to that evidence, in student-friendly language. I will prune to four.
+2. A 4-week arc: week-by-week activities that build toward the evidence.
+3. A differentiated materials set for a Grade 9 student who struggles with written organization - sentence starters, paragraph frames, one worked example on a DIFFERENT topic. Do not ask for or use any real student's name or records.
+4. One exit ticket per week - three questions each, checking that week's objective.
+
+Constraints: activities must produce visible student thinking - outlines, drafts, spoken reasons - not just polished text.</div>
+        <div class="steps">
+          <div class="step"><p><strong>Objectives.</strong> Paste the brief. AI drafts eight; prune to four live, saying out loud why each cut goes. Ms. Tan keeps "build a counterargument from a source you disagree with" and cuts two that were really activities in disguise.</p></div>
+          <div class="step"><p><strong>The 4-week arc.</strong> Week 1 claims and evidence, week 2 counterarguments, week 3 drafting, week 4 revision and speaking. Check the arc against the evidence, not against coverage.</p></div>
+          <div class="step"><p><strong>Differentiated materials.</strong> The brief describes "a Grade 9 student who struggles with written organization" - that is Dana's need with zero of Dana's data. Same sentence starters, no disclosure.</p></div>
+          <div class="step"><p><strong>Exit tickets.</strong> Four weeks, three questions each. Discernment pass: week 2's first draft tested plastic-recycling facts, not counterargument skill. Regenerate with the objective quoted.</p></div>
+        </div>
+        <div class="callout tip">
+          <strong>The Dana rule - privacy preview for b8</strong>
+          Describe the need, never the student. "A Grade 9 student who struggles with written organization" gets you the same paragraph frames as pasting her IEP into a consumer chatbot - without the unauthorized disclosure. Profiles in, records never. b8 builds the full rails.
+        </div>
+      </div>
+    </details>
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What ships in unit v1 - the artifact list<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The complete inventory of what tonight produced, with the provenance made explicit - this table is also your template for documenting any AI-assisted unit:</p>
+        <table class="clean">
+          <thead><tr><th>Artifact</th><th>Drafted by</th><th>Owned + finalized by</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>4 unit objectives</td><td>AI (8 candidates)</td><td>Ms. Tan - pruned to 4, student language</td><td>Done</td></tr>
+            <tr><td>4-week arc</td><td>AI</td><td>Ms. Tan - checked against the evidence</td><td>Done</td></tr>
+            <tr><td>Differentiated materials</td><td>AI (need profile, zero student data)</td><td>Ms. Tan - reviewed before release</td><td>Done</td></tr>
+            <tr><td>Weekly exit tickets</td><td>AI</td><td>Ms. Tan - week 2 regenerated after Discernment pass</td><td>Done</td></tr>
+            <tr><td>Assessment</td><td>-</td><td>Still one polished final essay</td><td>The b5 hole</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: THE HONEST HOLE ============ -->
+  <section class="section" id="the-hole">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · self-study</span>
+      <h2>Unit v1 has a hole - and we are leaving it open <span class="tag concept">after class</span></h2>
+    </div>
+    <p class="lede">Look hard at what you built tonight. Objectives: solid. Arc: solid. Materials: differentiated. Exit tickets: weekly. And the assessment? <strong>Still one polished final essay.</strong> Unit v1 grades exactly the artifact AI produces best - which means b1's 14-of-28 polished-drafts moment happens in THIS unit too, on schedule, around week 4. We name that honestly instead of pretending the design work is done: the fix is a redesigned assessment, and it is the whole of b5.</p>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why the hole matters more than the polish<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A beautifully designed unit with a final-draft-only assessment is a beautifully designed unit that cannot tell you who learned. The objectives say "defend an argument aloud" - but nothing in v1's grading actually collects that evidence. Everything we built tonight points at visible thinking; the assessment still only looks at the finished surface. Hold that tension until b5, where the essay unit gets process portfolios, an in-class component, a 5-minute oral defense, and an AI-transparent rubric - and the hole closes for good.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Differentiation at scale - the quiet superpower<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Gallup's 2025 teacher survey puts <strong>modifying materials to fit student levels at 28% of teacher AI use</strong> - behind preparing to teach (37%) and worksheets (33%), and arguably more valuable than both. Before AI, one teacher hand-building three reading levels of the same text for 28 students was a weekend. Now it is a prompt pattern: fix the content, vary the scaffold - leveled versions, sentence starters, first-language glossaries for your non-native English speakers, extension questions for the fast finishers. The craft point from tonight still applies: describe needs, never students, and review every variant before it ships.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 20-30 min total</span></h2>
+    </div>
+    <ul>
+      <li>Rewrite the unit brief for one of YOUR units: your class, your levels, your fixed evidence of learning. Run it, and prune the AI's eight objectives down to four - notice what the cutting teaches you.</li>
+      <li>Generate one differentiated materials set using a need profile ("a student who struggles with...") instead of any real student's name or records.</li>
+      <li>Draft exit tickets for your current unit and run one Discernment pass: does each question test the objective, or just recall?</li>
+      <li>Find the hole in your own unit v1: if a student outsourced the final artifact to AI, would your assessment notice? Write the answer in one sentence and bring it to b5.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">This track teaches the working core of the major AI-for-educators sources with one running case. Certificates, videos, and graded assessments stay on the official sites - linked each session. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Vanderbilt teaching-center course-design guidance - AI for course objectives, activities, assessment ideas</span><span class="note">Part 1 · the assessment side deepens in b5</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">ADGIE (Hardman) - AI in every phase of instructional design</span><span class="note">Part 2 · the corporate L&amp;D application lands in b9</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Khanmigo teacher features - learning objectives, rubrics, exit tickets</span><span class="note">Parts 1-2 · the student-facing tutor side lands in b6</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Google "Generative AI for Educators" - develop an instructional resource</span><span class="note">The build-along walks the same ground · prompting core was b2</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Mollick, Wharton "AI in Education" module 3 - lesson-design patterns</span><span class="note">Context only · the seven roles were b3's full treatment</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · You sit down with AI to design the Riverview unit. What does backward design say you name FIRST?</p>
+      <button class="qopt" type="button">A · The materials - AI makes them cheap, so start where the savings are</button>
+      <button class="qopt" type="button">B · The evidence of learning - what students will DO to show they learned it</button>
+      <button class="qopt" type="button">C · The activities - four weeks of engaging lessons, then see what they add up to</button>
+      <p class="qwhy">Evidence first, then activities that build it, then materials that support them. AI drafts at every stage - but if you start from materials because they are cheap to generate, you get a unit shaped by what AI produces easily instead of what students need to show.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · In Hardman's ADGIE, the Generation stage has AI first-drafting text, scripts, and knowledge checks. Who does quality control?</p>
+      <button class="qopt" type="button">A · The AI itself - a second pass with a self-critique prompt is the standard</button>
+      <button class="qopt" type="button">B · The learners - errors surface naturally as they work through the material</button>
+      <button class="qopt" type="button">C · The instructional designer - AI drafts, the designer QCs, every time</button>
+      <p class="qwhy">Generation means first drafts, never final ones. The designer quality-controls every draft - the same split as Part 1's classroom pattern: AI produces volume, the human owns the bar. Learners meeting unreviewed AI content is the failure mode, not the process.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Unit v1 ships tonight with objectives, a 4-week arc, differentiated materials, and exit tickets. What is the hole b5 exists to fix?</p>
+      <button class="qopt" type="button">A · The assessment is still final-draft-only - one polished essay, no process evidence</button>
+      <button class="qopt" type="button">B · The objectives were AI-drafted, so they cannot be trusted until rewritten from scratch</button>
+      <button class="qopt" type="button">C · Weekly exit tickets are too frequent and will exhaust the class by week 3</button>
+      <p class="qwhy">v1 grades exactly the artifact AI produces best - a polished final draft - so the 14-of-28 moment from b1 would replay in this unit on schedule. The objectives are fine (you pruned them). The fix is redesigning the assessment around process evidence, which is all of b5.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Backward design order</b><span>Evidence of learning → activities → materials. Name what students will DO to show it before anything gets drafted. Never start from materials.</span></div>
+      <div class="cheat-item"><b>Who drafts, who owns</b><span>AI drafts objectives, rubric rows, exit tickets, materials. Teacher owns the objectives, the top rubric band, the sequence, and the fit.</span></div>
+      <div class="cheat-item"><b>ADGIE</b><span>Analysis (AI personas/skill maps) · Design (AI prototypes) · Generation (AI drafts, designer QCs) · Individualisation (real-time) · Evaluation (continuous).</span></div>
+      <div class="cheat-item"><b>Cite it straight</b><span>ADGIE is the ID-with-AI frame. Objectives + rubric generation stands on Khanmigo teacher features and Vanderbilt course-design guidance.</span></div>
+      <div class="cheat-item"><b>The unit brief</b><span>Class size, levels, topic, FIXED evidence of learning, one section at a time, visible-thinking constraint. Context-rich beats "make a lesson plan".</span></div>
+      <div class="cheat-item"><b>The Dana rule</b><span>Describe the need ("struggles with written organization"), never the student. Profiles in, records never. Full privacy rails in b8.</span></div>
+      <div class="cheat-item"><b>The v1 hole</b><span>The assessment is still final-draft-only - it grades the artifact AI fakes best. Named honestly tonight; closed by b5's redesign.</span></div>
+      <div class="cheat-item"><b>Differentiation at scale</b><span>Modifying materials = 28% of teacher AI use (Gallup 2025). Fix the content, vary the scaffold - and review every variant.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 4 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b3-seven-ai-roles.html">← b3 · The seven AI roles</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b5-assessment-redesign.html">Next: Assessment redesign →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

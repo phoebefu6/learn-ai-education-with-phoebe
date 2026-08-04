@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 2 · Prompting for teaching - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 2 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 2 of 10</div>
+    <h1>Prompting <span class="accent">for teaching</span></h1>
+    <p class="sub">All six vendor courses we verified - Google, Microsoft, OpenAI, Anthropic, Common Sense, ISTE - teach exactly one skill first, and it is not a magic phrase. It is a loop. Google's Gemini course frames it most cleanly: write, iterate to refine, evaluate the output, prepare to incorporate. Tonight you learn that loop once, properly, plus the anatomy of a strong teaching prompt - role, class context, constraint, format, example - and then we build the five prompts every teacher needs, live on Riverview: differentiation, a lesson-plan variant, a rubric first draft, a parent email, and an exit-ticket generator. Every one comes with its iterate move, because draft 1 is always a first offer.</p>
+    <div class="chip-row">
+      <span class="chip level">🟢 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The loop + context anatomy</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: five teaching prompts</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we are in the track</h2>
+    </div>
+    <p class="lede">b1 gave you the 4D loop and the four levers, and left the Riverview scorecard at a painful 2/12. Tonight is the craft session: two of the four Ds - <strong>Description</strong> (say what you actually want) and <strong>Discernment</strong> (judge what came back) - turned into a hands-on skill you will use every working day. Everything is built on the running case: <strong>Ms. Tan, Grade 9, 28 students, the persuasive-essay unit on "Should our city ban single-use plastics?"</strong> No simulator tonight - just you, five prompts, and the loop.</p>
+    <div class="legend">
+      <span class="pill solid">Live - presented in session</span>
+      <span class="pill light">Self-study - read after class</span>
+      <span class="pill inkpill">Official sources covered</span>
+    </div>
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The prompt-iterate-evaluate loop, the five-layer anatomy of a teaching prompt, five ready-to-adapt prompts for the tasks teachers actually do with AI, one iterate move per prompt for when draft 1 goes generic, and the rule that keeps all of it safe: you review everything, AI drafts nothing final.
+    </div>
+  </section>
+
+  <!-- ============ PART 1: THE LOOP + ANATOMY ============ -->
+  <section class="section" id="loop-anatomy">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers Google's Gemini course + Anthropic Description/Discernment</span>
+      <h2>The loop, and the anatomy of a teaching prompt <span class="tag concept">15 min live</span></h2>
+    </div>
+    <p class="lede">The ONE skill all six vendor courses teach: prompting is not a sentence, it is a cycle. Google's course frames it exactly - <strong>write</strong> a prompt, <strong>iterate to refine</strong> it, <strong>evaluate the output</strong>, <strong>prepare to incorporate</strong> it into your work. And the write step has an anatomy. A strong teaching prompt carries five layers: <strong>role + class context + constraint + format + example</strong> - "You are helping a Grade 9 teacher... 28 students, mixed ability... never write full paragraphs students could submit... output as a table." Miss a layer and the model fills the gap with the average classroom on the internet, which is not your classroom.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 465" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prompt anatomy: a weak one-line prompt beside a strong prompt built from five labeled layers - role, class context, constraint, format, example.">
+        <style>
+          .p2T { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .p2S { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .p2H { font: 700 13px Inter, sans-serif; fill: #1E3A8A; }
+          .p2HB { font: 700 13px Inter, sans-serif; fill: #991B1B; }
+          .p2B { font: 700 13px Inter, sans-serif; fill: #991B1B; }
+          .p2X { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .p2N { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .p2Wire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#p2Hd); }
+        </style>
+        <defs>
+          <marker id="p2Hd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+        </defs>
+        <text class="p2HB" x="40" y="66">WEAK - one line, zero context</text>
+        <rect x="40" y="84" width="310" height="124" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="p2B" x="56" y="110">"Write a lesson plan on</text>
+        <text class="p2B" x="56" y="129">persuasive essays."</text>
+        <text class="p2X" x="56" y="156">No role, no class, no constraint,</text>
+        <text class="p2X" x="56" y="174">no format. The model fills every</text>
+        <text class="p2X" x="56" y="192">gap with the average classroom.</text>
+        <text class="p2H" x="480" y="66">STRONG - five labeled layers</text>
+        <path class="p2Wire" d="M355,146 L475,146"/>
+        <rect x="480" y="84" width="360" height="50" rx="8" fill="#1E3A8A"/>
+        <text class="p2T" x="496" y="106">1 · ROLE</text>
+        <text class="p2S" x="496" y="124">"You are helping a Grade 9 teacher..."</text>
+        <rect x="480" y="146" width="360" height="50" rx="8" fill="#1D4ED8"/>
+        <text class="p2T" x="496" y="168">2 · CLASS CONTEXT</text>
+        <text class="p2S" x="496" y="186">"...28 students, mixed ability..."</text>
+        <rect x="480" y="208" width="360" height="50" rx="8" fill="#3B82F6"/>
+        <text class="p2T" x="496" y="230">3 · CONSTRAINT</text>
+        <text class="p2S" x="496" y="248">"...never write paragraphs to submit..."</text>
+        <rect x="480" y="270" width="360" height="50" rx="8" fill="#1E293B"/>
+        <text class="p2T" x="496" y="292">4 · FORMAT</text>
+        <text class="p2S" x="496" y="310">"...output as a table, one row per tier..."</text>
+        <rect x="480" y="332" width="360" height="50" rx="8" fill="#0E7C6B"/>
+        <text class="p2T" x="496" y="354">5 · EXAMPLE</text>
+        <text class="p2S" x="496" y="372">"...here is one exemplar row to match."</text>
+        <rect x="40" y="400" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="p2N" x="64" y="412">Five layers, five failure modes closed: role, class context, constraint, format, example.</text>
+        <rect x="40" y="428" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="p2N" x="64" y="440">The weak prompt is not wrong, it is underspecified - the model fills every gap with someone else's class.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one real prompt, weak vs strong, with the five layers labeled</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The loop: write, iterate, evaluate, incorporate<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Four moves, run as a cycle - and notice how neatly they sit inside b1's 4D loop:</p>
+        <ul>
+          <li><strong>Write</strong> - draft the prompt with all five anatomy layers. This is <strong>Description</strong> from the 4D loop: can you say what you actually want?</li>
+          <li><strong>Iterate to refine</strong> - draft 1 is a first offer, not a verdict. Tell the model what is generic and anchor it to YOUR class. One good iterate beats five prompt rewrites from scratch.</li>
+          <li><strong>Evaluate the output</strong> - this is <strong>Discernment</strong>: is it accurate, does it fit these 28 students, would it survive Ms. Tan reading it aloud?</li>
+          <li><strong>Prepare to incorporate</strong> - the output becomes YOUR material: edited, owned, and never forwarded raw. That handoff is where <strong>Diligence</strong> starts.</li>
+        </ul>
+        <p>New users write once and accept. Fluent educators loop two or three times in the same minutes - the loop is fast, it just is not optional.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The five layers, one at a time<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Each layer closes a specific failure mode:</p>
+        <ul>
+          <li><strong>Role</strong> - "You are helping a Grade 9 teacher" sets the audience and the register. Without it you get advice written for nobody.</li>
+          <li><strong>Class context</strong> - "28 students, mixed ability, three IEP writing goals, the plastics-ban unit." The single highest-value layer, because it is the one thing the model cannot guess.</li>
+          <li><strong>Constraint</strong> - what the AI must NOT do: "never write full paragraphs students could submit." Constraints do more work in teaching prompts than in any other domain, because the failure mode is not a bad draft - it is a draft that quietly does the students' thinking.</li>
+          <li><strong>Format</strong> - "output as a table" turns a wall of text into something you can scan at 7am.</li>
+          <li><strong>Example</strong> - one exemplar row or sentence to match. Cheapest way to transmit taste.</li>
+        </ul>
+        <div class="callout tip">
+          <strong>Context + constraint carry the weight</strong>
+          If you only remember two layers, keep those two. Context makes the output fit your room; the constraint keeps it on the right side of the learning. A long prompt with neither is still a weak prompt.
+        </div>
+      </div>
+    </details>
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Where the vendor courses differ<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The loop and the anatomy are the shared core - here is what each vendor adds on top, so you know where to go for the delta:</p>
+        <ul>
+          <li><strong>Google (Gemini course)</strong> - the cleanest loop framing and the shortest path to a certificate: about 2 hours, built with MIT RAISE.</li>
+          <li><strong>Microsoft (AI for educators path)</strong> - the same prompting core, wrapped in Copilot-and-classroom workflows; strongest if your school lives in Microsoft 365.</li>
+          <li><strong>OpenAI (ChatGPT Foundations for Teachers)</strong> - seven modules, heavier on classroom use cases and responsible-use basics; its prompting modules match what you built tonight.</li>
+          <li><strong>Anthropic (AI Fluency)</strong> - the only one that frames prompting inside a competency model: tonight was Description and Discernment, two of b1's four Ds.</li>
+        </ul>
+        <p>None of them will contradict tonight's anatomy - the five layers are the convergence zone. Take whichever certificate your context rewards.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE FIVE PROMPTS ============ -->
+  <section class="section" id="five-prompts">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · build-along on Riverview · covers Mollick module 2 + the shared vendor core</span>
+      <h2>The five prompts every teacher needs <span class="tag demo">★ 24 min · build along</span></h2>
+    </div>
+    <p class="lede">Five tasks, five prompts, all on Ms. Tan's unit. Each comes as a weak/strong pair plus the <strong>iterate move</strong> - the exact sentence to say when draft 1 comes back generic. Adapt the strong versions to your own class tonight; the anatomy transfers even when the subject does not.</p>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>These are not hypothetical tasks.</strong> Gallup's 2025 survey of US teachers found the top three things teachers already use AI for are preparing to teach (37%), creating worksheets and assignments (33%), and modifying materials to fit student needs (28%) - exactly the ground prompts 1-3 cover. The five prompts tonight are the highest-traffic lanes of the six-weeks-a-year saving from b1.</p>
+    </div>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Prompt 1 · differentiation - the Mollick pattern<span class="mini">6 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Mollick's signature pattern: context-rich, and the AI asks YOU questions before it drafts. You know things about your class the model never will - the pattern makes it collect them first.</p>
+        <div class="prompt-box bad"><span class="label">Weak - what most teachers type</span>Differentiate this lesson for my weaker students.</div>
+        <div class="prompt-box good"><span class="label">Strong - context-rich, asks you first</span>You are an experienced teaching assistant helping a Grade 9 teacher differentiate one lesson. Class context: 28 students, mixed ability - several strong writers, a few reading below grade level, three students with IEP writing goals. The lesson: drafting body paragraphs for a persuasive essay on "Should our city ban single-use plastics?"
+Before you suggest anything, ask me up to five questions about my class that would change your recommendations. Wait for my answers.
+Then propose three tiered versions of the practice task. Constraint: never write full paragraphs students could submit - scaffolds, sentence starters, and success criteria only. Output as a table: tier / who it serves / the task / the scaffold.</div>
+        <p><strong>The iterate move.</strong> Draft still generic after the questions? Say: <em>"Too generic - tie every suggestion to the plastics-ban essay and name which of my three groups each tier serves."</em></p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Prompt 2 · the lesson-plan variant<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Not "write a lesson plan" - a variant of YOUR plan, under your constraints, in a format you can scan before first period.</p>
+        <div class="prompt-box bad"><span class="label">Weak</span>Write a lesson plan on persuasive writing.</div>
+        <div class="prompt-box good"><span class="label">Strong - your objective, your constraints</span>You are helping a Grade 9 teacher plan one 55-minute lesson inside a persuasive-essay unit ("Should our city ban single-use plastics?"). 28 students, mixed ability. Today's objective: every student connects one claim to one piece of evidence in their own words.
+Constraints: at least 20 minutes of student writing time; no activity that needs devices; nothing I could not photocopy tonight.
+Output as a table: minutes / teacher does / students do / what I watch for.</div>
+        <p><strong>The iterate move.</strong> First drafts overstuff the hour. Say: <em>"Cut this to the two activities that best serve the objective, and give the reclaimed minutes to student writing."</em></p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Prompt 3 · the rubric first draft<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>AI is excellent at rubric SCAFFOLDING and mediocre at rubric JUDGMENT - so the prompt bakes in whose judgment is final.</p>
+        <div class="prompt-box bad"><span class="label">Weak</span>Make a rubric for a persuasive essay.</div>
+        <div class="prompt-box good"><span class="label">Strong - a draft that knows it is a draft</span>Draft a FIRST-DRAFT rubric for a Grade 9 persuasive essay on the single-use plastics ban. I will revise every cell, so label it DRAFT. Four criteria: claim, evidence, reasoning, conventions. Four levels each.
+Constraints: describe observable evidence in the essay, not vague adjectives; use language a Grade 9 student can read without a dictionary; no level can be reached through polished grammar alone.
+Output as a table: criterion / level 1 / level 2 / level 3 / level 4.</div>
+        <p><strong>The iterate move.</strong> The classic failure: <em>"Levels 3 and 4 read the same. Rewrite them so the difference is something I could point to in the essay itself."</em></p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Prompt 4 · the parent-email draft<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The highest-stakes writing teachers do all week - which is exactly why the prompt states, in writing, that nothing goes out unreviewed.</p>
+        <div class="prompt-box bad"><span class="label">Weak</span>Write an email to a parent about their kid missing homework.</div>
+        <div class="prompt-box good"><span class="label">Strong - facts only, you press send</span>Draft an email for me to REVIEW and send myself - it goes nowhere until I have edited it. Recipient: the parent of a Grade 9 student who has missed three essay checkpoints this unit.
+Tone: warm, factual, on the same team as the parent. Constraints: state only the facts I gave you; no speculation about causes; no diagnosis language; under 150 words; end with one specific question inviting the parent's view. Leave a [NAME] placeholder - I add personal details myself, never in this chat.</div>
+        <p><strong>The iterate move.</strong> <em>"Warmer opening, and swap the question - ask what support looks like at home, not why the work is late."</em> (Why the placeholder rule matters becomes b8's whole session.)</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Prompt 5 · the exit-ticket generator<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The fastest daily win: three questions aligned to today's objective, with wrong answers that tell you something.</p>
+        <div class="prompt-box bad"><span class="label">Weak</span>Make quiz questions about persuasive essays.</div>
+        <div class="prompt-box good"><span class="label">Strong - objective-aligned, misconception-aware</span>Generate a 3-question exit ticket for today's Grade 9 lesson. Objective: students connect one claim to one piece of evidence in their own words. Mix: one "explain in your own words", one "spot the weak evidence" whose wrong option is a plausible misconception, one "apply it to your own plastics-ban essay".
+Constraints: answerable in five minutes on paper; no trick wording. Output: the three numbered questions, then a teacher-only answer key noting which misconception each wrong answer reveals.</div>
+        <p><strong>The iterate move.</strong> <em>"Question 1 is pure recall. Rewrite it so a student cannot answer without actually connecting a claim to evidence."</em></p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 3: SELF-STUDY ============ -->
+  <section class="section" id="meta">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · self-study</span>
+      <h2>The meta-lesson: starters, not spells</h2>
+    </div>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Mollick's meta-lesson: structured conversation starters<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Mollick's teaching on prompts lands on one reframe: they are <strong>"structured conversation starters," not magic spells</strong>. Nobody hands you the perfect incantation, and collecting other people's prompts is a weak strategy - because the value is not in the wording, it is in the anatomy plus the conversation that follows. That is why every prompt tonight shipped with an iterate move: the second message you send matters as much as the first. Learn the five layers and you can rebuild any prompt on this page from memory for any subject you teach.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The fluency stance: you review everything<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>This is <strong>Diligence</strong> from b1's 4D loop, applied to your own desk: <strong>you review everything, AI drafts nothing final</strong>. The rubric is a DRAFT until you revise it. The parent email goes nowhere until you edit and send it yourself. The exit ticket gets read before it gets photocopied. Notice the constraints tonight all pointed the same direction - never full paragraphs students could submit, no speculation in the email, no level passed on grammar alone. The never-submit-raw rule you will set for students in b7 starts as a rule you model yourself. Teachers who forward raw AI output are teaching a lesson too - just not the one on the board.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Build a prompt shelf, not a prompt pile<span class="mini">2 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Tonight's five prompts want a home. Two habits make them compound:</p>
+        <ul>
+          <li><strong>Save the SKELETON, not the transcript</strong> - keep each prompt with its class-context slot blank, so next term's 28 students drop straight in. A prompt with someone else's class baked in is single-use.</li>
+          <li><strong>Save the iterate moves with the prompt</strong> - the second message is half the craft. When a colleague asks for "your rubric prompt," hand over both lines or you have handed over half a tool.</li>
+        </ul>
+        <p>Five well-kept skeletons beat a folder of two hundred copied prompts - and in b4 these five become the building blocks of a full unit plan.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 20-30 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run prompt 1 (differentiation) on a real lesson of yours. Let the AI ask its five questions and answer honestly - then note which question you could not have thought to volunteer.</li>
+      <li>Take your weakest recent prompt and rebuild it with all five layers: role, class context, constraint, format, example. Compare outputs side by side.</li>
+      <li>Practice one iterate move per day: when a draft is generic, name what is generic and anchor it to your class instead of starting over.</li>
+      <li>Write your personal never-submit-raw line - the sentence you would say if a colleague asked whether you "just use ChatGPT for" your rubrics - and keep it honest.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Prompting is the most-shared ground across the six vendor courses, so this session teaches the shared core once and points at the deltas. Certificates and graded assessments stay with the official providers. This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Google "Generative AI for Educators with Gemini" - the write / iterate / evaluate / incorporate loop</span><span class="note">Part 1 · the 2h certificate course remains the gentlest official on-ramp</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Microsoft Learn "AI for educators" path - prompting modules</span><span class="note">Shared core in Parts 1-2 · path-specific Copilot workflows land in b4</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">OpenAI "ChatGPT Foundations for Teachers" - prompting modules</span><span class="note">Shared core here · its classroom use-case modules continue in b4</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Mollick Wharton Coursera, module 2 - context-rich prompting for teaching</span><span class="note">Part 2 · the ask-me-questions-first pattern is prompt 1</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Anthropic AI Fluency - Description + Discernment competencies</span><span class="note">The loop's write and evaluate steps · full 4D frame lives in b1</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Google's course teaches the teacher's core AI skill as a loop. Which order is the loop?</p>
+      <button class="qopt" type="button">A · Evaluate the output, then write, then iterate, then incorporate</button>
+      <button class="qopt" type="button">B · Write, iterate to refine, evaluate the output, prepare to incorporate</button>
+      <button class="qopt" type="button">C · Write once, incorporate immediately, evaluate later if there is time</button>
+      <p class="qwhy">Write - iterate to refine - evaluate the output - prepare to incorporate. It is a cycle, not a sentence: new users write once and accept, fluent educators loop two or three times in the same minutes.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · Two prompts ask for a differentiated lesson. What actually makes the strong one strong?</p>
+      <button class="qopt" type="button">A · It is longer, and longer prompts always produce better output</button>
+      <button class="qopt" type="button">B · It uses polite, encouraging wording that the model rewards</button>
+      <button class="qopt" type="button">C · It carries class context and a constraint - who the 28 students are, and what the AI must never write</button>
+      <p class="qwhy">Context and constraint are the load-bearing layers: context is the one thing the model cannot guess, and the constraint ("never write full paragraphs students could submit") keeps the draft on the right side of the learning.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · The parent-email prompt says "draft for me to REVIEW and send myself." Which rule is that an example of?</p>
+      <button class="qopt" type="button">A · The never-submit-raw rule: AI drafts nothing final - a human reviews everything before it reaches a student or parent</button>
+      <button class="qopt" type="button">B · A formatting convention that makes emails shorter</button>
+      <button class="qopt" type="button">C · A privacy rail that only applies to classrooms with students under 13</button>
+      <p class="qwhy">That is Diligence in practice: you review everything, AI drafts nothing final. It applies to every artifact tonight - rubric, email, exit ticket - and it is the same rule you will set for students in b7, modeled first by you.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The loop</b><span>Write → iterate to refine → evaluate the output → prepare to incorporate. Draft 1 is a first offer; loop before you accept.</span></div>
+      <div class="cheat-item"><b>The five-layer anatomy</b><span>Role + class context + constraint + format + example. Context and constraint carry the weight - the model cannot guess your room.</span></div>
+      <div class="cheat-item"><b>The ask-me-first pattern</b><span>Mollick's move: make the AI ask YOU up to five questions before it drafts. You hold the class knowledge; the pattern collects it.</span></div>
+      <div class="cheat-item"><b>The iterate move</b><span>Name what is generic, anchor to your class: "tie every suggestion to the plastics-ban essay and name who each tier serves."</span></div>
+      <div class="cheat-item"><b>The five prompts</b><span>1 differentiation · 2 lesson-plan variant · 3 rubric first draft · 4 parent-email draft · 5 exit-ticket generator. All on Riverview, all adaptable.</span></div>
+      <div class="cheat-item"><b>Never submit raw</b><span>You review everything, AI drafts nothing final. Rubrics stay DRAFT, emails wait for your edit, tickets get read before photocopying.</span></div>
+      <div class="cheat-item"><b>The Gallup mapping</b><span>Teachers' top AI tasks: preparing to teach 37%, worksheets 33%, modifying materials 28% - prompts 1-3 are exactly that ground.</span></div>
+      <div class="cheat-item"><b>Where this goes next</b><span>b3 hands prompts to STUDENTS through seven scaffolded roles. b4 scales tonight's craft from one lesson to the whole unit.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 2 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b1-educators-ai-loop.html">← b1 · The educator's AI loop</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b3-seven-ai-roles.html">Next: The seven AI roles →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

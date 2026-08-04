@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educator session 5 · Assessment redesign - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Educator session 5 of 10</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Educator track · Session 5 of 10</div>
+    <h1>Assessment <span class="accent">redesign</span></h1>
+    <p class="sub">This is the session the whole course funnels into. The question "did AI write this?" is statistically unanswerable - OpenAI's own detector caught 26% and got retired; detectors falsely flag 61% of honest non-native writers. The question "can this student do the thing?" is completely answerable - you just have to design the assessment so the answer is visible. Tonight you rebuild Riverview's essay unit around process evidence: portfolios, in-class components, oral defenses, and rubrics that grade thinking with AI in the room. The detector goes in the bin, and nothing of value is lost.</p>
+    <div class="chip-row">
+      <span class="chip level">🟠 Educator track</span>
+      <span class="chip audience">Teachers · instructional designers · L&amp;D</span>
+      <span class="chip audience">No coding needed</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Why detection fails + what to build instead</span>
+      <span class="a3" style="flex:5">18-42 · Build-along: redesign the essay unit</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PART 1: THE QUESTION SHIFT ============ -->
+  <section class="section" id="question-shift">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the detection evidence base: Liang et al., OpenAI, Vanderbilt</span>
+      <h2>The wrong question and the right one <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">"Did AI touch this text?" sounds like a question a tool could answer. The verified record says no tool can: <strong>OpenAI retired its own detector in July 2023 "due to its low rate of accuracy"</strong> - it caught 26% of AI text and falsely flagged 9% of human text. The Stanford team behind the Patterns study found detectors flagged <strong>61%+ of honest TOEFL essays by non-native English speakers</strong> - while being trivially evadable by anyone who asked the AI to "elevate" its own prose. Vanderbilt did the institutional arithmetic and turned Turnitin's detector off: a claimed 1% false-positive rate across ~75,000 papers a year means <strong>~750 falsely accused students, every year</strong>.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The question shift: detection asks did AI touch this text and fails statistically; redesign asks can the student do the thing and answers it with visible process evidence.">
+        <style>
+          .qsT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .qsS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .qsI { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .qsX { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .qsN { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .qsBad { font: 700 12.5px Inter, sans-serif; fill: #991B1B; }
+          .qsWire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#qsHd); }
+          .qsWireR { stroke: #991B1B; stroke-width: 2.5; fill: none; marker-end: url(#qsHdR); }
+        </style>
+        <defs>
+          <marker id="qsHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+          <marker id="qsHdR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+        <rect x="40" y="46" width="240" height="52" rx="8" fill="#991B1B"/>
+        <text class="qsT" x="56" y="68">"Did AI touch this text?"</text>
+        <text class="qsS" x="56" y="87">the detection question</text>
+        <rect x="40" y="230" width="240" height="52" rx="8" fill="#1D4ED8"/>
+        <text class="qsT" x="56" y="252">"Can they do the thing?"</text>
+        <text class="qsS" x="56" y="271">the assessment question</text>
+        <rect x="360" y="34" width="200" height="76" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="qsBad" x="376" y="56">26% caught (OpenAI)</text>
+        <text class="qsBad" x="376" y="76">61% false flags</text>
+        <text class="qsBad" x="376" y="96">(non-native writers)</text>
+        <rect x="360" y="218" width="200" height="76" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+        <text class="qsI" x="376" y="240">portfolio + drafts</text>
+        <text class="qsI" x="376" y="260">in-class writing</text>
+        <text class="qsI" x="376" y="280">oral defense</text>
+        <rect x="640" y="46" width="212" height="52" rx="8" fill="#1E293B"/>
+        <text class="qsT" x="656" y="68">VERDICT: guesswork</text>
+        <text class="qsS" x="656" y="87">plus false accusations</text>
+        <rect x="640" y="230" width="212" height="52" rx="8" fill="#1E3A8A"/>
+        <text class="qsT" x="656" y="252">VERDICT: visible</text>
+        <text class="qsS" x="656" y="271">learning, gradable work</text>
+        <path class="qsWireR" d="M280,72 L355,72"/>
+        <path class="qsWireR" d="M560,72 L635,72"/>
+        <path class="qsWire" d="M280,256 L355,256"/>
+        <path class="qsWire" d="M560,256 L635,256"/>
+        <text class="qsX" x="330" y="160">same class, same essays -</text>
+        <text class="qsX" x="330" y="177">only the question changed</text>
+        <rect x="40" y="306" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="qsN" x="64" y="318">Vanderbilt's arithmetic: 1% false positives x 75,000 papers/yr = ~750 wrongly accused students. They disabled the detector.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the question shift that makes detectors unnecessary</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Why every vendor landed in the same place<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>We verified six major vendor courses for this track - Google, Microsoft, Anthropic, OpenAI, Common Sense, ISTE. <strong>Not one endorses AI detection.</strong> OpenAI's educator FAQ says it plainly: detectors have not "proven to reliably distinguish between AI-generated and human-generated content" - their own tests flagged Shakespeare and the Declaration of Independence. The converged industry position is exactly this session: transparency norms + human judgment + assessment redesign.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>The accusation IS the punishment.</strong> The Washington Post tested detectors on real student essays and watched an innocent high-schooler get flagged. A student facing a false AI accusation cannot prove a negative - there is no exculpatory evidence for "I just wrote it." That asymmetry is why Vanderbilt, Michigan State, and Northwestern switched detection off rather than tune it. Your redesigned unit never puts a student in that position: the evidence exists BEFORE anyone is suspicious.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>But my colleague swears the detector works<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Three honest replies for the staffroom:</p>
+        <ul>
+          <li><strong>"It catches some cheaters."</strong> True - and it also accuses honest students at rates you cannot ethically accept. At 61% false flags for non-native writers, the tool is biased against exactly the students with the least power to push back.</li>
+          <li><strong>"Turnitin claims under 1% false positives."</strong> Document-level, for high-scoring documents - Turnitin itself admitted ~4% at sentence level and lower reliability below its thresholds. And 1% of a whole school is still hundreds of accusations.</li>
+          <li><strong>"So students just get away with it?"</strong> No - the redesigned unit catches outsourced work BETTER than a detector, because in-class writing and oral defenses test the student, not the text. The two outsourcers at Riverview get caught by evidence, not vibes, in Demo 2.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: THE REDESIGN TOOLKIT ============ -->
+  <section class="section" id="toolkit">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers Mollick "Building AI Exercises", ISTE assessment integration, Vanderbilt course design</span>
+      <h2>The redesign toolkit: four moves <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Every AI-resilient assessment in the wild is some mix of four moves. None of them ban AI - they make learning visible with AI in the room. That is the ISTE deep-dive framing ("assessment integration while maintaining academic integrity") and the practical heart of Mollick's Wharton course.</p>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Move 1 + 2: process portfolios and in-class anchors<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Move 1 - the process portfolio.</strong> The unit grade attaches to the trail, not just the destination: outline → draft 1 → AI transcript (if used) → draft 2 → final. Each artifact is small; together they make the thinking visible. A student who outsourced the essay has no trail - and producing a fake trail is more work than writing the essay.</p>
+        <p><strong>Move 2 - the in-class anchor.</strong> One timed, device-free paragraph per unit, on a familiar prompt. It is not a gotcha - it is a baseline. When a final draft towers over a student's in-class writing, that is a conversation, not an accusation. When they match, the polished draft is earned.</p>
+        <div class="callout tip">
+          <strong>Effort budget</strong>
+          The portfolio is NOT more grading. Grade the final draft as before; the trail is checked only when something needs explaining - like receipts. Ms. Tan's version: 4 checkpoints, 90 seconds each to skim, only 5 of 28 ever needed a second look.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Move 3 + 4: oral defenses and AI-transparent rubrics<span class="mini">5 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Move 3 - the oral defense.</strong> Five minutes, three questions: "Walk me through your strongest argument. What did you reject? Defend your weakest citation." A student who did the thinking passes easily - it is a proud moment, not an interrogation. A student who outsourced it cannot survive question one. This is where Aiden's hidden gap surfaces in week 3 instead of at the exam.</p>
+        <p><strong>Move 4 - the AI-transparent rubric.</strong> Add one visible row to your existing rubric: "AI use - disclosed, within tier, and the human thinking is evident." Harvard requires every syllabus to state an AI policy; Stanford tells students to cite AI like any tool. The rubric row makes disclosure normal and gradable instead of confessional.</p>
+        <div class="callout win">
+          <strong>★ The four moves, one line each</strong>
+          Portfolio = the trail is the proof · In-class anchor = a baseline, not a trap · Oral defense = test the student, not the text · Transparent rubric = disclosure is a graded skill, not a confession.
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Redesign patterns by subject<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The four moves wear different clothes per subject:</p>
+        <ul>
+          <li><strong>Math / sciences:</strong> the anchor is board work or a lab notebook; the "portfolio" is showing method variants; the oral is "explain why step 3 is legal."</li>
+          <li><strong>Humanities:</strong> exactly the Riverview unit - drafts, transcripts, seminar defense.</li>
+          <li><strong>Languages:</strong> in-class anchors dominate (production under time); AI becomes the conversation partner (b3's simulator role), never the translator.</li>
+          <li><strong>Corporate L&amp;D (b9 preview):</strong> the "oral defense" is a walkthrough demo - "show me how you'd do it without the tool, then with it."</li>
+        </ul>
+        <p>Vanderbilt's course-design guidance adds the flipped variant: give students an AI-generated essay and grade their CRITIQUE of it - the AI output becomes the exam paper.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO 1 ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo 1 of 2</span>
+      <h2>The detector, given every chance <span class="tag demo">★ 10 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">The department wants to buy a detector for the polished-drafts moment. Below, the simulator runs that decision with the <strong>detector toggle already ON</strong>. Step through and watch what it buys: two real catches that process evidence already had - and two false accusations, including Dana. Then <strong>turn the detector off and Redesign on</strong>, and watch the same question get answered properly.</p>
+
+    <div class="steps">
+      <div class="step"><p>Step through with <strong>detector on</strong>. Note WHO the four flags are: the 2 outsourcers (already catchable) plus Dana and Yusuf (honest non-native writers - the documented 61% failure mode).</p></div>
+      <div class="step"><p>Read the meeting step. Dana cannot prove a negative. The accusation is the punishment - this is the step no detector vendor puts in the brochure.</p></div>
+      <div class="step"><p>Detector <strong>off</strong>, Redesign <strong>on</strong>: the portfolio + oral evidence answers "can they do the thing?" for all 28 students, no accusations required.</p></div>
+      <div class="step"><p>Try detector off AND redesign off: refusing the detector without building the evidence trail leaves the question unanswerable. Redesign is the load-bearing lever.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="trace" data-scenario="detector" data-levers="policy,roles,detector"></div>
+
+    <div class="callout tip">
+      <strong>The honest rail, repeated</strong>
+      The simulator's model turns are scripted - but the statistics in the guardrail step (61%, 26%, ~750/yr) are the real published numbers, and the failure pattern is the one the studies describe. When you show this to colleagues, show them the citations on this page too.
+    </div>
+  </section>
+
+  <!-- ============ DEMO 2 ============ -->
+  <section class="section" id="demo-2">
+    <div class="section-kicker">
+      <span class="klabel">Demo 2 of 2</span>
+      <h2>Rung 3: the redesigned unit scores 10/12 <span class="tag demo">★ 8 min · explore</span></h2>
+    </div>
+    <p class="lede">Policy (b7 gives you the full statement), AI roles (b3), and tonight's redesign - three levers on. The scorecard below starts at exactly that state: <strong>10/12</strong>. The polished-drafts moment and Aiden's oral both flip to ✓ tonight. Read the two remaining failures carefully - they are privacy moments, and no amount of assessment design fixes them. That is b8.</p>
+
+    <div class="steps">
+      <div class="step"><p>Find tonight's two flips: "half of period 3 submits suspiciously polished drafts" and "Aiden aces the take-home, blanks the oral." Read their pass text - both are the four moves working.</p></div>
+      <div class="step"><p>Read the two remaining ✗ rows: the IEP paste and the under-13 class. Different lever entirely - privacy rails, b8.</p></div>
+      <div class="step"><p>Toggle the detector on at 10/12. Still no help - it subtracts Dana. It never adds. At no rung does it ever add.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="score" data-levers="policy,roles,redesign"></div>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The redesigned Riverview unit, on one page.</strong> Week 1: policy tiers + outline (portfolio starts). Week 2: draft 1 + in-class anchor paragraph. Week 3: AI-assisted revision within tiers, transcript filed + 5-minute orals begin. Week 4: final draft + transparent-rubric grading. Total new teacher time: the orals (28 x 5 min, replacing one grading pass) and 90-second portfolio skims. Total detector spend: zero.</p>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 30-40 min total</span></h2>
+    </div>
+    <ul>
+      <li>Take ONE assignment you actually give and apply the four moves on paper: what is the trail, where is the in-class anchor, what are your three oral questions, what does the AI row on the rubric say? That artifact is your b10 capstone seed.</li>
+      <li>Run the detector trace both ways until you can narrate the 61% / 26% / ~750 numbers from memory - you will need them in exactly one staffroom conversation this term.</li>
+      <li>Draft the one-sentence "conversation, not accusation" script for a towering final draft: "Your final is much stronger than your in-class work - walk me through how you got there."</li>
+      <li>Optional deep read: Vanderbilt's "Guidance on AI Detection and Why We're Disabling Turnitin's AI Detector" - the best-argued institutional document in this space.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Certificates, videos, and graded assessments stay on the official sites (linked each session). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Liang et al., Patterns 2023 + OpenAI classifier record + Vanderbilt guidance - the detection evidence</span><span class="note">Part 1 + Demo 1 · quoted with exact numbers</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Mollick (Wharton) Module 3 "Building AI Exercises for Students" - assignment design core</span><span class="note">Part 2 · the GPT-building module lands in b6</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">ISTE AI Deep Dive - assessment integration under academic integrity</span><span class="note">Part 2 framing · ISTE's full 15-hour course linked for grad credit</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Vanderbilt AdvancED course-design + academic-integrity guidance</span><span class="note">Flipped assignments, redesign examples · policy language lands in b7</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">OpenAI educator FAQ - "Do AI detectors work?"</span><span class="note">The vendor's own verdict · full policy treatment in b7</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Why did Vanderbilt disable Turnitin's AI detector?</p>
+      <button class="qopt" type="button">A · It was too expensive per submission</button>
+      <button class="qopt" type="button">B · Even a 1% false-positive rate meant ~750 wrongly accused students a year at their volume</button>
+      <button class="qopt" type="button">C · Students found it too easy to see their scores</button>
+      <p class="qwhy">The institutional arithmetic: low error RATES become large accusation COUNTS at scale - and a falsely accused student cannot prove a negative. Michigan State and Northwestern reached the same conclusion.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · A final draft towers over a student's in-class anchor writing. The redesigned response is:</p>
+      <button class="qopt" type="button">A · Run the draft through a detector for confirmation</button>
+      <button class="qopt" type="button">B · Deduct marks for suspected AI use</button>
+      <button class="qopt" type="button">C · A conversation with the trail: "walk me through how you got there" - the portfolio and oral carry the evidence</button>
+      <p class="qwhy">The anchor creates a baseline, the portfolio holds the receipts, the oral tests the student rather than the text. Suspicion becomes a structured conversation with evidence - in both directions.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is the AI-transparent rubric row for?</p>
+      <button class="qopt" type="button">A · Making disclosure a normal, graded part of the work instead of a confession</button>
+      <button class="qopt" type="button">B · Catching students who used AI without permission</button>
+      <button class="qopt" type="button">C · Rewarding students who avoided AI entirely</button>
+      <p class="qwhy">The row grades "disclosed, within tier, human thinking evident." Jae's voluntary disclosure becomes the expected path - which is what Harvard's mandatory syllabus policies and Stanford's cite-your-AI guidance are engineering at scale.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Educator session 5 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The question shift</b><span>Not "did AI touch this text?" (unanswerable) but "can this student do the thing?" (designable). Redesign, don't detect.</span></div>
+      <div class="cheat-item"><b>The detection record</b><span>OpenAI: 26% caught, retired 2023. Stanford: 61% false flags on non-native writers. Vanderbilt: ~750 false accusations/yr at 1% - detector disabled.</span></div>
+      <div class="cheat-item"><b>Move 1 · Portfolio</b><span>Outline → drafts → AI transcript → final. The trail is the proof; grading cost is skim-on-demand, like receipts.</span></div>
+      <div class="cheat-item"><b>Move 2 · In-class anchor</b><span>One timed, device-free piece per unit. A baseline for conversations, never a trap.</span></div>
+      <div class="cheat-item"><b>Move 3 · Oral defense</b><span>5 minutes, 3 questions. Tests the student, not the text. Proud moment for the honest, unsurvivable for the outsourcer.</span></div>
+      <div class="cheat-item"><b>Move 4 · Transparent rubric</b><span>One added row: "AI use disclosed, within tier, human thinking evident." Disclosure becomes a graded skill.</span></div>
+      <div class="cheat-item"><b>The rung</b><span>Policy + roles + redesign = 10/12. The last two moments are privacy failures - no assessment design fixes them. b8.</span></div>
+      <div class="cheat-item"><b>Staffroom line</b><span>"The detector's only unique contribution was accusing two honest students - everything real, the portfolio already caught."</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Educator session 5 of 10 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="b4-lesson-unit-design.html">← b4 · Lesson + unit design</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="b6-guardrailed-tutor.html">Next: Build a guardrailed tutor →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

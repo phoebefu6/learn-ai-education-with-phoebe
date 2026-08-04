@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>learn ai education with phoebe - a two-track course on teaching with AI</title>
+<link rel="stylesheet" href="assets/style.css?v=1">
+<style>
+  .stats-row { display: flex; gap: 2.4rem; margin-top: 1.5rem; flex-wrap: wrap; }
+  .stat b { display: block; font-size: 2.1rem; font-weight: 800; line-height: 1.05; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: .72rem; opacity: .85; text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+
+  .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+  .course-card {
+    border: 1px solid var(--hairline);
+    border-top: 4px solid var(--diff, var(--indigo));
+    border-radius: var(--radius);
+    padding: 1.2rem 1.3rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-decoration: none;
+    color: var(--ink);
+    background: #fff;
+    transition: box-shadow .15s ease, border-color .15s ease, transform .15s ease;
+    position: relative;
+  }
+  .course-card:hover { border-color: var(--indigo-soft); border-top-color: var(--diff, var(--indigo)); box-shadow: 0 8px 28px rgba(29,78,216,.12); transform: translateY(-3px); }
+  .course-card .cicon { font-size: 1.7rem; line-height: 1; }
+  .course-card .cnum { font-size: .72rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .1em; }
+  .course-card h3 { font-size: 1.05rem; font-weight: 800; line-height: 1.3; }
+  .course-card p { font-size: .85rem; color: var(--muted); flex: 1; }
+  .course-card .meta { display: flex; gap: .4rem; flex-wrap: wrap; }
+
+  .diff-legend { display: flex; gap: 1rem; margin-top: 1.6rem; font-size: .74rem; color: var(--muted); font-weight: 600; flex-wrap: wrap; }
+  .diff-legend i { display: inline-block; width: .85rem; height: .35rem; border-radius: 999px; margin-right: .35rem; vertical-align: middle; }
+
+  .paths { margin-top: 2.6rem; }
+  .paths h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .3rem; }
+  .paths .plede { color: var(--muted); font-size: .92rem; margin-bottom: .8rem; }
+  .path { display: flex; gap: .55rem; align-items: center; padding: .75rem 0; border-bottom: .5px solid var(--hairline); flex-wrap: wrap; }
+  .path:last-child { border-bottom: none; }
+  .path b { min-width: 15.5rem; font-size: .9rem; }
+  .path .pstep { background: var(--indigo-50); color: var(--indigo); border-radius: 999px; padding: .16rem .68rem; font-weight: 700; font-size: .8rem; text-decoration: none; transition: all .12s ease; }
+  .path .pstep:hover { background: var(--indigo); color: #fff; }
+  .path .parr { color: var(--faint); font-weight: 700; }
+
+  .mm-section { margin-top: 1.6rem; }
+  .mm-section h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .2rem; }
+  .mm-section .mm-lede { color: var(--muted); font-size: .92rem; margin-bottom: .4rem; }
+  .mm-wrap { border: 1px solid var(--hairline); border-radius: var(--radius); background: linear-gradient(180deg,#fff,#F2F6FD); padding: .6rem; overflow-x: auto; }
+  .mm-svg { width: 100%; height: auto; display: block; max-width: 60rem; margin: 0 auto; min-width: 34rem; }
+  .mm-link { cursor: pointer; text-decoration: none; }
+  .mm-node rect { transition: opacity .15s ease, filter .15s ease; }
+  .mm-node text { pointer-events: none; }
+  .mm-link:hover .mm-node rect { filter: brightness(1.06); }
+  .mm-edge { transition: opacity .15s ease; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe</div>
+    <h1>Two tracks into teaching that survives AI</h1>
+    <p class="sub">Sixty percent of teachers already use AI - and the same tool that doubles learning in one classroom quietly erases it in the next. The difference is design, and design is teachable. A leader track gives deans, principals, and L&amp;D heads the evidence, the policy patterns, and the governance rails - no detector required. An educator track takes teachers, instructional designers, and L&amp;D practitioners through one real redesign: Riverview's Grade 9 persuasive-essay unit, rebuilt end to end with the four levers - policy, AI roles, redesigned assessment, privacy rails. A live classroom simulator runs on the key pages: watch 12 classroom moments fail and recover as you toggle the levers - and discover for yourself why the fifth toggle, the AI detector, never helps.</p>
+    <div class="stats-row">
+      <div class="stat"><b data-count="2">2</b><span>tracks</span></div>
+      <div class="stat"><b data-count="16">16</b><span>sessions</span></div>
+      <div class="stat"><b data-count="12">12</b><span>classroom moments</span></div>
+      <div class="stat"><b data-count="45">45</b><span>min per session</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <div class="paths" style="margin-top:0">
+      <h2>The leader track 🤝 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for deans, principals &amp; L&amp;D heads · 6 x 45 min · evidence first</span></h2>
+      <p class="plede">Judgment mode: what AI actually changes in learning, the peer-reviewed evidence on both sides, why detection is statistically unsafe, the privacy and equity rails, and a 12-month institutional roadmap - each session ends with decisions to make, not slides to admire.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/a1-what-ai-changes.html" style="--diff:#34D399">
+        <span class="cicon">🏫</span>
+        <span class="cnum">Leader 1 · easy</span>
+        <h3>What AI actually changes in learning</h3>
+        <p>The adoption reality - 60% of teachers, six weeks a year saved - the answer-machine problem, and what is hype versus what is measured.</p>
+        <span class="meta"><span class="pill amber">▶ Leaders start here</span></span>
+      </a>
+      <a class="course-card" href="courses/a2-the-evidence.html" style="--diff:#34D399">
+        <span class="cicon">⚖️</span>
+        <span class="cnum">Leader 2 · easy</span>
+        <h3>The evidence, in plain English</h3>
+        <p>The PNAS harm study, the Harvard tutor win, MIT's cognitive-debt signal, the CHI overreliance data - design determines outcome, with citations.</p>
+        <span class="meta"><span class="pill light">The two-sided evidence base</span></span>
+      </a>
+      <a class="course-card" href="courses/a3-redesign-not-detect.html" style="--diff:#FBBF24">
+        <span class="cicon">🚫</span>
+        <span class="cnum">Leader 3 · medium</span>
+        <h3>Detection is broken - redesign instead</h3>
+        <p>26% catch rates, 61% false flags on non-native writers, Vanderbilt's ~750-a-year arithmetic - and the 3-tier policy pattern that replaces the detector.</p>
+        <span class="meta"><span class="pill light">▶ Detector trap demo</span></span>
+      </a>
+      <a class="course-card" href="courses/a4-privacy-equity-governance.html" style="--diff:#FBBF24">
+        <span class="cicon">🔐</span>
+        <span class="cnum">Leader 4 · medium</span>
+        <h3>Privacy, equity, governance</h3>
+        <p>FERPA, COPPA, PDPA and Singapore's SLS pattern, the TeachAI toolkit, vetted-tool lists - and the 13% vs 25% guidance gap that makes this an equity issue.</p>
+        <span class="meta"><span class="pill light">The governance rails</span></span>
+      </a>
+      <a class="course-card" href="courses/a5-institution-roadmap.html" style="--diff:#FB923C">
+        <span class="cicon">🗺️</span>
+        <span class="cnum">Leader 5 · deciding</span>
+        <h3>Your institution's AI roadmap</h3>
+        <p>The UNESCO teacher framework, PD strategy, build-vs-buy across Khanmigo, Claude for Education and ChatGPT for Teachers - plus Bersin's maturity model for L&amp;D.</p>
+        <span class="meta"><span class="pill light">Build-vs-buy exercise</span></span>
+      </a>
+      <a class="course-card" href="courses/a6-leading-the-change.html" style="--diff:#FB923C">
+        <span class="cicon">🧭</span>
+        <span class="cnum">Leader 6 · deciding</span>
+        <h3>Leading the change</h3>
+        <p>Champions, rollout sequencing, measurement, the false-accusation protocol every school needs written down - and the next 12 months.</p>
+        <span class="meta"><span class="pill light">Strategy session</span></span>
+      </a>
+    </div>
+
+    <div class="paths">
+      <h2>The educator track 🍎 <span style="font-size:.85rem;font-weight:600;color:var(--muted)">· for teachers, instructional designers &amp; L&amp;D · 10 x 45 min · no coding needed</span></h2>
+      <p class="plede">One running case, redesigned harder every session: Riverview's Grade 9 persuasive-essay unit. The 12-moment scorecard climbs 2 → 5 → 8 → 10 → 12 as the levers come on; b10 must hit 12/12 with the detector still in the bin. Every artifact is usable in your classroom Monday.</p>
+    </div>
+    <div class="course-grid">
+      <a class="course-card" href="courses/b1-educators-ai-loop.html" style="--diff:#34D399">
+        <span class="cicon">🔄</span>
+        <span class="cnum">Educator 1 · easy</span>
+        <h3>The educator's AI loop</h3>
+        <p>The 4D fluency loop, the four levers, and the 12-moment scorecard you will spend ten sessions climbing - plus the detector's first surprise.</p>
+        <span class="meta"><span class="pill amber">▶ Educators start here</span></span>
+      </a>
+      <a class="course-card" href="courses/b2-prompting-for-teaching.html" style="--diff:#34D399">
+        <span class="cicon">✏️</span>
+        <span class="cnum">Educator 2 · easy</span>
+        <h3>Prompting for teaching</h3>
+        <p>The prompt-iterate-evaluate loop every vendor course teaches - done once, properly, with context-rich teaching prompts and Mollick's patterns.</p>
+        <span class="meta"><span class="pill light">The core teacher skill</span></span>
+      </a>
+      <a class="course-card" href="courses/b3-seven-ai-roles.html" style="--diff:#FBBF24">
+        <span class="cicon">🎭</span>
+        <span class="cnum">Educator 3 · medium</span>
+        <h3>The seven student-facing AI roles</h3>
+        <p>Tutor, coach, mentor, teammate, tool, simulator, AI-student - Mollick's seven approaches with ready-to-adapt prompts and the risks each carries.</p>
+        <span class="meta"><span class="pill light">Rung 2: 8/12</span></span>
+      </a>
+      <a class="course-card" href="courses/b4-lesson-unit-design.html" style="--diff:#FBBF24">
+        <span class="cicon">📐</span>
+        <span class="cnum">Educator 4 · medium</span>
+        <h3>Design lessons + units with AI</h3>
+        <p>Backward design with an AI co-designer: objectives, differentiation, materials, the ADGIE loop for instructional designers - Riverview unit v1 ships.</p>
+        <span class="meta"><span class="pill light">The design studio</span></span>
+      </a>
+      <a class="course-card" href="courses/b5-assessment-redesign.html" style="--diff:#FB923C">
+        <span class="cicon">📋</span>
+        <span class="cnum">Educator 5 · the heart</span>
+        <h3>Assessment redesign</h3>
+        <p>The core session: process portfolios, in-class anchors, oral defenses, AI-transparent rubrics - and the full detection evidence, so the detector goes in the bin.</p>
+        <span class="meta"><span class="pill light">Rung 3: 10/12</span></span>
+      </a>
+      <a class="course-card" href="courses/b6-guardrailed-tutor.html" style="--diff:#FB923C">
+        <span class="cicon">🛡️</span>
+        <span class="cnum">Educator 6 · hands-on</span>
+        <h3>Build a guardrailed tutor</h3>
+        <p>Socratic system prompts, the Learning Mode and Khanmigo design DNA, the PNAS guardrails - build the tutor that helps without doing the homework.</p>
+        <span class="meta"><span class="pill light">▶ Tutor vs answer machine</span></span>
+      </a>
+      <a class="course-card" href="courses/b7-integrity-policy.html" style="--diff:#FB923C">
+        <span class="cicon">📜</span>
+        <span class="cnum">Educator 7 · hands-on</span>
+        <h3>Integrity + policy in practice</h3>
+        <p>The 3-tier syllabus statement, disclosure norms, handling suspicion without detectors - your classroom policy ships tonight.</p>
+        <span class="meta"><span class="pill light">Rung 1: 5/12</span></span>
+      </a>
+      <a class="course-card" href="courses/b8-privacy-rails.html" style="--diff:#FB923C">
+        <span class="cicon">🔐</span>
+        <span class="cnum">Educator 8 · hands-on</span>
+        <h3>Privacy + safety rails</h3>
+        <p>The PII discipline, FERPA and COPPA in practice, the under-13 reality, vetted tools, Singapore's PDPA and SLS pattern - the last two moments flip.</p>
+        <span class="meta"><span class="pill light">Rung 4: 12/12</span></span>
+      </a>
+      <a class="course-card" href="courses/b9-ai-for-ld.html" style="--diff:#F87171">
+        <span class="cicon">💼</span>
+        <span class="cnum">Educator 9 · hardest</span>
+        <h3>AI for corporate L&amp;D</h3>
+        <p>The mirror session: skills-gap analysis, personalized paths, Bersin's four maturity levels, the ATD and LinkedIn playbooks - Riverview's moves, translated to the enterprise.</p>
+        <span class="meta"><span class="pill light">The L&amp;D mirror</span></span>
+      </a>
+      <a class="course-card" href="courses/b10-capstone-unit.html" style="--diff:#F87171">
+        <span class="cicon">🏆</span>
+        <span class="cnum">Educator 10 · hardest</span>
+        <h3>Capstone: the redesigned unit</h3>
+        <p>Assemble everything - policy, roles, redesigned assessment, privacy rails - and do not ship the unit until the scorecard reads 12/12, detector off.</p>
+        <span class="meta"><span class="pill light">Ship it at 12/12</span></span>
+      </a>
+    </div>
+    <div class="diff-legend">
+      <span><i style="background:#34D399"></i>easy - everyone</span>
+      <span><i style="background:#FBBF24"></i>medium</span>
+      <span><i style="background:#FB923C"></i>hands-on / deciding</span>
+      <span><i style="background:#F87171"></i>hardest</span>
+    </div>
+
+    <div class="paths">
+      <h2>Choose your path 🗺️</h2>
+      <p class="plede">Two doors into the same conviction: learning survives AI when the design is deliberate. Leaders decide and govern; educators build the classroom that proves it.</p>
+      <div class="path"><b>🤝 Leader (decide &amp; govern)</b>
+        <a class="pstep" href="courses/a1-what-ai-changes.html">a1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a2-the-evidence.html">a2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a3-redesign-not-detect.html">a3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a4-privacy-equity-governance.html">a4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a5-institution-roadmap.html">a5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/a6-leading-the-change.html">a6</a>
+      </div>
+      <div class="path"><b>🍎 Educator (redesign the unit)</b>
+        <a class="pstep" href="courses/b1-educators-ai-loop.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b2-prompting-for-teaching.html">b2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b3-seven-ai-roles.html">b3</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b4-lesson-unit-design.html">b4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b5-assessment-redesign.html">b5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b6-guardrailed-tutor.html">b6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b7-integrity-policy.html">b7</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b8-privacy-rails.html">b8</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b9-ai-for-ld.html">b9</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b10-capstone-unit.html">b10</a>
+      </div>
+      <div class="path"><b>💼 L&amp;D professional (fast lane)</b>
+        <a class="pstep" href="courses/b1-educators-ai-loop.html">b1</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b2-prompting-for-teaching.html">b2</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b4-lesson-unit-design.html">b4</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b5-assessment-redesign.html">b5</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b9-ai-for-ld.html">b9</a>
+      </div>
+      <div class="path"><b>🚀 Full journey (lead AND teach)</b>
+        <a class="pstep" href="courses/a1-what-ai-changes.html">a1-a6</a><span class="parr">→</span>
+        <a class="pstep" href="courses/b1-educators-ai-loop.html">b1-b10</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mm-section">
+    <h2>The knowledge map 🧠</h2>
+    <p class="mm-lede">Both tracks at a glance - hover a session to spotlight its concepts, click any node to jump in.</p>
+    <div class="mm-wrap"><div id="mindmap"></div></div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a> · taught from the UNESCO AI competency frameworks, Anthropic AI Fluency, the Mollick playbook, Google/Microsoft/OpenAI/Common Sense/ISTE educator courses, the peer-reviewed evidence base (PNAS, Patterns, Scientific Reports, CHI), Vanderbilt/Harvard/Stanford teaching guidance, TeachAI, ATD + Bersin</span>
+  </footer>
+</main>
+
+<script>
+window.MINDMAP_DATA = {
+  title: "Learn\nAI Education",
+  centerColor: "#1E3A8A",
+  sessions: [
+    { label: "What AI\nchanges", href: "courses/a1-what-ai-changes.html", color: "#34D399",
+      concepts: [
+        { label: "60% adoption", href: "courses/a1-what-ai-changes.html" },
+        { label: "Answer-machine problem", href: "courses/a1-what-ai-changes.html" } ] },
+    { label: "The\nevidence", href: "courses/a2-the-evidence.html", color: "#34D399",
+      concepts: [
+        { label: "PNAS -17% / +127%", href: "courses/a2-the-evidence.html" },
+        { label: "Design decides", href: "courses/a2-the-evidence.html" } ] },
+    { label: "Redesign,\nnot detect", href: "courses/a3-redesign-not-detect.html", color: "#FBBF24",
+      concepts: [
+        { label: "61% false flags", href: "courses/a3-redesign-not-detect.html" },
+        { label: "3-tier policy", href: "courses/a3-redesign-not-detect.html" } ] },
+    { label: "Privacy &\ngovernance", href: "courses/a4-privacy-equity-governance.html", color: "#FBBF24",
+      concepts: [
+        { label: "FERPA · COPPA · PDPA", href: "courses/a4-privacy-equity-governance.html" },
+        { label: "Equity gap", href: "courses/a4-privacy-equity-governance.html" } ] },
+    { label: "Institution\nroadmap", href: "courses/a5-institution-roadmap.html", color: "#FB923C",
+      concepts: [
+        { label: "UNESCO framework", href: "courses/a5-institution-roadmap.html" },
+        { label: "Build vs buy", href: "courses/a5-institution-roadmap.html" } ] },
+    { label: "Leading\nthe change", href: "courses/a6-leading-the-change.html", color: "#FB923C",
+      concepts: [
+        { label: "Rollout + champions", href: "courses/a6-leading-the-change.html" },
+        { label: "False-accusation protocol", href: "courses/a6-leading-the-change.html" } ] },
+    { label: "Educator's\nAI loop", href: "courses/b1-educators-ai-loop.html", color: "#34D399",
+      concepts: [
+        { label: "4D fluency", href: "courses/b1-educators-ai-loop.html" },
+        { label: "Four levers", href: "courses/b1-educators-ai-loop.html" },
+        { label: "The scorecard", href: "courses/b1-educators-ai-loop.html" } ] },
+    { label: "Prompting\nfor teaching", href: "courses/b2-prompting-for-teaching.html", color: "#34D399",
+      concepts: [
+        { label: "Prompt-iterate-evaluate", href: "courses/b2-prompting-for-teaching.html" },
+        { label: "Teaching prompts", href: "courses/b2-prompting-for-teaching.html" } ] },
+    { label: "Seven\nAI roles", href: "courses/b3-seven-ai-roles.html", color: "#FBBF24",
+      concepts: [
+        { label: "Tutor · coach · simulator", href: "courses/b3-seven-ai-roles.html" },
+        { label: "AI-student pattern", href: "courses/b3-seven-ai-roles.html" } ] },
+    { label: "Lesson &\nunit design", href: "courses/b4-lesson-unit-design.html", color: "#FBBF24",
+      concepts: [
+        { label: "Backward design", href: "courses/b4-lesson-unit-design.html" },
+        { label: "ADGIE loop", href: "courses/b4-lesson-unit-design.html" } ] },
+    { label: "Assessment\nredesign", href: "courses/b5-assessment-redesign.html", color: "#FB923C",
+      concepts: [
+        { label: "Four moves", href: "courses/b5-assessment-redesign.html" },
+        { label: "Detector in the bin", href: "courses/b5-assessment-redesign.html" } ] },
+    { label: "Guardrailed\ntutor", href: "courses/b6-guardrailed-tutor.html", color: "#FB923C",
+      concepts: [
+        { label: "Socratic prompts", href: "courses/b6-guardrailed-tutor.html" },
+        { label: "PNAS guardrails", href: "courses/b6-guardrailed-tutor.html" } ] },
+    { label: "Integrity\n& policy", href: "courses/b7-integrity-policy.html", color: "#FB923C",
+      concepts: [
+        { label: "3-tier statement", href: "courses/b7-integrity-policy.html" },
+        { label: "Disclosure norms", href: "courses/b7-integrity-policy.html" } ] },
+    { label: "Privacy\nrails", href: "courses/b8-privacy-rails.html", color: "#FB923C",
+      concepts: [
+        { label: "PII discipline", href: "courses/b8-privacy-rails.html" },
+        { label: "Under-13 reality", href: "courses/b8-privacy-rails.html" } ] },
+    { label: "AI for\nL&D", href: "courses/b9-ai-for-ld.html", color: "#F87171",
+      concepts: [
+        { label: "Skills-gap analysis", href: "courses/b9-ai-for-ld.html" },
+        { label: "Bersin levels", href: "courses/b9-ai-for-ld.html" } ] },
+    { label: "Capstone\n12/12", href: "courses/b10-capstone-unit.html", color: "#F87171",
+      concepts: [
+        { label: "Full unit assembly", href: "courses/b10-capstone-unit.html" },
+        { label: "Scorecard gate", href: "courses/b10-capstone-unit.html" } ] }
+  ]
+};
+</script>
+<script src="assets/mindmap.js?v=1"></script>
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>

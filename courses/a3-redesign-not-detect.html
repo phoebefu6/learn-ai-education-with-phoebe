@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leader session 3 · Detection is broken - redesign instead - learn ai education with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-education-with-phoebe</a> / Leader session 3 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Education with Phoebe · Leader track · Session 3 of 6</div>
+    <h1>Detection is broken - <span class="accent">redesign instead</span></h1>
+    <p class="sub">Somewhere in your institution right now, someone is proposing to buy an AI detector. This session is the 45 minutes that saves you from signing that purchase order. The verified record is brutal: OpenAI retired its own detector at a 26% catch rate, Stanford researchers found detectors falsely flag 61%+ of honest essays by non-native English speakers, and Vanderbilt did the arithmetic - at their scale, a "1% false-positive rate" means roughly 750 wrongly accused students every year - then switched the detector off. Tonight you see the false accusation manufactured live in the simulator, and you leave with the move that actually works: mandate a policy per course, not a detector per school.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Leader track</span>
+      <span class="chip audience">Deans · principals · L&amp;D heads</span>
+      <span class="chip audience">No code, decisions only</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The detection record</span>
+      <span class="a3" style="flex:5">18-42 · The detector demo + the 3-tier policy</span>
+      <span class="a4" style="flex:1">42-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ PART 1: THE DETECTION RECORD ============ -->
+  <section class="section" id="detection-record">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers the detection evidence base: Liang et al., OpenAI, Vanderbilt</span>
+      <h2>The detection record, as an institutional risk table <span class="tag concept">8 min live</span></h2>
+    </div>
+    <p class="lede">Read this the way you would read a vendor due-diligence file, because that is exactly what it is. Every row is a published, verifiable finding - and every row points the same direction. The tool your integrity committee is being sold does not do what the brochure says, and its errors land on a very specific group of students.</p>
+
+    <table class="clean">
+      <thead>
+        <tr><th>Evidence</th><th>What it found</th><th>What it means for your institution</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>OpenAI's own classifier</strong> (2023)</td>
+          <td>Caught only <strong>26%</strong> of AI text, falsely flagged 9% of human text. Retired July 2023 "due to its low rate of accuracy".</td>
+          <td>The vendor with the most training data in the world quit the detection business.</td>
+        </tr>
+        <tr>
+          <td><strong>Liang et al., Patterns 2023</strong> (Stanford)</td>
+          <td>Detectors flagged <strong>61%+ of honest TOEFL essays by non-native English speakers</strong> as AI - and were trivially evadable: one "elevate the text" prompt dropped flags from 61% to 12%.</td>
+          <td>The errors are biased against exactly the students least able to push back - while real cheaters walk through.</td>
+        </tr>
+        <tr>
+          <td><strong>Turnitin's own admission</strong></td>
+          <td>The marketed "under 1%" false-positive claim is document-level; Turnitin admitted <strong>~4% false positives at sentence level</strong>.</td>
+          <td>The fine print quadruples the risk you are actually buying.</td>
+        </tr>
+        <tr>
+          <td><strong>Vanderbilt</strong> (Aug 2023)</td>
+          <td>A claimed 1% false-positive rate x ~75,000 papers a year = <strong>~750 falsely accused students, every year</strong>. Detector disabled.</td>
+          <td>Michigan State and Northwestern followed. The institutions that did the arithmetic all landed in the same place.</td>
+        </tr>
+        <tr>
+          <td><strong>OpenAI educator FAQ</strong></td>
+          <td>Detectors have not "proven to reliably distinguish" AI from human writing - OpenAI's tests flagged Shakespeare and the Declaration of Independence.</td>
+          <td>The industry position, in the industry's own words. Not one major vendor endorses detection.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The false-accusation funnel: 75,000 papers go into a detector claiming 1% false positives, about 750 flags come out, and the flags split into real cases the evidence already had and innocent students who are falsely accused - concentrated among non-native writers.">
+        <style>
+          .dtT { font: 700 14px Inter, sans-serif; fill: #FFFFFF; }
+          .dtS { font: 400 11.5px Inter, sans-serif; fill: #FFFFFF; opacity: .92; }
+          .dtI { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .dtX { font: 400 12px Inter, sans-serif; fill: #64748B; }
+          .dtN { font: 600 13px Inter, sans-serif; fill: #043029; }
+          .dtBad { font: 700 12.5px Inter, sans-serif; fill: #991B1B; }
+          .dtWire { stroke: #1D4ED8; stroke-width: 2.5; fill: none; marker-end: url(#dtHd); }
+          .dtWireR { stroke: #991B1B; stroke-width: 2.5; fill: none; marker-end: url(#dtHdR); }
+        </style>
+        <defs>
+          <marker id="dtHd" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#1D4ED8"/>
+          </marker>
+          <marker id="dtHdR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+            <path d="M0,0 L9,4.5 L0,9 z" fill="#991B1B"/>
+          </marker>
+        </defs>
+        <rect x="20" y="120" width="180" height="52" rx="8" fill="#1E293B"/>
+        <text class="dtT" x="36" y="142">75,000 PAPERS</text>
+        <text class="dtS" x="36" y="161">one year at Vanderbilt</text>
+        <rect x="250" y="120" width="200" height="52" rx="8" fill="#1D4ED8"/>
+        <text class="dtT" x="266" y="142">AI DETECTOR</text>
+        <text class="dtS" x="266" y="161">claims 1% false positives</text>
+        <rect x="500" y="120" width="160" height="52" rx="8" fill="#3B82F6"/>
+        <text class="dtT" x="516" y="142">~750 FLAGS/YR</text>
+        <text class="dtS" x="516" y="161">the 1% arithmetic</text>
+        <rect x="710" y="36" width="160" height="52" rx="8" fill="#1E3A8A"/>
+        <text class="dtT" x="726" y="58">REAL AI USE</text>
+        <text class="dtS" x="726" y="77">already catchable</text>
+        <rect x="710" y="210" width="160" height="68" rx="8" fill="#991B1B"/>
+        <text class="dtT" x="726" y="232">INNOCENT</text>
+        <text class="dtS" x="726" y="251">honest students,</text>
+        <text class="dtS" x="726" y="268">falsely accused</text>
+        <rect x="460" y="214" width="230" height="56" rx="8" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="2"/>
+        <text class="dtBad" x="476" y="236">61%+ false flags on honest</text>
+        <text class="dtBad" x="476" y="256">non-native TOEFL essays</text>
+        <path class="dtWire" d="M200,146 L245,146"/>
+        <path class="dtWire" d="M450,146 L495,146"/>
+        <path class="dtWire" d="M660,134 C685,120 685,76 705,64"/>
+        <path class="dtWireR" d="M660,158 C685,175 685,230 705,240"/>
+        <rect x="20" y="296" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="dtN" x="44" y="308">Michigan State and Northwestern followed Vanderbilt. The detector never caught what evidence missed.</text>
+        <rect x="20" y="322" width="14" height="14" rx="3" fill="#0E7C6B"/>
+        <text class="dtN" x="44" y="334">The bias is not random: near-perfect on native essays, 61%+ false flags on non-native (Liang 2023).</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the false-accusation funnel every detector purchase buys</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>Read the record like a risk officer<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Strip the edtech language away and a detector is a screening test with a known error profile, run at scale, whose positive results trigger disciplinary proceedings. Three questions any risk officer would ask:</p>
+        <ul>
+          <li><strong>What is the base-rate exposure?</strong> Multiply the false-positive rate by your annual submission volume. At Vanderbilt's scale, even the marketing number produced ~750 accusations of innocent students a year. Run your own number before any meeting where the purchase is discussed.</li>
+          <li><strong>Who absorbs the errors?</strong> Not randomly distributed students - the Stanford data says non-native English speakers absorb them at 61%+, and the accused cannot prove a negative. There is no exculpatory evidence for "I just wrote it."</li>
+          <li><strong>What does the true positive buy you?</strong> In every documented case pattern, the genuinely outsourced work was already catchable by process evidence - drafts, in-class baselines, a five-minute conversation. The detector's unique contribution is the false accusations.</li>
+        </ul>
+        <p>That is the whole case. The tool fails the students you are most obligated to protect, and succeeds only where you did not need it.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The claim vs the fine print<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>When a vendor deck reaches your desk, three claims will be on it. The honest annotations:</p>
+        <ul>
+          <li><strong>"99%+ accuracy."</strong> Accuracy is the wrong metric for rare events - a detector that flags nothing at all scores high accuracy. Ask for the false-positive rate at YOUR volume, in accusations per year.</li>
+          <li><strong>"Under 1% false positives."</strong> Turnitin's own admission: that figure is document-level for high-scoring documents; sentence-level false positives ran ~4%, with lower reliability below its thresholds.</li>
+          <li><strong>"Constantly improving."</strong> The evasion side improves faster. Liang's team cut flags from 61% to 12% with a single rewrite prompt. You would be buying a permanent arms race in which the honest students are the casualties.</li>
+        </ul>
+        <p>Keep this page open in that meeting. Every number on it is published and citable.</p>
+      </div>
+    </details>
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Scripts for the three pushbacks you will hear<span class="mini">3 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>When you table this evidence, three objections arrive on schedule. Ready answers, in a leader's voice:</p>
+        <ul>
+          <li><strong>"Doing nothing feels irresponsible."</strong> Agreed - which is why the alternative is not nothing. It is a stated policy in every syllabus plus evidence-based assessment, which catches outsourced work better than the detector did, without the ~750 false accusations.</li>
+          <li><strong>"Other schools use detectors."</strong> The schools that published their reasoning - Vanderbilt, Michigan State, Northwestern - switched them off. Ask the schools still running one for their false-accusation count; they will not have measured it.</li>
+          <li><strong>"Our teachers want backup on suspicion."</strong> Then give them backup that works: the in-class baseline, the draft trail, the five-minute conversation script. A detector score is not backup - it is a liability with a dashboard.</li>
+        </ul>
+        <p>Notice the pattern in all three replies: never argue AI ethics in the abstract. Argue accusations per year, evidence per case, and who absorbs the errors. Those are numbers a board can act on.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2: WHAT TO DO INSTEAD ============ -->
+  <section class="section" id="policy-instead">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers Vanderbilt, Harvard, Stanford syllabus policy patterns</span>
+      <h2>What leading institutions mandate instead <span class="tag concept">7 min live</span></h2>
+    </div>
+    <p class="lede">The same institutions that switched detectors off did not go soft on integrity - they moved the control point. Instead of one tool policing every submission, every course states its own rules up front. The pattern is remarkably consistent across Vanderbilt, Harvard, and Stanford, and it is cheap to mandate.</p>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The 3-tier syllabus policy pattern<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Vanderbilt's guidance gives faculty three exact tiers to choose from, per course, per assignment:</p>
+        <ul>
+          <li><strong>Allowed</strong> - AI use is permitted, students disclose how they used it.</li>
+          <li><strong>Allowed only in certain scenarios</strong> - the syllabus names which tasks and which uses; everything else is off the table.</li>
+          <li><strong>Never allowed</strong> - and the assessment is designed so that the rule is enforceable without a detector.</li>
+        </ul>
+        <p>Harvard runs the same idea with different labels - "maximally restrictive" / "mixed" / "fully-encouraging" - and Harvard FAS <strong>requires every syllabus to state one</strong>. Stanford adds two sharpening rules: the statement must be <strong>self-contained</strong> (a student reading only the syllabus knows exactly what is allowed), and <strong>students cite AI use</strong> the way they would cite any source.</p>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p><strong>Why per-course beats school-wide.</strong> A single blanket rule is always wrong somewhere: the coding course wants AI pair work the literature seminar forbids. The tier menu keeps the DECISION with the person who owns the learning outcome - the instructor - while the institution mandates only that a decision gets made and published. That is governance doing its actual job.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The leader's move: mandate a policy per course, not a detector per school<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>One sentence of institutional policy replaces the entire detector budget: <strong>"Every course states its AI tier in the syllabus, and suspicion is handled through evidence and conversation, never through detector output alone."</strong> What that one sentence buys you:</p>
+        <ul>
+          <li><strong>Due process.</strong> When 14 polished drafts show up, the question is "which tier did each student operate in?" - answerable with evidence - not "did AI touch this text?" - which no tool can answer.</li>
+          <li><strong>Consistency for students.</strong> Honesty stops being a confession. A student who disclosed AI use within tier has followed the rules, by definition.</li>
+          <li><strong>Zero procurement.</strong> The policy costs a faculty meeting and a template. The detector costs money, an arms race, and roughly one false accusation per hundred papers.</li>
+        </ul>
+        <p>The questions to bring back to your leadership team: Which of our courses currently state any AI rule at all? Who owns the template? What is our deadline for 100% syllabus coverage?</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The false-accusation protocol<span class="mini">4 min read</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Even with detectors gone, teachers will sometimes suspect. Your institution needs a written answer to "what happens next?" - because the improvised version is where the damage happens. The protocol that works:</p>
+        <ul>
+          <li><strong>Suspicion starts a conversation, not a proceeding.</strong> "Your final is much stronger than your in-class work - walk me through how you got there." Curious, not accusatory.</li>
+          <li><strong>Evidence means process evidence.</strong> Drafts, outlines, the in-class baseline, a short oral walkthrough. If the course collected none of these, that is a course-design gap, not a student-guilt signal.</li>
+          <li><strong>Detector output is never proof.</strong> Write this down explicitly: a detector score alone cannot open or sustain an integrity case. The published error rates make it inadmissible on its own terms.</li>
+          <li><strong>The burden stays on the institution.</strong> A student cannot prove they did not use AI. If your process requires them to, your process is broken - that asymmetry is precisely why Vanderbilt pulled the plug.</li>
+        </ul>
+        <p>Put this protocol in the same document as the tier mandate. Together they are your whole integrity architecture.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ DEMO ============ -->
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Demo · the detector trace</span>
+      <h2>Watch the false accusation get manufactured <span class="tag demo">★ 12 min · everyone runs it</span></h2>
+    </div>
+    <p class="lede">Below is the strongest classroom in this whole course - policy stated, AI roles scaffolded, assessment redesigned - <strong>with a detector switched on anyway</strong>. This is the exact configuration a well-meaning institution creates when it does everything right and then buys the detector "just to be safe". Step through and watch what the extra tool contributes.</p>
+
+    <div class="steps">
+      <div class="step"><p>Run it <strong>as-is</strong>: three levers on, detector on. Good design does not save the honest students - watch the detector manufacture the false accusation anyway, on top of a classroom that had already answered the real question.</p></div>
+      <div class="step"><p>Note <strong>who gets flagged</strong>: the genuinely outsourced work the portfolio evidence already had, plus honest non-native writers - the documented 61% failure mode, now with a name and a face.</p></div>
+      <div class="step"><p>Toggle the <strong>detector OFF</strong> and run again. Same class, same drafts: the redesign answers "can this student do the thing?" properly, for everyone, with no accusations required.</p></div>
+      <div class="step"><p>Say the leader lesson out loud: the detector never added anything at any rung. It only ever subtracts - and it subtracts your most vulnerable students first.</p></div>
+    </div>
+
+    <div class="edubox" data-mode="trace" data-scenario="detector" data-levers="policy,roles,redesign,detector"></div>
+
+    <div class="callout tip">
+      <strong>How to read the classroom sim</strong>
+      🏫 situation · 🧠 thinking · ✏️ action · 📦 what happens · 🛡 rail · 🎓 outcome. The moments are a scripted teaching simulation replaying documented failure modes; the statistics quoted in the guardrail steps (26%, 61%, ~750/yr) are the real published numbers from the sources on this page.
+    </div>
+
+    <div class="callout win">
+      <strong>★ What you walk out with today</strong>
+      The risk table with exact citations for the next procurement meeting, the 3-tier syllabus mandate (Vanderbilt's tiers, Harvard's requirement, Stanford's two sharpening rules), and the false-accusation protocol - a complete detector-free integrity architecture that costs a faculty meeting instead of a budget line.
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Try it yourself - this week <span class="tag exercise">◐ 25-35 min total</span></h2>
+    </div>
+    <ul>
+      <li>Run Vanderbilt's arithmetic on YOUR institution: annual submission volume x 1% (then x 4% for the sentence-level number). Write the result as "falsely accused students per year" - that phrase, not a percentage, is what belongs in the board paper.</li>
+      <li>Audit five syllabi from different departments: how many state any AI rule at all? That gap is your first governance metric for a4 and a5.</li>
+      <li>Draft the one-sentence institutional mandate in your own words - policy per course, evidence-based process for suspicion, detector output never proof - and note who would need to approve it.</li>
+      <li>Optional deep read: Vanderbilt's "Guidance on AI Detection and Why We're Disabling Turnitin's AI Detector" - the best-argued institutional document in this space, and a ready-made template for your own announcement.</li>
+    </ul>
+  </section>
+
+  <!-- ============ SOURCES ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Source material</span>
+      <h2>Official sources covered</h2>
+    </div>
+    <p class="lede">Certificates, videos, and graded assessments stay on the official sites (linked each session). This page covers:</p>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Liang et al., Patterns 2023 - the 61%+ false-flag evidence on non-native writers</span><span class="note">Part 1 + demo · quoted with exact numbers</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">OpenAI classifier record + educator FAQ - the 26% catch rate and the retirement verdict</span><span class="note">Part 1 risk table · the vendor's own words</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Vanderbilt detector guidance - the ~750/yr arithmetic and the disable decision</span><span class="note">Part 1 + homework · Michigan State and Northwestern followed</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Vanderbilt / Harvard / Stanford syllabus policy patterns - the 3-tier mandate</span><span class="note">Part 2 · the educator-level playbook lands in b5 and b7</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions before you go 🎯 <span class="tag exercise">◐ 90 seconds</span></h2>
+    </div>
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Vanderbilt processed about 75,000 papers a year. At Turnitin's claimed 1% false-positive rate, what did their arithmetic show?</p>
+      <button class="qopt" type="button">A · About 75 falsely accused students a year - an acceptable cost of enforcement</button>
+      <button class="qopt" type="button">B · About 750 falsely accused students a year - so they disabled the detector</button>
+      <button class="qopt" type="button">C · About 7,500 undetected cheaters a year - so they doubled the detector budget</button>
+      <p class="qwhy">1% x 75,000 = ~750 innocent students facing accusations they cannot disprove, every single year. Vanderbilt switched the detector off in August 2023; Michigan State and Northwestern reached the same conclusion.</p>
+    </div>
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">2 · The Stanford study in Patterns found detector errors are not randomly distributed. Who absorbs them?</p>
+      <button class="qopt" type="button">A · Students who type quickly - speed correlates with AI-like text</button>
+      <button class="qopt" type="button">B · Students in STEM subjects, where writing is more formulaic</button>
+      <button class="qopt" type="button">C · Non-native English speakers - 61%+ of their honest TOEFL essays were flagged as AI</button>
+      <p class="qwhy">Detectors scored near-perfectly on native-speaker essays and flagged 61%+ of honest non-native writing - while one rewrite prompt dropped real AI text from 61% to 12% flags. The tool punishes the honest and misses the prepared.</p>
+    </div>
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What is the leader's move this session recommends in place of buying a detector?</p>
+      <button class="qopt" type="button">A · Mandate a stated AI policy per course, with suspicion handled through evidence - never a detector per school</button>
+      <button class="qopt" type="button">B · Ban AI institution-wide until the detection technology matures</button>
+      <button class="qopt" type="button">C · Buy two detectors and act only when both agree</button>
+      <p class="qwhy">The Vanderbilt / Harvard / Stanford pattern: every course states its tier (allowed / allowed only in certain scenarios / never allowed), the statement is self-contained, students cite AI use - and detector output is never proof. Governance moves the decision, not the tool.</p>
+    </div>
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Leader session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The detection record</b><span>OpenAI: 26% caught, retired July 2023. Stanford: 61%+ false flags on non-native writers. Turnitin: ~4% at sentence level. No major vendor endorses detection.</span></div>
+      <div class="cheat-item"><b>The Vanderbilt arithmetic</b><span>1% false positives x 75,000 papers/yr = ~750 falsely accused students/yr. Detector disabled; Michigan State and Northwestern followed.</span></div>
+      <div class="cheat-item"><b>Who pays the errors</b><span>Honest non-native English speakers - the students least able to push back, facing an accusation with no way to prove a negative.</span></div>
+      <div class="cheat-item"><b>The evasion asymmetry</b><span>One "elevate the text" prompt: 61% → 12% flags. Cheaters adapt in minutes; the falsely accused cannot adapt at all.</span></div>
+      <div class="cheat-item"><b>The 3-tier pattern</b><span>Vanderbilt: allowed / allowed only in certain scenarios / never allowed. Harvard FAS requires a stated policy per syllabus. Stanford: self-contained statement, students cite AI.</span></div>
+      <div class="cheat-item"><b>The leader's move</b><span>Mandate a POLICY per course, not a DETECTOR per school. One sentence of governance replaces the entire detector budget.</span></div>
+      <div class="cheat-item"><b>The suspicion protocol</b><span>Conversation with evidence: drafts, in-class baseline, oral walkthrough. Detector output alone can never open or sustain a case.</span></div>
+      <div class="cheat-item"><b>The demo lesson</b><span>Even with every good lever on, the detector still manufactures a false accusation. It never adds at any rung - it only subtracts.</span></div>
+    </div>
+  </section>
+
+  <footer class="pagefoot">
+    <span>Leader session 3 of 6 · learn-ai-education-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="a2-the-evidence.html">← a2 · The evidence</a> &nbsp;·&nbsp; <a href="../index.html">All sessions</a> &nbsp;·&nbsp; <a href="a4-privacy-equity-governance.html">Next: Privacy, equity, governance →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/edu-live.js?v=1"></script>
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

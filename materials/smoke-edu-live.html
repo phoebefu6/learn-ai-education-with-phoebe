@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>edu-live smoke test</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+<main class="wrap">
+  <h2>score - rung 0</h2>
+  <div class="edubox" data-mode="score" data-levers=""></div>
+  <h2>score - all four</h2>
+  <div class="edubox" data-mode="score" data-levers="policy,roles,redesign,privacy"></div>
+  <h2>trace - essay (policy only)</h2>
+  <div class="edubox" data-mode="trace" data-scenario="essay" data-levers="policy"></div>
+  <h2>trace - detector (all four + detector)</h2>
+  <div class="edubox" data-mode="trace" data-scenario="detector" data-levers="policy,roles,redesign,privacy,detector"></div>
+  <h2>trace - tutor (none)</h2>
+  <div class="edubox" data-mode="trace" data-scenario="tutor" data-levers=""></div>
+  <h2>trace - privacy (default)</h2>
+  <div class="edubox" data-mode="trace" data-scenario="privacy"></div>
+</main>
+<script src="../assets/edu-live.js?v=1"></script>
+</body>
+</html>
