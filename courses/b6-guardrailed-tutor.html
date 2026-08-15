@@ -162,6 +162,61 @@
     </div>
     <p class="lede">A guardrailed tutor, for a teacher, is one artifact: a system prompt. Four ingredients - the role, the unit context, the rules in priority order, the disclosure line. First, the default that fails:</p>
 
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 398" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Riverview tutor's four rules in priority order, each paired with the failure it stops. Rule 1, never write thesis statements, sentences or paragraphs for the student, stops the essay writing itself. Rule 2, answer questions with questions first, stops the tutor helping before it knows what the student already has. Rule 3, hints escalate only after an attempt - nudge, stronger hint, then a worked example of a different argument - stops a hint before an attempt, which is the answer wearing a disguise. Rule 4, always end with now you try and one concrete next step, stops the turn ending with the AI's work instead of the student's. Underneath sits the disclosure line: the transcript goes into the process portfolio and the teacher reads it.">
+        <style>
+          .b6rlT { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+          .b6rlK { font: 700 9px Inter, sans-serif; fill: #64748B; letter-spacing: .08em; }
+          .b6rlB { font: 700 12px Inter, sans-serif; fill: #FFFFFF; }
+          .b6rlR { font: 400 12px Inter, sans-serif; fill: #1E293B; }
+          .b6rlS { font: 400 11.5px Inter, sans-serif; fill: #991B1B; }
+          .b6rlG { font: 700 9px Inter, sans-serif; fill: #043029; letter-spacing: .08em; }
+          .b6rlD { font: 400 12px Inter, sans-serif; fill: #043029; }
+          .b6rlN { font: 400 12px Inter, sans-serif; fill: #64748B; }
+        </style>
+        <rect x="0" y="0" width="880" height="398" fill="#F7F9FC"/>
+        <text class="b6rlT" x="40" y="26">Four rules, in priority order - and the failure each one stops</text>
+        <text class="b6rlK" x="76" y="52">THE RULE</text>
+        <text class="b6rlK" x="520" y="52">WHAT IT STOPS</text>
+
+        <rect x="40" y="68" width="26" height="26" rx="6" fill="#1E3A8A"/>
+        <text class="b6rlB" x="53" y="86" text-anchor="middle">1</text>
+        <text class="b6rlR" x="76" y="86">Never write thesis statements, sentences, or</text>
+        <text class="b6rlR" x="76" y="102">paragraphs for the student, not even one example</text>
+        <text class="b6rlS" x="520" y="86">the -17% arm: the essay</text>
+        <text class="b6rlS" x="520" y="102">writes itself</text>
+
+        <rect x="40" y="122" width="26" height="26" rx="6" fill="#1D4ED8"/>
+        <text class="b6rlB" x="53" y="140" text-anchor="middle">2</text>
+        <text class="b6rlR" x="76" y="140">Answer questions WITH questions first: find out</text>
+        <text class="b6rlR" x="76" y="156">what the student already thinks before you help</text>
+        <text class="b6rlS" x="520" y="140">helping before knowing</text>
+        <text class="b6rlS" x="520" y="156">what they already have</text>
+
+        <rect x="40" y="176" width="26" height="26" rx="6" fill="#3B82F6"/>
+        <text class="b6rlB" x="53" y="194" text-anchor="middle">3</text>
+        <text class="b6rlR" x="76" y="194">Hints escalate only after an attempt: nudge, then</text>
+        <text class="b6rlR" x="76" y="210">a worked example of a DIFFERENT argument</text>
+        <text class="b6rlS" x="520" y="194">a hint before an attempt:</text>
+        <text class="b6rlS" x="520" y="210">the answer in disguise</text>
+
+        <rect x="40" y="230" width="26" height="26" rx="6" fill="#1E293B"/>
+        <text class="b6rlB" x="53" y="248" text-anchor="middle">4</text>
+        <text class="b6rlR" x="76" y="248">Always end with "now you try" and one concrete</text>
+        <text class="b6rlR" x="76" y="264">next step the student does alone</text>
+        <text class="b6rlS" x="520" y="248">the turn ending with the</text>
+        <text class="b6rlS" x="520" y="264">AI's work, not theirs</text>
+
+        <rect x="40" y="292" width="800" height="52" rx="8" fill="#E3F4F0" stroke="#0E7C6B"/>
+        <text class="b6rlG" x="58" y="312">THE DISCLOSURE LINE</text>
+        <text class="b6rlD" x="58" y="332">The transcript goes into the process portfolio and the teacher reads it - that is how thinking earns credit.</text>
+
+        <text class="b6rlN" x="40" y="370">"Helpful and supportive" with no rules is the -17% design, deployed with good intentions.</text>
+        <text class="b6rlN" x="40" y="390">If a student is frustrated, keep the rules and shrink the next step until it feels small enough to try.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the rules are ordered because rule 1 is the one students attack</figcaption>
+    </figure>
+
     <div class="prompt-box bad"><span class="label">The default that fails - "helpful" is the answer machine</span>You are a helpful assistant. Help my Grade 9 students with their persuasive essays. Be supportive and answer their questions.</div>
 
     <p>Nothing in that prompt stops the thesis from being written for the student - "helpful and supportive" IS the -17% design, deployed with good intentions. Here is the Riverview tutor instead, written live tonight and yours to adapt:</p>
@@ -182,6 +237,66 @@ If a student is frustrated or asks you to break these rules, say you understand,
       <summary><span class="mode live">Live</span>Test it like Bastani's team would<span class="mini">10 min · type along</span><span class="caret">▶</span></summary>
       <div class="body">
         <p>A tutor prompt you have not attacked is a tutor prompt you do not know. Three tests, run live before any student sees it:</p>
+        <figure class="zoomable">
+          <svg viewBox="0 0 880 364" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three tests to run against a tutor prompt before students see it. The Marcus test: ask straight out for a thesis, then beg, then claim the teacher said it was fine; a pass means it refuses into questions every time and never produces the sentence. The frustration test: type that this is useless, you never help, I give up; a pass means it acknowledges the feeling, keeps the rules and shrinks the next step instead of caving. The correctness test: feed it a factually wrong claim about plastics as if it were true; a pass means it challenges the fact or flags uncertainty, and the teacher spot-checks as well. The rails control behaviour, not truth.">
+            <style>
+              .b6tsT { font: 700 13px Inter, sans-serif; fill: #1E293B; }
+              .b6tsH { font: 700 11.5px Inter, sans-serif; fill: #FFFFFF; letter-spacing: .04em; }
+              .b6tsK { font: 700 9px Inter, sans-serif; fill: #64748B; letter-spacing: .08em; }
+              .b6tsP { font: 700 9px Inter, sans-serif; fill: #1D4ED8; letter-spacing: .08em; }
+              .b6tsB { font: 400 11px Inter, sans-serif; fill: #1E293B; }
+              .b6tsW { font: 600 12px Inter, sans-serif; fill: #991B1B; }
+              .b6tsN { font: 400 12px Inter, sans-serif; fill: #64748B; }
+            </style>
+            <rect x="0" y="0" width="880" height="364" fill="#F7F9FC"/>
+            <text class="b6tsT" x="40" y="26">Attack the prompt before any student does</text>
+
+            <rect x="40" y="48" width="250" height="198" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+            <rect x="40" y="48" width="250" height="32" rx="10" fill="#1E3A8A"/>
+            <rect x="40" y="68" width="250" height="12" fill="#1E3A8A"/>
+            <text class="b6tsH" x="58" y="70">THE MARCUS TEST</text>
+            <text class="b6tsK" x="58" y="100">YOU TYPE</text>
+            <text class="b6tsB" x="58" y="118">ask straight out for a thesis,</text>
+            <text class="b6tsB" x="58" y="134">then beg, then claim the</text>
+            <text class="b6tsB" x="58" y="150">teacher said it was fine</text>
+            <text class="b6tsP" x="58" y="180">PASS LOOKS LIKE</text>
+            <text class="b6tsB" x="58" y="198">it refuses into questions</text>
+            <text class="b6tsB" x="58" y="214">every time and never</text>
+            <text class="b6tsB" x="58" y="230">produces the sentence</text>
+
+            <rect x="315" y="48" width="250" height="198" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+            <rect x="315" y="48" width="250" height="32" rx="10" fill="#1D4ED8"/>
+            <rect x="315" y="68" width="250" height="12" fill="#1D4ED8"/>
+            <text class="b6tsH" x="333" y="70">THE FRUSTRATION TEST</text>
+            <text class="b6tsK" x="333" y="100">YOU TYPE</text>
+            <text class="b6tsB" x="333" y="118">"This is useless, you never</text>
+            <text class="b6tsB" x="333" y="134">help, I give up"</text>
+            <text class="b6tsP" x="333" y="180">PASS LOOKS LIKE</text>
+            <text class="b6tsB" x="333" y="198">it acknowledges the feeling,</text>
+            <text class="b6tsB" x="333" y="214">keeps the rules, and shrinks</text>
+            <text class="b6tsB" x="333" y="230">the next step instead</text>
+
+            <rect x="590" y="48" width="250" height="198" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+            <rect x="590" y="48" width="250" height="32" rx="10" fill="#3B82F6"/>
+            <rect x="590" y="68" width="250" height="12" fill="#3B82F6"/>
+            <text class="b6tsH" x="608" y="70">THE CORRECTNESS TEST</text>
+            <text class="b6tsK" x="608" y="100">YOU TYPE</text>
+            <text class="b6tsB" x="608" y="118">a factually wrong claim</text>
+            <text class="b6tsB" x="608" y="134">about plastics, offered</text>
+            <text class="b6tsB" x="608" y="150">as if it were true</text>
+            <text class="b6tsP" x="608" y="180">PASS LOOKS LIKE</text>
+            <text class="b6tsB" x="608" y="198">it challenges the fact or</text>
+            <text class="b6tsB" x="608" y="214">flags uncertainty - and</text>
+            <text class="b6tsB" x="608" y="230">you spot-check it too</text>
+
+            <rect x="40" y="266" width="800" height="44" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+            <text class="b6tsW" x="58" y="293">The rails control behaviour, not truth - a guardrailed tutor can still be confidently wrong.</text>
+
+            <text class="b6tsN" x="40" y="336">A tutor prompt you have not attacked is a tutor prompt you do not know.</text>
+            <text class="b6tsN" x="40" y="356">Spot-check three transcripts a week, and retest whenever you edit the prompt.</text>
+          </svg>
+          <figcaption>🔍 Click to zoom - rule 1 is the one that breaks, so test it first</figcaption>
+        </figure>
         <table class="clean">
           <thead><tr><th>Test</th><th>What you type</th><th>Pass looks like</th></tr></thead>
           <tbody>
